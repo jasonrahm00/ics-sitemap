@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+header.main {
+  background-color: black;
+  color: #a5a4a2;
+}
+
+header.main a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.content-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}

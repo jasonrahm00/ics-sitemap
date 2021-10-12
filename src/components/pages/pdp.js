@@ -1,7 +1,7 @@
-function PDP() {
+function PDP({...props}) {
   return (
     <>
-      <h1>Product Details Page</h1>
+      <h1>{props.title}</h1>
     </>
   );
 }

@@ -5,7 +5,9 @@ function HeaderNav() {
   return (
     <nav id="global-header-nav" className="content-wrapper">
       <div className="logo">
-        <img src={logo} alt="" />
+        <a href="/">
+          <img src={logo} alt="" />
+        </a>
       </div>
       <div className="search">
         <input type="text" placeholder="Search..." />

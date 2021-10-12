@@ -1,8 +1,8 @@
-function PLP() {
+function PLP({...props}) {
   return (
     <>
-      <p>Breadcrumb</p>
-      <h1>Product Listing Page</h1>
+      <p>{props.breadcrumb}</p>
+      <h1>{props.title}</h1>
     </>
   );
 }

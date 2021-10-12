@@ -2,6 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import Link from '@mui/material/Link';
 
 import './mainNav.css';
 
@@ -36,9 +37,9 @@ function BrandNav() {
           'aria-labelledby': 'shop-brand-trigger',
         }}
       >
-        <MenuItem onClick={handleClose}>ICS</MenuItem>
-        <MenuItem onClick={handleClose}>Merit</MenuItem>
-        <MenuItem onClick={handleClose}>Pentruder</MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/ics">ICS</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="products/merit">Merit</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="products/pentruder">Pentruder</Link></MenuItem>
       </Menu>
     </>
   );

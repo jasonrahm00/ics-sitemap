@@ -2,6 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import Link from '@mui/material/Link';
 
 import './mainNav.css';
 
@@ -36,12 +37,12 @@ function TypeNav() {
           'aria-labelledby': 'shop-type-trigger',
         }}
       >
-        <MenuItem onClick={handleClose}>All Products</MenuItem>
-        <MenuItem onClick={handleClose}>Power Cutters</MenuItem>
-        <MenuItem onClick={handleClose}>Flat Saws</MenuItem>
-        <MenuItem onClick={handleClose}>Wall/Wire Saws</MenuItem>
-        <MenuItem onClick={handleClose}>Diamond Chains</MenuItem>
-        <MenuItem onClick={handleClose}>Parts and Accessories</MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products">All Products</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/pipe-cutters">Power Cutters</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/producs/flat-saws">Flat Saws</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/wall-wire-saws">Wall/Wire Saws</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/diamond-chains">Diamond Chains</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/parts-accessories">Parts and Accessories</Link></MenuItem>
       </Menu>
     </>
   );

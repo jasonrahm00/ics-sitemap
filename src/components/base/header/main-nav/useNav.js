@@ -2,6 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import Link from '@mui/material/Link';
 
 import './mainNav.css';
 
@@ -36,10 +37,10 @@ function UseNav() {
           'aria-labelledby': 'shop-use-trigger',
         }}
       >
-        <MenuItem onClick={handleClose}>Concrete Cutting</MenuItem>
-        <MenuItem onClick={handleClose}>Pipe Cutting</MenuItem>
-        <MenuItem onClick={handleClose}>Steel Cutting</MenuItem>
-        <MenuItem onClick={handleClose}>Power Supply</MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/concrete-cutting">Concrete Cutting</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/pipe-cutting">Pipe Cutting</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/steel-cutting">Steel Cutting</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/power-supply">Power Supply</Link></MenuItem>
       </Menu>
     </>
   );

@@ -1,0 +1,14 @@
+#main-nav button {
+  color: #a5a4a2;
+}
+
+#main-nav button:hover, 
+#main-nav button[aria-expanded="true"] {
+  color:white;
+}
+
+#main-nav > a {
+  padding: 6px 8px;
+  font-size: .875rem;
+  font-weight: 500;
+}

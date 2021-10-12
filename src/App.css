@@ -30,9 +30,12 @@ header.main nav li {
   display: inline-block;
 }
 
-header.main a:link {
+header.main a:link,
+header.main a:visited {
   color: #a5a4a2;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 header.main a:hover {

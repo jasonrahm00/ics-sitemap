@@ -36,7 +36,7 @@ function App() {
           <Route exact path="/products" component={() => <PLP title={'All Products'} breadcrumb={'Home > Products'} />} />
           <Route exact path="/products/power-cutters" component={() => <ContentPage title={'Power Cutters'} breadcrumb={'Home > Products > Power Cutters'} />} />
           <Route exact path="/products/flat-saws" component={() => <ContentPage title={'Flat Saws'} breadcrumb={'Home > Products > Flat Saws'} />} />
-          <Route exact path="/products/wire-wall-saws" component={() => <ContentPage title={'Wall/Wire Saws'} breadcrumb={'Home > Products > Wall Wire Saws'} />} />
+          <Route exact path="/products/wall-wire-saws" component={() => <ContentPage title={'Wall/Wire Saws'} breadcrumb={'Home > Products > Wall Wire Saws'} />} />
           <Route exact path="/products/diamond-chains" component={() => <ContentPage title={'Diamond Chains'} breadcrumb={'Home > Products > Diamond Chains'} />} />
           <Route exact path="/products/parts-accessories" component={() => <PLP title={'Parts & Accessories'} breadcrumb={'Home > Products > Parts & Accessories'} />} />
           <Route exact path="/pdp" component={() => <PDP title={'Product'} breadcrumb={'Home > Products > Product'} />} />

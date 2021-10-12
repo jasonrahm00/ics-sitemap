@@ -38,8 +38,8 @@ function BrandNav() {
         }}
       >
         <MenuItem onClick={handleClose}><Link href="/products/ics">ICS</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="products/merit">Merit</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="products/pentruder">Pentruder</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/merit">Merit</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/pentruder">Pentruder</Link></MenuItem>
       </Menu>
     </>
   );

@@ -1,8 +1,12 @@
+import Breadcrumbs from '../page-objects/breadcrumbs/breadcrumbs';
+
 function PLP({...props}) {
   return (
     <>
-      <p>{props.breadcrumb}</p>
+      <Breadcrumbs breadcrumbs={props.breadcrumb} />
       <h1>{props.title}</h1>
+      <div>Facets</div>
+      <div>Product List</div>
     </>
   );
 }

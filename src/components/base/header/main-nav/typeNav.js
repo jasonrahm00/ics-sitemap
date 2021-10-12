@@ -38,8 +38,8 @@ function TypeNav() {
         }}
       >
         <MenuItem onClick={handleClose}><Link href="/products">All Products</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/products/pipe-cutters">Power Cutters</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/producs/flat-saws">Flat Saws</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/power-cutters">Power Cutters</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/products/flat-saws">Flat Saws</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link href="/products/wall-wire-saws">Wall/Wire Saws</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link href="/products/diamond-chains">Diamond Chains</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link href="/products/parts-accessories">Parts and Accessories</Link></MenuItem>

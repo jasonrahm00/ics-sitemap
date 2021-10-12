@@ -1,12 +1,38 @@
+import Grid from '@mui/material/Grid';
+
+import CardComponent from "../page-objects/card/cardComponent";
+import HeroBanner from '../page-objects/hero-banner/heroBanner';
+import Breadcrumbs from '../page-objects/breadcrumbs/breadcrumbs';
+
 function ContentPage({...props}) {
   return (
     <>
-      <p className="content-wrapper">{props.breadcrumb}</p>
-      <h1>{props.title}</h1>
-      <p>Hero banner</p>
-      <div className="content-wrapper">
-        <p>Tiles and other stuff</p>
-      </div>
+      <Breadcrumbs breadcrumbs={props.breadcrumb} />
+      <HeroBanner header={props.title} />
+      <section className="content-wrapper">
+        <h2>Section Header</h2>
+        <p>Section Ddescription</p>
+        <Grid container spacing={12}>
+          <Grid item>
+            <CardComponent />
+          </Grid>
+          <Grid item>
+            <CardComponent />
+          </Grid>
+          <Grid item>
+            <CardComponent />
+          </Grid>
+          <Grid item>
+            <CardComponent />
+          </Grid>
+          <Grid item>
+            <CardComponent />
+          </Grid>
+          <Grid item>
+            <CardComponent />
+          </Grid>
+        </Grid>
+      </section>
       
     </>
   );

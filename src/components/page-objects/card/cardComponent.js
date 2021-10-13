@@ -12,11 +12,11 @@ import icsProduct from './ics-product.jpg';
 function CardComponent({...props}) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
+      {/* <CardMedia
         component="img"
         image={icsProduct}
         alt=""
-      />
+      /> */}
       <CardContent>
         <CardHeader component="h3" title={props.header}/>
         <Typography variant="body2" color="text.secondary">

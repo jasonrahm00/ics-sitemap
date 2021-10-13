@@ -7,7 +7,7 @@ import {
 import './App.css';
 import HeaderNav from './components/base/header/header-nav/headerNav';
 import MainNav from './components/base/header/main-nav/mainNav';
-import Foooter from './components/base/footer/footer';
+import Footer from './components/base/footer/footer';
 import Homepage from './components/pages/hompage';
 import ContentPage from "./components/pages/contentPage";
 import PDP from "./components/pages/pdp";
@@ -29,7 +29,9 @@ function App() {
           <Route exact path="/products/ics" component={
             () => <ContentPage title={'ICS Brand'} breadcrumb={'Home > Products > ICS'} cards={CardData.icsCards} />
           } />
-          <Route exact path="/products/merit" component={() => <ContentPage title={'Merit Brand'} breadcrumb={'Home > Products > Merit'} />} />
+          <Route exact path="/products/merit" component={
+            () => <ContentPage title={'Merit Brand'} breadcrumb={'Home > Products > Merit'} cards={CardData.meritCards} />
+          } />
           <Route exact path="/products/pentruder" component={() => <ContentPage title={'Pentruder Brand'} breadcrumb={'Home > Products > Pentruder'} />} />
           <Route exact path="/products/concrete-cutting" component={() => <ContentPage title={'Concrete Cutting'} breadcrumb={'Home > Products > Concrete Cutting'} />} />
           <Route exact path="/products/pipe-cutting" component={() => <ContentPage title={'Pipe Cutting'} breadcrumb={'Home > Products > Pipe Cutting'} />} />
@@ -45,8 +47,7 @@ function App() {
           <Route exact path="/plp" component={() => <PLP breadcrumb={'Home > Products > PLP'} />} />
         </Switch>
       </main>
-      
-      <Foooter />
+      <Footer />
     </Router>
   );
 }

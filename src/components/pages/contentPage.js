@@ -18,7 +18,13 @@ function ContentPage({...props}) {
               {item.cards && item.cards.map((x, i) => {
                 return(
                   <Grid item key={i}>
-                    <CardComponent header={x.header} dest={x.destination} link={x.link} products={x.productList} />
+                    <CardComponent 
+                      header={x.header} 
+                      dest={x.destination} 
+                      link={x.link} 
+                      products={x.productList} 
+                      description={x.description} 
+                    />
                   </Grid>
                 )
               })}

@@ -1,12 +1,36 @@
+import { useLocation } from 'react-router-dom';
+import Grid from '@mui/material/Grid';
+
 import Breadcrumbs from '../page-objects/breadcrumbs/breadcrumbs';
 
 function PLP({...props}) {
+
+  const location = useLocation();
+  const productList = location.state.products;
+  const pageTitle = location.state.pageTitle;
+
   return (
     <>
       <Breadcrumbs breadcrumbs={props.breadcrumb} />
-      <h1>{props.title}</h1>
-      <div>Facets</div>
-      <div>Product List</div>
+      <div className="content-wrapper">
+        <Grid container spacing={6}>
+          <Grid item md={4}>
+            <h2>Facets</h2>
+          </Grid>
+          <Grid item md={8}>
+            <h1>{pageTitle}</h1>
+            {productList.length ? (
+              <ul>
+                {productList.map((product, index) => {
+                  return (
+                    <li key={index}>{product}</li>
+                  )
+                })}
+              </ul>
+            ) : ''}
+          </Grid>
+        </Grid>
+      </div>
     </>
   );
 }

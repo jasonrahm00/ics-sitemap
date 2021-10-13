@@ -28,7 +28,10 @@ function CardComponent({...props}) {
           <Link 
             to={{
               pathname: props.link,
-              state: { products: props.products}
+              state: { 
+                products: props.products,
+                pageTitle: props.header
+              },
             }}
           >
             {props.dest}

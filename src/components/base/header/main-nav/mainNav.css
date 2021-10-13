@@ -12,3 +12,9 @@
   font-size: .875rem;
   font-weight: 500;
 }
+
+.MuiMenuItem-root a,
+.MuiMenuItem-root a:hover, 
+.MuiMenuItem-root a:visited {
+  color: #1976d2;
+}

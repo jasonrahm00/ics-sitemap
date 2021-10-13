@@ -2,7 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import Link from '@mui/material/Link';
+import { Link } from 'react-router-dom';
 
 import './mainNav.css';
 
@@ -37,12 +37,14 @@ function TypeNav() {
           'aria-labelledby': 'shop-type-trigger',
         }}
       >
-        <MenuItem onClick={handleClose}><Link href="/products">All Products</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/products/power-cutters">Power Cutters</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/products/flat-saws">Flat Saws</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/products/wall-wire-saws">Wall/Wire Saws</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/products/diamond-chains">Diamond Chains</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/products/parts-accessories">Parts and Accessories</Link></MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link to={{pathname: '/products', state: { products: ['All Products'], pageTitle: 'All Products'}}}>All Products</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/products/power-cutters">Power Cutters</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/products/flat-saws">Flat Saws</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/products/wall-wire-saws">Wall/Wire Saws</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/products/diamond-chains">Diamond Chains</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/products/parts-accessories">Parts and Accessories</Link></MenuItem>
       </Menu>
     </>
   );

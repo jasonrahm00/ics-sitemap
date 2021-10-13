@@ -12,7 +12,7 @@ import Homepage from './components/pages/hompage';
 import ContentPage from "./components/pages/contentPage";
 import PDP from "./components/pages/pdp";
 import PLP from "./components/pages/plp";
-import * as CardData from './components/page-objects/card/cardData';
+import * as CardData from './data';
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
           <Route exact path="/products/diamond-chains" component={() => <ContentPage title={'Diamond Chains'} breadcrumb={'Home > Products > Diamond Chains'} />} />
           <Route exact path="/products/parts-accessories" component={() => <PLP title={'Parts & Accessories'} breadcrumb={'Home > Products > Parts & Accessories'} />} />
           <Route exact path="/pdp" component={() => <PDP title={'Product'} breadcrumb={'Home > Products > Product'} />} />
-          <Route exact path="/plp" component={() => <PLP title={'Product'} breadcrumb={'Home > Products > PLP'} />} />
+          <Route exact path="/plp" component={() => <PLP breadcrumb={'Home > Products > PLP'} />} />
         </Switch>
       </main>
       

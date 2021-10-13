@@ -7,7 +7,7 @@ body {
 }
 
 main {
-  margin-top: 146px;
+  margin-top: 134px;
   min-height: 100vh;
 }
 
@@ -47,4 +47,8 @@ header.main a:hover {
 .content-wrapper {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+p {
+  margin: 0;
 }

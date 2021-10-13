@@ -1,8 +1,7 @@
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import './App.css';
@@ -13,6 +12,7 @@ import Homepage from './components/pages/hompage';
 import ContentPage from "./components/pages/contentPage";
 import PDP from "./components/pages/pdp";
 import PLP from "./components/pages/plp";
+import * as CardData from './components/page-objects/card/cardData';
 
 function App() {
   return (
@@ -26,7 +26,9 @@ function App() {
           <Route exact path="/">
             <Homepage />
           </Route>
-          <Route exact path="/products/ics" component={() => <ContentPage title={'ICS Brand'} breadcrumb={'Home > Products > ICS'} />} />
+          <Route exact path="/products/ics" component={
+            () => <ContentPage title={'ICS Brand'} breadcrumb={'Home > Products > ICS'} cards={CardData.icsCards} />
+          } />
           <Route exact path="/products/merit" component={() => <ContentPage title={'Merit Brand'} breadcrumb={'Home > Products > Merit'} />} />
           <Route exact path="/products/pentruder" component={() => <ContentPage title={'Pentruder Brand'} breadcrumb={'Home > Products > Pentruder'} />} />
           <Route exact path="/products/concrete-cutting" component={() => <ContentPage title={'Concrete Cutting'} breadcrumb={'Home > Products > Concrete Cutting'} />} />
@@ -40,6 +42,7 @@ function App() {
           <Route exact path="/products/diamond-chains" component={() => <ContentPage title={'Diamond Chains'} breadcrumb={'Home > Products > Diamond Chains'} />} />
           <Route exact path="/products/parts-accessories" component={() => <PLP title={'Parts & Accessories'} breadcrumb={'Home > Products > Parts & Accessories'} />} />
           <Route exact path="/pdp" component={() => <PDP title={'Product'} breadcrumb={'Home > Products > Product'} />} />
+          <Route exact path="/plp" component={() => <PLP title={'Product'} breadcrumb={'Home > Products > PLP'} />} />
         </Switch>
       </main>
       

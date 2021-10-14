@@ -32,7 +32,9 @@ function App() {
           <Route exact path="/products/merit" component={
             () => <ContentPage title={'Merit Brand'} breadcrumb={'Home > Products > Merit'} cards={CardData.meritCards} />
           } />
-          <Route exact path="/products/pentruder" component={() => <ContentPage title={'Pentruder Brand'} breadcrumb={'Home > Products > Pentruder'} />} />
+          <Route exact path="/products/pentruder" component={
+            () => <ContentPage title={'Pentruder Brand'} breadcrumb={'Home > Products > Pentruder'} cards={CardData.pentruderCards} />
+          } />
           <Route exact path="/products/concrete-cutting" component={() => <ContentPage title={'Concrete Cutting'} breadcrumb={'Home > Products > Concrete Cutting'} />} />
           <Route exact path="/products/pipe-cutting" component={() => <ContentPage title={'Pipe Cutting'} breadcrumb={'Home > Products > Pipe Cutting'} />} />
           <Route exact path="/products/steel-cutting" component={() => <ContentPage title={'Steel Cutting'} breadcrumb={'Home > Products > Steel Cutting'} />} />

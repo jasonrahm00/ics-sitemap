@@ -1,4 +1,4 @@
-const template = {
+/* {
   group: '',
   description: '',
   cards: [
@@ -11,7 +11,11 @@ const template = {
     }
   ]
 };
+*/
 
+/******
+ * Merit Cards
+ */
 export const meritCards = [
   {
     group: 'Flat Saws',
@@ -83,6 +87,69 @@ export const meritCards = [
   }
 ];
 
+/******
+ * Pentruder Cards
+ */
+export const pentruderCards = [
+  {
+    group: 'Saws',
+    description: '',
+    cards: [
+      {
+        header: 'CBK HF Wall Saw',
+        destination: 'Product Page',
+        description: '',
+        link: '/pdp',
+        productList: ['CBK HF Wall Saw']
+      },
+      {
+        header: '8-20 HF Wall Saw',
+        destination: 'Product Page',
+        description: '',
+        link: '/pdp',
+        productList: ['8-20 HF Wall Saw']
+      },
+      {
+        header: '3P8 HF Wire Saw',
+        destination: 'Product Page',
+        description: '',
+        link: '/pdp',
+        productList: ['3P8 HF Wire Saw']
+      },
+      {
+        header: 'CW630 HF Chain Saw',
+        destination: 'Product Page',
+        description: '',
+        link: '/pdp',
+        productList: ['CW630 HF Chain Saw']
+      }
+    ]
+  },
+  {
+    group: 'Accessories',
+    description: '',
+    cards: [
+      {
+        header: 'Pentpak 427 HF Power Pack',
+        destination: 'Product Page',
+        description: '',
+        link: '/pdp',
+        productList: ['Pentpak™ 427 HF Power Pack']
+      },
+      {
+        header: 'Pentruder Remote Controls',
+        destination: 'Product Page',
+        description: '',
+        link: '/pdp',
+        productList: ['Pentruder Remote Controls']
+      }
+    ]
+  }
+];
+
+/******
+ * ICS Cards
+ */
 export const icsCards = [
   {
     group: 'Power Saws',

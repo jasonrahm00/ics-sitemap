@@ -36,13 +36,18 @@ header.main nav > ul > li {
 }
 
 header.main a:link,
-header.main a:visited {
+header.main a:visited,
+header.main .MuiButton-root {
   color: #a5a4a2;
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   text-decoration: none;
   text-transform: uppercase;
+  display: block;
+  text-align: center;
+  width: 100%;  
 }
 
+header.main .MuiButton-root:hover,
 header.main a:hover {
   color: white;
   cursor: pointer;

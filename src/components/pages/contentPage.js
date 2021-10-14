@@ -1,8 +1,8 @@
 import Grid from '@mui/material/Grid';
 
-import CardComponent from "../page-objects/card/cardComponent";
-import HeroBanner from '../page-objects/hero-banner/heroBanner';
-import Breadcrumbs from '../page-objects/breadcrumbs/breadcrumbs';
+import CardComponent from "../cms-components/card/cardComponent";
+import HeroBanner from '../cms-components/hero-banner/heroBanner';
+import Breadcrumbs from '../cms-components/breadcrumbs/breadcrumbs';
 
 function ContentPage({...props}) {
   let cards = props.cards;

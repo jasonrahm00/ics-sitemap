@@ -23,7 +23,8 @@ function ContentPage({...props}) {
                       dest={x.destination} 
                       link={x.link} 
                       products={x.productList} 
-                      description={x.description} 
+                      description={x.description}
+                      verified={x.verified} 
                     />
                   </Grid>
                 )

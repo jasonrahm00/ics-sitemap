@@ -11,8 +11,8 @@ body {
 }
 
 main {
-  margin-top: 134px;
-  min-height: calc(100vh - 134px);
+  margin-top: 165px;
+  min-height: calc(100vh - 165px);
 }
 
 header.main {
@@ -31,7 +31,7 @@ header.main nav ul {
   padding: 0;
 }
 
-header.main nav li {
+header.main nav > ul > li {
   display: inline-block;
 }
 

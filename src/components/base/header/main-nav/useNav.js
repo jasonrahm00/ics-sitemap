@@ -1,47 +1,35 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import Link from '@mui/material/Link';
+import ClickAwayListener from '@mui/material/ClickAwayListener';
+import {Link} from 'react-router-dom';
+import MenuList from '@mui/material/MenuList';
 
 import './mainNav.css';
 
 function UseNav() {
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
+  const [open, setOpen] = React.useState(null);
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+    setOpen(event.currentTarget.id);
   };
   const handleClose = () => {
-    setAnchorEl(null);
+    setOpen(null);
   };
 
   return (
     <>
-      <Button
-        id="shop-use-trigger"
-        aria-controls="shop-by-use"
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
-      >
-        Shop by Use
-      </Button>
-      <Menu
-        id="shop-by-use"
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        MenuListProps={{
-          'aria-labelledby': 'shop-use-trigger',
-        }}
-      >
-        <MenuItem onClick={handleClose}><Link href="/products/concrete-cutting">Concrete Cutting</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/products/pipe-cutting">Pipe Cutting</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/products/steel-cutting">Steel Cutting</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/products/power-supply">Power Supply</Link></MenuItem>
-      </Menu>
+      <Button id="shop-use" onClick={handleClick} className="submenu-trigger">Shop by Use</Button>
+      { open === 'shop-use' ? (
+        <ClickAwayListener onClickAway={handleClose}>
+          <MenuList className="submenu">
+          <MenuItem onClick={handleClose}><Link to="/products/concrete-cutting">Concrete Cutting</Link></MenuItem>
+          <MenuItem onClick={handleClose}><Link to="/products/pipe-cutting">Pipe Cutting</Link></MenuItem>
+          <MenuItem onClick={handleClose}><Link to="/products/steel-cutting">Steel Cutting</Link></MenuItem>
+          <MenuItem onClick={handleClose}><Link to="/products/power-supply">Power Supply</Link></MenuItem>
+          </MenuList>
+        </ClickAwayListener>
+      ) : ''}
     </>
   );
 }

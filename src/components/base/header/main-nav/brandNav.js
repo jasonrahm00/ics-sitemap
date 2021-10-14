@@ -1,46 +1,34 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import Link from '@mui/material/Link';
+import ClickAwayListener from '@mui/material/ClickAwayListener';
+import {Link} from 'react-router-dom';
+import MenuList from '@mui/material/MenuList';
 
 import './mainNav.css';
 
 function BrandNav() {
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
+  const [open, setOpen] = React.useState(null);
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+    setOpen(event.currentTarget.id);
   };
   const handleClose = () => {
-    setAnchorEl(null);
+    setOpen(null);
   };
 
   return (
     <>
-      <Button
-        id="shop-brand-trigger"
-        aria-controls="shop-by-brand"
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
-      >
-        Shop by Brand
-      </Button>
-      <Menu
-        id="shop-by-brand"
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        MenuListProps={{
-          'aria-labelledby': 'shop-brand-trigger',
-        }}
-      >
-        <MenuItem onClick={handleClose}><Link href="/products/ics">ICS</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/products/merit">Merit</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href="/products/pentruder">Pentruder</Link></MenuItem>
-      </Menu>
+      <Button id="shop-brand" onClick={handleClick} className="submenu-trigger">Shop by Brand</Button>
+      { open === 'shop-brand' ? (
+        <ClickAwayListener onClickAway={handleClose}>
+          <MenuList className="submenu">
+            <MenuItem onClick={handleClose}><Link to="/products/ics">ICS</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to="/products/merit">Merit</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to="/products/pentruder">Pentruder</Link></MenuItem>
+          </MenuList>
+        </ClickAwayListener>
+      ) : ''}
     </>
   );
 }

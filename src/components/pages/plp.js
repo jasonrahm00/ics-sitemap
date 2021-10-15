@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 
 import Breadcrumbs from '../base/breadcrumbs/breadcrumbs';
 
-function PLP({...props}) {
+function PLP() {
 
   const location = useLocation();
   const productList = location.state.products;
@@ -11,7 +11,7 @@ function PLP({...props}) {
 
   return (
     <>
-      <Breadcrumbs breadcrumbs={props.breadcrumb} />
+      <Breadcrumbs />
       <div className="content-wrapper">
         <Grid container spacing={6}>
           <Grid item md={4}>

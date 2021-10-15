@@ -4,8 +4,8 @@ import CardComponent from "../cms-components/card/cardComponent";
 import HeroBanner from '../cms-components/hero-banner/heroBanner';
 import Breadcrumbs from '../base/breadcrumbs/breadcrumbs';
 
-function CategoryContentPage({...props}) {
-  let cards = props.cards;
+function ContentPage({...props}) {
+  console.log(props.cards);
   return (
     <>
       <Breadcrumbs breadcrumbs={props.breadcrumb} />
@@ -37,4 +37,4 @@ function CategoryContentPage({...props}) {
   );
 }
 
-export default CategoryContentPage;
+export default ContentPage;

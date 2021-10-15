@@ -12,3 +12,9 @@ export const ProductTypes = {
   parts: 'Parts & Accessories',
   chains: 'Chains'
 };
+
+export const PageTypes = {
+  pdp: 'Product Page',
+  plp: 'Product Listing Page',
+  content: 'Category Content Page'
+}

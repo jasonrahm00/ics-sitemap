@@ -1,4 +1,4 @@
-export function Card(
+const Card = function (
   brand,
   type,
   use,
@@ -18,4 +18,6 @@ export function Card(
   this.link = link;
   this.productList = productList;
   this.verified = verified;
-}
+};
+
+export default Card;

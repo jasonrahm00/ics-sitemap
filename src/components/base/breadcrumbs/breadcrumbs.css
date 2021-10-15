@@ -1,0 +1,13 @@
+.breadcrumbs ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: '/';
+  padding: 0 .5rem;
+}

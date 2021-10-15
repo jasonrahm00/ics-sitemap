@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 
-import Breadcrumbs from '../cms-components/breadcrumbs/breadcrumbs';
+import Breadcrumbs from '../base/breadcrumbs/breadcrumbs';
 
 function PLP({...props}) {
 

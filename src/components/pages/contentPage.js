@@ -2,7 +2,7 @@ import Grid from '@mui/material/Grid';
 
 import CardComponent from "../cms-components/card/cardComponent";
 import HeroBanner from '../cms-components/hero-banner/heroBanner';
-import Breadcrumbs from '../cms-components/breadcrumbs/breadcrumbs';
+import Breadcrumbs from '../base/breadcrumbs/breadcrumbs';
 
 function ContentPage({...props}) {
   let cards = props.cards;

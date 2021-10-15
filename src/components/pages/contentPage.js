@@ -5,12 +5,12 @@ import HeroBanner from '../cms-components/hero-banner/heroBanner';
 import Breadcrumbs from '../base/breadcrumbs/breadcrumbs';
 
 function ContentPage({...props}) {
-  console.log(props.cards);
+  const {cards} = props;
   return (
     <>
       <Breadcrumbs breadcrumbs={props.breadcrumb} />
       <HeroBanner header={props.title} />
-      {/* {cards && cards.map((item, index) => {
+      {cards && cards.map((item, index) => {
         return (
           <section className="content-wrapper" key={index}>
             <h2>{item.group}</h2>
@@ -20,7 +20,7 @@ function ContentPage({...props}) {
                   <Grid item key={i}>
                     <CardComponent 
                       header={x.header} 
-                      dest={x.destination} 
+                      dest={x.ctaText} 
                       link={x.link} 
                       products={x.productList} 
                       description={x.description}
@@ -32,7 +32,7 @@ function ContentPage({...props}) {
             </Grid>
           </section>
         )
-      })} */}
+      })}
     </>
   );
 }

@@ -169,4 +169,4 @@ export const AllICSCards = [
   flowAdapter,
   engineOil,
   powerPack
-]
+];

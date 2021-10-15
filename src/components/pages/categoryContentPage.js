@@ -4,13 +4,13 @@ import CardComponent from "../cms-components/card/cardComponent";
 import HeroBanner from '../cms-components/hero-banner/heroBanner';
 import Breadcrumbs from '../base/breadcrumbs/breadcrumbs';
 
-function ContentPage({...props}) {
+function CategoryContentPage({...props}) {
   let cards = props.cards;
   return (
     <>
       <Breadcrumbs breadcrumbs={props.breadcrumb} />
       <HeroBanner header={props.title} />
-      {cards && cards.map((item, index) => {
+      {/* {cards && cards.map((item, index) => {
         return (
           <section className="content-wrapper" key={index}>
             <h2>{item.group}</h2>
@@ -32,9 +32,9 @@ function ContentPage({...props}) {
             </Grid>
           </section>
         )
-      })}
+      })} */}
     </>
   );
 }
 
-export default ContentPage;
+export default CategoryContentPage;

@@ -14,7 +14,7 @@ const placeholderText = "I'm baby artisan try-hard put a bird on it, literally t
 function CardComponent({...props}) {
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} raised="true">
       <CardContent>
         <CardHeader component="h3" title={props.header} subheader={props.showBrand ? props.brand : ''} action={props.verified ? <CheckCircleIcon /> : ''}/>
         <Typography variant="body2" color="text.secondary" className={!props.description.length ? 'no-description' : ''}>

@@ -24,7 +24,7 @@ export const gasSaws = new Card(
   'Gas Power Saws', //Header
   Page.content, //ctaText
   '680 vs 695, different power requirements changes chain needs. Discuss what the difference is between the two saws and why you would want one over the other. What is your cutting project? Different than cutting surface... need to make the deliniation', //Description
-  '/', //Link
+  '/category-content', //Link
   ['695XL PG Gas Power Cutter', '695XL Gas Power Cutter', '680ES PG Gas Power Cutter', '680ES Gas Power Cutter'], //Product List
   true //Verified
 );
@@ -36,7 +36,7 @@ export const hydraulicSaws = new Card(
   'Hydraulic Power Saws', //Header
   Page.content, //ctaText
   'Need to dilineate flush cut versus regular cut. What is your cutting project? Different than cutting surface... need to make the deliniation', //Description
-  '/', //Link
+  '/category-content', //Link
   ['890PG Hydraulic Power Cutter', '890F4 Flush Cut Hydraulic Power Cutter', '890F4 Flush Cut Hydraulic Power Cutter'], //Product List
   true //Verified
 );

@@ -8,7 +8,7 @@ function ContentPage({...props}) {
   const {cards} = props;
   return (
     <>
-      <Breadcrumbs breadcrumbs={props.breadcrumb} />
+      <Breadcrumbs />
       <HeroBanner header={props.title} />
       {cards && cards.map((item, index) => {
         return (

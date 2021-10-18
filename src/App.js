@@ -13,6 +13,7 @@ import ContentPage from "./components/pages/contentPage";
 import PDP from "./components/pages/pdp";
 import PLP from "./components/pages/plp";
 import ScrollToTop from "./utility/scrollToTop";
+import CaetegoryContent from "./components/pages/categoryContentPage";
 
 import { 
   ICSBrandCards, 
@@ -42,6 +43,7 @@ function App() {
           <Route exact path="/"> <Homepage /></Route>
           <Route exact path="/pdp" component={() => <PDP title={'Product'} />} />
           <Route exact path="/plp" component={() => <PLP/>} />
+          <Route exact path="/category-content" component={() => <CaetegoryContent/>} />
 
           {/* Brand Routes */}
           <Route exact path="/products/ics" component={() => <ContentPage title={'ICS Brand'} cards={ICSBrandCards} />} />  

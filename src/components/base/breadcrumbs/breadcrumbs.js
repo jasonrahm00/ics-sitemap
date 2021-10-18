@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 
 import './breadcrumbs.css';
 
-function Breadcrumbs({...props}) {
+function Breadcrumbs() {
 
   const location = useLocation();
   const breadcrumbs = location.pathname;

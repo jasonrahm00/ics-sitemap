@@ -1,4 +1,4 @@
-import Card from './cardConstructor';
+import { Card } from './cardConstructors';
 import { Brands } from '../variables';
 import { ProductTypes as Type } from '../variables';
 import { PageTypes as Page } from '../variables';
@@ -94,9 +94,9 @@ export const hydraulicHose = new Card(
   Type.parts,
   '', //Use
   'Hydraulic Hoses', //Header
-  Page.pdp, //ctaText
+  Page.plp, //ctaText
   '', //Description
-  '/pdp', //Link
+  '/plp', //Link
   ['Hydraulic Hoses'], //Product List
   false //Verified
 );
@@ -137,6 +137,18 @@ export const powerPack = new Card(
   false //Verified
 );
 
+export const wires = new Card(
+  Brand,
+  Type.parts,
+  '', //Use
+  'Wires', //Header
+  Page.plp, //ctaText
+  '', //Description
+  '/plp', //Link
+  ['Finish Wire', 'Heavy Concrete Wire', 'Hybrid Wire', 'Steel Wire – Fast Cutting', 'Steel Wire – Longer Lasting', 'Super Wire'], //Product List
+  false //Verified
+);
+
 export const ICSSaws = [
   pneumaticSaws,
   gasSaws,
@@ -154,19 +166,6 @@ export const ICSParts = [
   hydraulicHose,
   flowAdapter,
   engineOil,
-  powerPack
-];
-
-export const AllICSCards = [
-  pneumaticSaws,
-  gasSaws,
-  hydraulicSaws,
-  forceThree,
-  forceFour,
-  powerGrit,
-  pipeClamp,
-  hydraulicHose,
-  flowAdapter,
-  engineOil,
-  powerPack
+  powerPack,
+  wires
 ];

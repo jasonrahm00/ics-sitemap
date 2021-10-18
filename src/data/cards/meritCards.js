@@ -1,4 +1,4 @@
-import Card from './cardConstructor';
+import {Card} from './cardConstructors';
 import { Brands } from '../variables';
 import { ProductTypes as Type } from '../variables';
 
@@ -95,13 +95,3 @@ export const MeritFlatSaws = [
   m600FlatSaws,
   m800FlatSaws
 ];
-
-export const AllMeritCards = [
-  m100FlatSaws,
-  m250FlatSaws,
-  m350FlatSaws,
-  m400FlatSaws,
-  m600FlatSaws,
-  m800FlatSaws,
-  partsAccessories
-]

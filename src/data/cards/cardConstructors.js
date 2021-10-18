@@ -1,4 +1,4 @@
-const Card = function (
+export const Card = function (
   brand,
   type,
   use,
@@ -20,4 +20,8 @@ const Card = function (
   this.verified = verified;
 };
 
-export default Card;
+export const CardGroup = function(group, cards) {
+  this.group = group;
+  this.cards = cards;
+};
+

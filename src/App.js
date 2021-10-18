@@ -14,7 +14,7 @@ import PDP from "./components/pages/pdp";
 import PLP from "./components/pages/plp";
 import ScrollToTop from "./utility/scrollToTop";
 
-import { ICSBrandCards, MeritBrandCards, PentruderBrandCards } from './data/cards/cardGroupings';
+import { ICSBrandCards, MeritBrandCards, PentruderBrandCards, ConcreteCutting, PipeCutting } from './data/cards/cardGroupings';
 
 function App() {
   return (
@@ -38,10 +38,14 @@ function App() {
           <Route exact path="/products/pentruder" component={() => <ContentPage title={'Pentruder Brand'} cards={PentruderBrandCards} />} />  
 
           {/* Use Routes */}    
-          <Route exact path="/products/concrete-cutting" component={() => <ContentPage title={'Concrete Cutting'} />} />
-          <Route exact path="/products/pipe-cutting" component={() => <ContentPage title={'Pipe Cutting'} />} />
-          <Route exact path="/products/steel-cutting" component={() => <ContentPage title={'Steel Cutting'} />} />
-          <Route exact path="/products/power-supply" component={() => <ContentPage title={'Power Supply'} />} />
+          <Route exact path="/products/concrete-cutting" component={
+            () => <ContentPage title={'Concrete Cutting'} cards={ConcreteCutting} showBrand="true" />
+          } />
+          <Route exact path="/products/pipe-cutting" component={
+            () => <ContentPage title={'Pipe Cutting'} cards={PipeCutting} showBrand="true" />
+          } />
+          <Route exact path="/products/steel-cutting" component={() => <PLP title={'Steel Cutting'} />} />
+          <Route exact path="/products/power-supply" component={() => <PLP title={'Power Supply'} />} />
 
           {/* Type Routes */} 
           <Route exact path="/products" component={() => <PLP title={'All Products'} />} />

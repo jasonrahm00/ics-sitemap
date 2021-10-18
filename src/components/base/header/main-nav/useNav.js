@@ -23,10 +23,26 @@ function UseNav() {
       { open === 'shop-use' ? (
         <ClickAwayListener onClickAway={handleClose}>
           <MenuList className="submenu">
-          <MenuItem onClick={handleClose}><Link to="/products/concrete-cutting">Concrete Cutting</Link></MenuItem>
-          <MenuItem onClick={handleClose}><Link to="/products/pipe-cutting">Pipe Cutting</Link></MenuItem>
-          <MenuItem onClick={handleClose}><Link to="/products/steel-cutting">Steel Cutting</Link></MenuItem>
-          <MenuItem onClick={handleClose}><Link to="/products/power-supply">Power Supply</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to="/products/concrete-cutting">Concrete Cutting</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to="/products/pipe-cutting">Pipe Cutting</Link></MenuItem>
+            <MenuItem onClick={handleClose}>
+              <Link to={{
+                pathname: '/products/steel-cutting',
+                state: { 
+                  products: ['Steel Wire – Longer Lasting', 'Steel Wire – Fast Cutting'],
+                  pageTitle: 'Steel Cutting'
+                },
+              }}>Steel Cutting</Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <Link to={{
+                pathname: '/products/power-supply',
+                state: { 
+                  products: ['M300-23G-HPP Power Pack', 'Powerpack'],
+                  pageTitle: 'Power Supply'
+                },
+              }}>Power Supply</Link>
+            </MenuItem>
           </MenuList>
         </ClickAwayListener>
       ) : ''}

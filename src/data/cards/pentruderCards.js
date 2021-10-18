@@ -1,4 +1,4 @@
-import Card from './cardConstructor';
+import {Card} from './cardConstructors';
 import { Brands } from '../variables';
 import { ProductTypes as Type } from '../variables';
 
@@ -40,15 +40,15 @@ export const threePEightWireSaw = new Card(
   false //Verified
 );
 
-export const hfCainSaw = new Card(
+export const hfChainSaw = new Card(
   Brand,
   Type.powerCut,
   '', //Use
-  'CW630 HF Chain Saw', //Header
+  'CW630 HF Electric Chain Saw', //Header
   'Product Detail Page', //ctaText
   '', //Description
   '/pdp', //Link
-  ['CW630 HF Chain Saw'], //Product List
+  ['CW630 HF Electric Chain Saw'], //Product List
   false //Verified
 );
 
@@ -78,5 +78,5 @@ export const remoteControl = new Card(
 
 export const PentruderWallSaws = [cbkSaw, eightTwentyWallSaw];
 export const PentruderWireSaws = [threePEightWireSaw];
-export const PentruderChainSaws = [hfCainSaw];
+export const PentruderChainSaws = [hfChainSaw];
 export const PentruderParts = [powerPack, remoteControl];

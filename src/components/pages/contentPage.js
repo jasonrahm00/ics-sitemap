@@ -24,7 +24,9 @@ function ContentPage({...props}) {
                       link={x.link} 
                       products={x.productList} 
                       description={x.description}
-                      verified={x.verified} 
+                      verified={x.verified}
+                      showBrand={props.showBrand}
+                      brand={x.brand} 
                     />
                   </Grid>
                 )

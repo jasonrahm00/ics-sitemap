@@ -1,6 +1,7 @@
 import {Card} from './cardConstructors';
 import { Brands } from '../variables';
 import { ProductTypes as Type } from '../variables';
+import { PageTypes as Page } from '../variables';
 
 const Brand = Brands.pentruder;
 
@@ -9,7 +10,7 @@ export const cbkSaw = new Card(
   Type.wall,
   '', //Use
   'CBK HF Wall Saw', //Header
-  'Product Detail Page', //ctaText
+  Page.pdp, //ctaText
   '', //Description
   '/pdp', //Link
   ['CBK HF Wall Saw'], //Product List
@@ -21,7 +22,7 @@ export const eightTwentyWallSaw = new Card(
   Type.wall,
   '', //Use
   '8-20 HF Wall Saw', //Header
-  'Product Detail Page', //ctaText
+  Page.pdp, //ctaText
   '', //Description
   '/pdp', //Link
   ['8-20 HF Wall Saw'], //Product List
@@ -33,7 +34,7 @@ export const threePEightWireSaw = new Card(
   Type.wall,
   '', //Use
   '3P8 HF Wire Saw', //Header
-  'Product Detail Page', //ctaText
+  Page.pdp, //ctaText
   '', //Description
   '/pdp', //Link
   ['3P8 HF Wire Saw'], //Product List
@@ -45,19 +46,19 @@ export const hfChainSaw = new Card(
   Type.powerCut,
   '', //Use
   'CW630 HF Electric Chain Saw', //Header
-  'Product Detail Page', //ctaText
+  Page.pdp, //ctaText
   '', //Description
   '/pdp', //Link
   ['CW630 HF Electric Chain Saw'], //Product List
   false //Verified
 );
 
-export const powerPack = new Card(
+export const pentruderPowerPack = new Card(
   Brand,
   Type.parts,
   '', //Use
   'Pentpak 427 HF Power Pack', //Header
-  'Product Detail Page', //ctaText
+  Page.pdp, //ctaText
   '', //Description
   '/pdp', //Link
   ['Pentpak 427 HF Power Pack'], //Product List
@@ -69,14 +70,82 @@ export const remoteControl = new Card(
   Type.parts,
   '', //Use
   'Pentruder Remote Controls', //Header
-  'Product Detail Page', //ctaText
+  Page.pdp, //ctaText
   '', //Description
   '/pdp', //Link
   ['Pentruder Remote Controls'], //Product List
   false //Verified
 );
 
+export const track = new Card(
+  Brand,
+  Type.parts,
+  '', //Use
+  'Pentruder Track', //Header
+  Page.pdp, //ctaText
+  '', //Description
+  '/pdp', //Link
+  ['Pentruder Track'], //Product List
+  false //Verified
+);
+
+export const trackFeet = new Card(
+  Brand,
+  Type.parts,
+  '', //Use
+  'Pentruder Track Feet', //Header
+  Page.pdp, //ctaText
+  '', //Description
+  '/pdp', //Link
+  ['Pentruder Track Feet'], //Product List
+  false //Verified
+);
+
+export const bladeGuards = new Card(
+  Brand,
+  Type.parts,
+  '', //Use
+  'Pentruder Blade Guards', //Header
+  Page.pdp, //ctaText
+  '', //Description
+  '/pdp', //Link
+  ['Pentruder Blade Guards'], //Product List
+  false //Verified
+);
+
+export const cables = new Card(
+  Brand,
+  Type.parts,
+  '', //Use
+  'Pentruder Cables', //Header
+  Page.pdp, //ctaText
+  '', //Description
+  '/pdp', //Link
+  ['Pentruder Cables'], //Product List
+  false //Verified
+);
+
+export const bladeFlanges = new Card(
+  Brand,
+  Type.parts,
+  '', //Use
+  'Pentruder Blade Flanges', //Header
+  Page.pdp, //ctaText
+  '', //Description
+  '/pdp', //Link
+  ['Pentruder Blade Flanges'], //Product List
+  false //Verified
+);
+
 export const PentruderWallSaws = [cbkSaw, eightTwentyWallSaw];
 export const PentruderWireSaws = [threePEightWireSaw];
 export const PentruderChainSaws = [hfChainSaw];
-export const PentruderParts = [powerPack, remoteControl];
+export const PentruderParts = [
+  pentruderPowerPack, 
+  remoteControl,
+  track,
+  trackFeet,
+  bladeFlanges,
+  bladeGuards,
+  cables
+];

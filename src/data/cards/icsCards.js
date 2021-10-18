@@ -149,6 +149,18 @@ export const wires = new Card(
   false //Verified
 );
 
+export const carryBags = new Card(
+  Brand,
+  Type.parts,
+  '', //Use
+  'ICS Carrying Bags', //Header
+  Page.plp, //ctaText
+  '', //Description
+  '/plp', //Link
+  ['ICS Small Carrying Bag', 'ICS Large Carrying Bag'], //Product List
+  false //Verified
+);
+
 export const ICSSaws = [
   pneumaticSaws,
   gasSaws,

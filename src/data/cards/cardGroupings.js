@@ -1,44 +1,62 @@
 import { CardGroup } from './cardConstructors';
 import { ICSSaws, ICSChains, ICSParts, wires, forceThree, forceFour, powerGrit, pipeClamp } from './icsCards';
-import { MeritFlatSaws, partsAccessories } from './meritCards';
+import { MeritFlatSaws, MeritParts } from './meritCards';
 import { PentruderWallSaws, PentruderChainSaws, PentruderWireSaws, PentruderParts, remoteControl  } from './pentruderCards';
 
-const allChainSaws = new CardGroup('Chain Saws', [...ICSSaws].concat([...PentruderChainSaws]));
+export const AllChainSaws = new CardGroup('Chain Saws', [...ICSSaws].concat([...PentruderChainSaws]));
+export const FlatSaws = new CardGroup('Flat Saws', MeritFlatSaws);
+export const DiamondChains = new CardGroup('Diamond Saw Chains', ICSChains);
+const wallSaws = new CardGroup('Wall Saws', PentruderWallSaws);
+const wireSaws = new CardGroup('Wire Saws', PentruderWireSaws);
+const icsParts = new CardGroup('ICS Parts & Accessories', ICSParts);
+const meritParts = new CardGroup('Merit Parts & Accessories', MeritParts);
+const pentruderParts = new CardGroup('Pentruder Parts & Accessories', PentruderParts);
 
 export const ICSBrandCards = [
   new CardGroup('Power Saws', ICSSaws),
-  new CardGroup('Saw Chains', ICSChains),
-  new CardGroup('Parts & Accessories', ICSParts)
+  DiamondChains,
+  icsParts
 ];
 
 export const MeritBrandCards = [
-  new CardGroup('Flat Saws', MeritFlatSaws),
-  new CardGroup('Parts & Accessories', [partsAccessories])
+  FlatSaws,
+  meritParts
 ];
 
 export const PentruderBrandCards = [
   new CardGroup('Power Cutters', PentruderChainSaws),
-  new CardGroup('Wall Saws', PentruderWallSaws),
-  new CardGroup('Wire Saws', PentruderWireSaws),
-  new CardGroup('Parts & Accessories', PentruderParts)
+  wallSaws,
+  wireSaws,
+  pentruderParts
 ];
 
 export const ConcreteCutting = [
-  allChainSaws,
+  AllChainSaws,
   new CardGroup('Concrete Cutting Saw Chains', [forceThree, forceFour]),
   new CardGroup('Flat Saws', MeritFlatSaws),
-  new CardGroup('Wall Saws', PentruderWallSaws),
-  new CardGroup('Wire Saws', PentruderWireSaws),
+  wallSaws,
+  wireSaws,
   new CardGroup('Concrete Cutting Parts & Accessories', [remoteControl, wires])
 ];
 
 export const PipeCutting = [
-  allChainSaws,
+  AllChainSaws,
   new CardGroup('Pipe Cutting Saw Chains', [powerGrit]),
   new CardGroup('Pipe Cutting Accessories', [pipeClamp])
 ];
 
 export const SteelCutting = [
   new CardGroup('Steel Cutting Wires', )
-]
+];
 
+export const WallWireSaws = [
+  wallSaws,
+  wireSaws,
+  new CardGroup('Wall/Wire Saw Accessories', [remoteControl])
+];
+
+export const AllParts = [
+  icsParts,
+  meritParts,
+  pentruderParts
+];

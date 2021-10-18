@@ -17,7 +17,7 @@ function CardComponent({...props}) {
     <Card sx={{ maxWidth: 345 }}>
       <CardContent>
         <CardHeader component="h3" title={props.header} action={props.verified ? <CheckCircleIcon /> : ''}/>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" className={!props.description.length ? 'no-description' : ''}>
           {props.description.length ? props.description : placeholderText}
         </Typography>
       </CardContent>

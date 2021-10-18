@@ -19,3 +19,7 @@
   text-decoration: none;
   transform: skewX(8deg) translateZ(0);
 }
+
+.MuiCardContent-root .MuiTypography-body2.no-description {
+  opacity: 0.3;
+}

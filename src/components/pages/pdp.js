@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 
 import './pageStyles.css';
 
-function PDP({...props}) {
+function PDP() {
   const location = useLocation();
   const productName = location.state.products[0];
   return (

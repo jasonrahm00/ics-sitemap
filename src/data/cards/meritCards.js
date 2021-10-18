@@ -86,3 +86,22 @@ export const partsAccessories = new Card(
   ['M300-23G-HPP Power Pack'], //Product List
   false //Verified
 );
+
+export const MeritFlatSaws = [
+  m100FlatSaws,
+  m250FlatSaws,
+  m350FlatSaws,
+  m400FlatSaws,
+  m600FlatSaws,
+  m800FlatSaws
+];
+
+export const AllMeritCards = [
+  m100FlatSaws,
+  m250FlatSaws,
+  m350FlatSaws,
+  m400FlatSaws,
+  m600FlatSaws,
+  m800FlatSaws,
+  partsAccessories
+]

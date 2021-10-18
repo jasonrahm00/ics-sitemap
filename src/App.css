@@ -11,8 +11,8 @@ body {
 }
 
 main {
-  margin-top: 165px;
-  min-height: calc(100vh - 165px);
+  margin-top: 147px;
+  min-height: calc(100vh - 147px);
 }
 
 header.main {

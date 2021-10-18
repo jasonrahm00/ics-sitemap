@@ -75,3 +75,8 @@ export const remoteControl = new Card(
   ['Pentruder Remote Controls'], //Product List
   false //Verified
 );
+
+export const PentruderWallSaws = [cbkSaw, eightTwentyWallSaw];
+export const PentruderWireSaws = [threePEightWireSaw];
+export const PentruderChainSaws = [hfCainSaw];
+export const PentruderParts = [powerPack, remoteControl];

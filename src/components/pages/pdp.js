@@ -4,7 +4,7 @@ import './pageStyles.css';
 
 function PDP() {
   const location = useLocation();
-  const productName = location.state.products[0];
+  const productName = location.state && location.state.products ? location.state.products[0] : 'Product Page';
   return (
     <>
       <div className="red-bar-header">

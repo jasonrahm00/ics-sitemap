@@ -6,8 +6,8 @@ import Breadcrumbs from '../base/breadcrumbs/breadcrumbs';
 function PLP() {
 
   const location = useLocation();
-  const productList = location.state.products;
-  const pageTitle = location.state.pageTitle;
+  const productList = location.state && location.state.products ? location.state.products : ['Product 1', 'Product 1', 'Product 1'];
+  const pageTitle = location.state && location.state.pageTitle ? location.state.pageTitle : 'Product Listing Page';
 
   return (
     <>

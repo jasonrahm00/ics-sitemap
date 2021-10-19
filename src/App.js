@@ -1,19 +1,11 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import './App.css';
 import HeaderNav from './components/base/header/header-nav/headerNav';
 import MainNav from './components/base/header/main-nav/mainNav';
 import Footer from './components/base/footer/footer';
 import ScrollToTop from "./utility/scrollToTop";
-
-import baseRoutes from "./routing/baseRoutes";
-import brandRoutes from "./routing/brandRoutes";
-import typeRoutes from "./routing/typeRoutes";
-import useRoutes from "./routing/useRoutes";
+import RouterSwitch from "./routing/routerSwitch";
 
 function App() {
   return (
@@ -24,37 +16,7 @@ function App() {
       </header>
       <main>
         <ScrollToTop />
-        <Switch>
-
-          {/* Base Routes */}
-          {baseRoutes.map((entry, index) => {
-            return (
-              <Route key={'base' + index} exact {...entry} />
-            )
-          })}
-
-          {/* Brand Routes */}
-          {brandRoutes.map((entry, index) => {
-            return (
-              <Route key={'brand' + index} exact {...entry} />
-            )
-          })}
-
-          {/* Use Routes */}
-          {useRoutes.map((entry, index) => {
-            return (
-              <Route key={'use' + index} exact {...entry} />
-            )
-          })}
-            
-          {/* Type Routes */}
-          {typeRoutes.map((entry, index) => {
-            return (
-              <Route key={'type' + index} exact {...entry} />
-            )
-          })}
-          
-        </Switch>
+        <RouterSwitch />
       </main>
       <Footer />
     </Router>

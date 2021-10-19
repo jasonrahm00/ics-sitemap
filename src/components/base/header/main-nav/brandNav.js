@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import MenuList from '@mui/material/MenuList';
 
 import './mainNav.css';
+import { ICSBrandNavLink, MeritBrandNavLink, PentruderBrandNavLink } from '../../reusableNavLinks';
  
 function BrandNav() {
 
@@ -24,13 +25,13 @@ function BrandNav() {
         <ClickAwayListener onClickAway={handleClose}>
           <MenuList className="submenu">
             <MenuItem onClick={handleClose}>
-              <Link to='/products/ics'>ICS</Link>
+              <ICSBrandNavLink />
             </MenuItem>
             <MenuItem onClick={handleClose}>
-              <Link to='/products/merit'>Merit</Link>
+              <MeritBrandNavLink />
             </MenuItem>
             <MenuItem onClick={handleClose}>
-              <Link to='/products/pentruder'>Pentruder</Link>
+              <PentruderBrandNavLink />
             </MenuItem>
           </MenuList>
         </ClickAwayListener>

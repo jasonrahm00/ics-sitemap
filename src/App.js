@@ -41,46 +41,46 @@ function App() {
 
           {/* Base Routes */}
           <Route exact path="/"> <Homepage /></Route>
-          <Route exact path="/pdp" component={() => <PDP title={'Product'} />} />
-          <Route exact path="/plp" component={() => <PLP/>} />
-          <Route exact path="/category-content" component={() => <CategoryContent/>} />
+          <Route exact path="/pdp" render={() => <PDP title={'Product'} />} />
+          <Route exact path="/plp" renderr={() => <PLP/>} />
+          <Route exact path="/category-content" render={() => <CategoryContent/>} />
 
           {/* Brand Routes */}
-          <Route exact path="/products/ics" component={() => <ContentPage title={'ICS Brand'} cards={ICSBrandCards} />} />  
-          <Route exact path="/products/merit" component={() => <ContentPage title={'Merit Brand'} cards={MeritBrandCards} />} />  
-          <Route exact path="/products/pentruder" component={() => <ContentPage title={'Pentruder Brand'} cards={PentruderBrandCards} />} />  
+          <Route exact path="/products/ics" render={() => <ContentPage title={'ICS Brand'} cards={ICSBrandCards} />} />  
+          <Route exact path="/products/merit" render={() => <ContentPage title={'Merit Brand'} cards={MeritBrandCards} />} />  
+          <Route exact path="/products/pentruder" render={() => <ContentPage title={'Pentruder Brand'} cards={PentruderBrandCards} />} />  
 
           {/* Use Routes */}    
-          <Route exact path="/products/concrete-cutting" component={
+          <Route exact path="/products/concrete-cutting" render={
               () => <ContentPage title={'Concrete Cutting'} cards={ConcreteCutting} showBrand="true" />
             } 
           />
-          <Route exact path="/products/pipe-cutting" component={
+          <Route exact path="/products/pipe-cutting" render={
               () => <ContentPage title={'Pipe Cutting'} cards={PipeCutting} showBrand="true" />
             } 
           />
-          <Route exact path="/products/steel-cutting" component={() => <PLP title={'Steel Cutting'} />} />
-          <Route exact path="/products/power-supply" component={() => <PLP title={'Power Supply'} />} />
+          <Route exact path="/products/steel-cutting" render={() => <PLP title={'Steel Cutting'} />} />
+          <Route exact path="/products/power-supply" render={() => <PLP title={'Power Supply'} />} />
 
           {/* Type Routes */} 
-          <Route exact path="/products" component={() => <PLP title={'All Products'} />} />
-          <Route exact path="/products/power-cutters" component={
+          <Route exact path="/products" render={() => <PLP title={'All Products'} />} />
+          <Route exact path="/products/power-cutters" render={
               () => <ContentPage title={'Power Cutters'} cards={[AllChainSaws]} showBrand="true" />
             } 
           />
-          <Route exact path="/products/flat-saws" component={
+          <Route exact path="/products/flat-saws" render={
               () => <ContentPage title={'Flat Saws'} cards={[FlatSaws]} showBrand="true" />
             } 
           />
-          <Route exact path="/products/wall-wire-saws" component={
+          <Route exact path="/products/wall-wire-saws" render={
               () => <ContentPage title={'Wall/Wire Saws'} cards={WallWireSaws} showBrand="true" />
             } 
           />
-          <Route exact path="/products/diamond-chains" component={
+          <Route exact path="/products/diamond-chains" render={
               () => <ContentPage title={'Diamond Chains'} cards={[DiamondChains]} showBrand="true" />
             } 
           />
-          <Route exact path="/products/parts-accessories" component={
+          <Route exact path="/products/parts-accessories" render={
               () => <ContentPage title={'Parts & Accessories'} cards={AllParts} />
             } 
           />

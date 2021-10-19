@@ -1,4 +1,4 @@
-import ContentPage from "../components/pages/contentPage";
+import CardPage from "../components/pages/cardPage";
 import PLP from "../components/pages/plp";
 
 import { 
@@ -9,11 +9,11 @@ import {
 const useRoutes = [
   {
     path: '/products/concrete-cutting',
-    render: () => <ContentPage title={'Concrete Cutting'} cards={ConcreteCutting} showBrand="true" />
+    render: () => <CardPage title={'Concrete Cutting'} cards={ConcreteCutting} showBrand="true" />
   },
   {
     path: '/products/pipe-cutting',
-    render: () => <ContentPage title={'Pipe Cutting'} cards={PipeCutting} showBrand="true" />
+    render: () => <CardPage title={'Pipe Cutting'} cards={PipeCutting} showBrand="true" />
   },
   {
     path: '/products/steel-cutting',

@@ -4,7 +4,7 @@ import CardComponent from "../cms-components/card/cardComponent";
 import HeroBanner from '../cms-components/hero-banner/heroBanner';
 import Breadcrumbs from '../base/breadcrumbs/breadcrumbs';
 
-function ContentPage({...props}) {
+function CardPage({...props}) {
   const {cards} = props;
   return (
     <>
@@ -39,4 +39,4 @@ function ContentPage({...props}) {
   );
 }
 
-export default ContentPage;
+export default CardPage;

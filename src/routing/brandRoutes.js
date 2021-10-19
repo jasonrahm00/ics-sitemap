@@ -1,4 +1,4 @@
-import ContentPage from "../components/pages/contentPage";
+import CardPage from "../components/pages/cardPage";
 
 import { 
   ICSBrandCards, 
@@ -9,15 +9,15 @@ import {
 const brandRoutes = [
   {
     path: '/products/ics',
-    render: () => <ContentPage title={'ICS Brand'} cards={ICSBrandCards} />
+    render: () => <CardPage title={'ICS Brand'} cards={ICSBrandCards} />
   },
   {
     path: '/products/merit',
-    render: () => <ContentPage title={'Merit Brand'} cards={MeritBrandCards} />
+    render: () => <CardPage title={'Merit Brand'} cards={MeritBrandCards} />
   },
   {
     path: '/products/pentruder',
-    render: () => <ContentPage title={'Pentruder Brand'} cards={PentruderBrandCards} />
+    render: () => <CardPage title={'Pentruder Brand'} cards={PentruderBrandCards} />
   }
 ]
 

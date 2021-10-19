@@ -1,6 +1,6 @@
 import Breadcrumbs from '../base/breadcrumbs/breadcrumbs';
 
-function CaetegoryContent() {
+function CategoryContent() {
   return (
     <>
       <Breadcrumbs />
@@ -12,4 +12,4 @@ function CaetegoryContent() {
   );
 }
 
-export default CaetegoryContent;
+export default CategoryContent;

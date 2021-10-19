@@ -43,14 +43,14 @@ function App() {
           {/* Use Routes */}
           {useRoutes.map((entry, index) => {
             return (
-              <Route key={'brand' + index} exact {...entry} />
+              <Route key={'use' + index} exact {...entry} />
             )
           })}
             
           {/* Type Routes */}
           {typeRoutes.map((entry, index) => {
             return (
-              <Route key={'brand' + index} exact {...entry} />
+              <Route key={'type' + index} exact {...entry} />
             )
           })}
           

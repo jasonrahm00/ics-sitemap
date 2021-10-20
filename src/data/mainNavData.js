@@ -1,4 +1,4 @@
-import sharedLinks from '../../reusableNavLinks';
+import sharedLinks from './reusableNavLinks';
 
 const mainNavData = [
   {

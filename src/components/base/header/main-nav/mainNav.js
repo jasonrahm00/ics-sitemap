@@ -6,7 +6,7 @@ import MenuList from '@mui/material/MenuList';
 
 import './mainNav.css';
 
-import mainNavData from './mainNavData';
+import mainNavData from '../../../../data/mainNavData';
 
 function MainNav() {
 

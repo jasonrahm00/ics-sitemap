@@ -1,4 +1,4 @@
-import { Card } from './cardConstructors';
+import { Card } from '../../utility/constructors';
 import { Brands } from '../variables';
 import { ProductTypes as Type } from '../variables';
 import { PageTypes as Page } from '../variables';

@@ -5,7 +5,7 @@ import HeaderNav from './components/base/header/header-nav/headerNav';
 import MainNav from './components/base/header/main-nav/mainNav';
 import Footer from './components/base/footer/footer';
 import ScrollToTop from "./utility/scrollToTop";
-import RouterSwitch from "./routing/routerSwitch";
+import RouterSwitch from "./components/base/routerSwitch";
 
 function App() {
   return (

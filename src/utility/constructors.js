@@ -25,3 +25,8 @@ export const CardGroup = function(group, cards) {
   this.cards = cards;
 };
 
+export const RouteObject = function(path, render) {
+  this.path = path;
+  this.render = render;
+};
+

@@ -5,7 +5,7 @@
 .MuiCardActions-root .MuiButton-root:hover,
 .MuiCardActions-root .MuiButton-root {
   transform: skewX(-8deg) translateZ(0);
-  padding: .5rem 1.5rem;
+  padding: 0;
   font-size: .875rem;
   margin: .5rem 0 .5rem .5rem;
   text-transform: uppercase;
@@ -15,6 +15,7 @@
 
 .MuiCardActions-root .MuiButton-root a,
 .MuiCardActions-root .MuiButton-root a:visited {
+  padding: .5rem 1.5rem;
   color: black;
   text-decoration: none;
   transform: skewX(8deg) translateZ(0);

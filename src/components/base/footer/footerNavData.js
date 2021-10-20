@@ -2,7 +2,6 @@ import sharedLinks from '../reusableNavLinks';
 
 const footerNavData = [
   {
-    column: 1,
     sections: [
       {
         sectionHeader: 'products',
@@ -20,7 +19,6 @@ const footerNavData = [
     ]
   },
   {
-    column: 2,
     sections: [
       {
         sectionHeader: 'About',
@@ -33,7 +31,6 @@ const footerNavData = [
     ]
   },
   {
-    column: 3,
     sections: [
       {
         sectionHeader: 'Resources',
@@ -46,10 +43,9 @@ const footerNavData = [
     ]
   },
   {
-    column: 4,
     sections: [
       {
-        sectionHeader: 'Contat',
+        sectionHeader: 'Contact',
         sectionLinks: ['Phone', 'Email']
       }
     ]

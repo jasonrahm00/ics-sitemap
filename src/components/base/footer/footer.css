@@ -20,6 +20,7 @@ footer h2 {
 footer nav {
   display: flex;
   justify-content: space-between;
+  padding: 2rem 0;
 }
 
 footer nav > div {

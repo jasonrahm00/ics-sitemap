@@ -9,9 +9,9 @@ function Footer() {
   return (
     <footer>
       <nav className="content-wrapper">
-        {footerNavData.map(column => {
+        {footerNavData.map((column, index) => {
           return (
-            <div key={column.column}>
+            <div key={index}>
               {column.sections.map((section, secIndex) => {
                 return (
                   <section key={secIndex}>

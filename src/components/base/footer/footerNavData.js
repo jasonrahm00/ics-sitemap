@@ -1,4 +1,12 @@
+import {Link} from 'react-router-dom';
+
 import sharedLinks from '../../../data/reusableNavLinks';
+
+const CareersLink = () => {
+  return (
+    <a href="https://www.oregontool.com/careers/">Careers</a>
+  )
+};
 
 const footerNavData = [
   {
@@ -22,11 +30,11 @@ const footerNavData = [
     sections: [
       {
         sectionHeader: 'About',
-        sectionLinks: ['About ICS', 'Careers']
+        sectionLinks: [sharedLinks.aboutICS, <CareersLink />]
       },
       {
         sectionHeader: 'Where to Buy',
-        sectionLinks: ['Find a Dealer']
+        sectionLinks: [sharedLinks.findDealer]
       }
     ]
   },
@@ -34,7 +42,12 @@ const footerNavData = [
     sections: [
       {
         sectionHeader: 'Resources',
-        sectionLinks: ['Contact Us', 'Product Registration', 'Pro Corner', 'Document Library']
+        sectionLinks: [
+          sharedLinks.contactUs, 
+          sharedLinks.productRegistration, 
+          sharedLinks.proCorner, 
+          sharedLinks.docLibrary
+        ]
       },
       {
         sectionHeader: 'Follow Us',

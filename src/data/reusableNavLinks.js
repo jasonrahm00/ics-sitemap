@@ -26,6 +26,7 @@ const sharedLinks = {
   proCorner: <Link to="/pro-corner">Pro Corner</Link>,
   demoRequest: <Link to="/demo-request">Request a Demo</Link>,
   successStories: <Link to="/success-stories">Sucess Stories</Link>,
+  aboutICS: <Link to="/about-ics">About ICS</Link>,
 };
 
 export default sharedLinks;

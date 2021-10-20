@@ -15,8 +15,7 @@ import {
   DiamondChains,
   AllParts,
   ConcreteCutting,
-  PipeCutting,
-  SuccessCards
+  PipeCutting
 } from './cards/cardGroupings';
 
 const routeData = [
@@ -66,8 +65,10 @@ const routeData = [
   new RouteObject('/success-stories/egress-window', () => <ContentPage title={'Egress Window'}/>),
   new RouteObject('/success-stories/small-openings', () => <ContentPage title={'Small Openings'}/>),
   new RouteObject('/success-stories/kickback-study', () => <ContentPage title={'Kickback Study'}/>),
-  new RouteObject('/success-stories/overview-crosslink', () => <ContentPage title={'Overview: Crosslink'}/>)
+  new RouteObject('/success-stories/overview-crosslink', () => <ContentPage title={'Overview: Crosslink'}/>),
 
+  //Misc Routes
+  new RouteObject('/about-ics', () => <ContentPage title={'About ICS'}/>),
 ];
 
 export default routeData;

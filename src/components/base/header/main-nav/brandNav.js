@@ -2,11 +2,10 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
-import {Link} from 'react-router-dom';
 import MenuList from '@mui/material/MenuList';
 
 import './mainNav.css';
-import { ICSBrandNavLink, MeritBrandNavLink, PentruderBrandNavLink } from '../../reusableNavLinks';
+import sharedLinks from '../../reusableNavLinks';
  
 function BrandNav() {
 
@@ -25,13 +24,13 @@ function BrandNav() {
         <ClickAwayListener onClickAway={handleClose}>
           <MenuList className="submenu">
             <MenuItem onClick={handleClose}>
-              <ICSBrandNavLink />
+              {sharedLinks.icsBrandLink}
             </MenuItem>
             <MenuItem onClick={handleClose}>
-              <MeritBrandNavLink />
+              {sharedLinks.meritBrandLink}
             </MenuItem>
             <MenuItem onClick={handleClose}>
-              <PentruderBrandNavLink />
+              {sharedLinks.pentruderBrandLink}
             </MenuItem>
           </MenuList>
         </ClickAwayListener>

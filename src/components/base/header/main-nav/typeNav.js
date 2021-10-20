@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import MenuList from '@mui/material/MenuList';
 
 import './mainNav.css';
+import sharedLinks from '../../reusableNavLinks';
 
 function TypeNav() {
 
@@ -27,11 +28,11 @@ function TypeNav() {
             <MenuItem onClick={handleClose}>
               <Link to={{pathname: '/products', state: { products: ['All Products'], pageTitle: 'All Products'}}}>All Products</Link>
             </MenuItem>
-            <MenuItem onClick={handleClose}><Link to="/products/power-cutters">Power Cutters</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link to="/products/flat-saws">Flat Saws</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link to="/products/wall-wire-saws">Wall/Wire Saws</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link to="/products/diamond-chains">Diamond Chains</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link to="/products/parts-accessories">Parts and Accessories</Link></MenuItem>
+            <MenuItem onClick={handleClose}>{sharedLinks.powerCutters}</MenuItem>
+            <MenuItem onClick={handleClose}>{sharedLinks.flatSaws}</MenuItem>
+            <MenuItem onClick={handleClose}>{sharedLinks.wallWireSaws}</MenuItem>
+            <MenuItem onClick={handleClose}>{sharedLinks.diamondChains}</MenuItem>
+            <MenuItem onClick={handleClose}>{sharedLinks.partsAccessories}</MenuItem>
           </MenuList>
         </ClickAwayListener>
       ) : ''}

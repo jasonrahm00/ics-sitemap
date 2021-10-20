@@ -1,5 +1,3 @@
-import {Link} from 'react-router-dom';
-
 import sharedLinks from '../../reusableNavLinks';
 
 const mainNavData = [
@@ -19,7 +17,12 @@ const mainNavData = [
       anchorText: 'Shop by Use',
       targetUrl: null
     },
-    submenuLinks: []
+    submenuLinks: [
+      sharedLinks.concreteCutting, 
+      sharedLinks.pipeCutting, 
+      sharedLinks.steelCutting,
+      sharedLinks.powerSupply
+    ]
   },
   {
     topLevelLink: {

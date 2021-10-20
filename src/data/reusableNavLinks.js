@@ -18,7 +18,14 @@ const sharedLinks = {
   powerSupply: <Link to={{
                   pathname: '/products/power-supply',
                   state: {products: ['M300-23G-HPP Power Pack', 'Powerpack'],pageTitle: 'Power Supply'},
-                }}>Power Supply</Link>
+                }}>Power Supply</Link>,
+  contactUs: <Link to="/contact-us">Contact Us</Link>,
+  findDealer: <Link to="/find-dealer">Find a Dealer</Link>,
+  productRegistration: <Link to="/product-registration">Product Registration</Link>,
+  docLibrary: <Link to="/document-library">Document Library</Link>,
+  proCorner: <Link to="/pro-corner">Pro Corner</Link>,
+  demoRequest: <Link to="/demo-request">Request a Demo</Link>,
+  successStories: <Link to="/success-stories">Sucess Stories</Link>,
 };
 
 export default sharedLinks;

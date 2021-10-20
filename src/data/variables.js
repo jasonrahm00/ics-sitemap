@@ -16,5 +16,6 @@ export const ProductTypes = {
 export const PageTypes = {
   pdp: 'Product Page',
   plp: 'Product Listing Page',
-  content: 'Category Content Page'
+  categoryContent: 'Category Content Page',
+  plainContent: 'Content Page'
 }

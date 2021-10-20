@@ -40,14 +40,21 @@ const mainNavData = [
   {
     topLevelLink: {
       anchorText: 'Customer Support',
-      targetUrl: '/'
+      targetUrl: null
     },
-    submenuLinks: []
+    submenuLinks: [
+      sharedLinks.contactUs,
+      sharedLinks.findDealer,
+      sharedLinks.productRegistration,
+      sharedLinks.docLibrary,
+      sharedLinks.proCorner,
+      sharedLinks.demoRequest
+    ]
   },
   {
     topLevelLink: {
       anchorText: 'Success Stories',
-      targetUrl: '/'
+      targetUrl: '/success-stories'
     },
     submenuLinks: []
   }

@@ -16,7 +16,7 @@ function Footer() {
                 return (
                   <section key={secIndex}>
                     <h2>{section.sectionHeader}</h2>
-                    <List component="ul" disablePadding={true}>
+                    <List component="ul" disablePadding={true} className={section.sectionHeader === 'Follow Us' ? 'social-links' : ''}>
                       {section.sectionLinks.map((link, linkIndex) => {
                         return (
                           <ListItem key={linkIndex} disablePadding={true}>

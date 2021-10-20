@@ -30,3 +30,8 @@ export const RouteObject = function(path, render) {
   this.render = render;
 };
 
+export const SocialLink = function(channel, url, icon) {
+  this.channel = channel;
+  this.url = url;
+  this.icon = icon;
+};

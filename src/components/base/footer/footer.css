@@ -38,3 +38,12 @@ footer li {
   margin: 1rem 0 .5rem 0;
   font-size: .875rem;
 }
+
+footer .social-links {
+  display: flex;
+}
+
+footer .social-links .MuiListItem-root {
+  width: unset;
+  margin-right: .75rem;
+}

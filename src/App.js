@@ -1,11 +1,11 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import './App.css';
 import HeaderNav from './components/base/header/header-nav/headerNav';
 import MainNav from './components/base/header/main-nav/mainNav';
 import Footer from './components/base/footer/footer';
 import ScrollToTop from "./utility/scrollToTop";
-import RouterSwitch from "./components/base/routerSwitch";
+import routeData from './data/routeData';
 
 function App() {
   return (
@@ -16,7 +16,13 @@ function App() {
       </header>
       <main>
         <ScrollToTop />
-        <RouterSwitch />
+        <Switch>
+          {routeData.map((route, index) => {
+            return (
+              <Route exact key={index} {...route} />
+            )
+          })}
+        </Switch>
       </main>
       <Footer />
     </Router>

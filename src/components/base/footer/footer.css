@@ -1,7 +1,6 @@
 footer {
   margin: 2rem 0 0 0;
   background-color: #eaeaea;
-  border-bottom: 32px solid black;
   height: 500px;
 }
 
@@ -46,4 +45,15 @@ footer .social-links {
 footer .social-links .MuiListItem-root {
   width: unset;
   margin-right: .75rem;
+}
+
+.black-bar-footer {
+  background-color: black;
+  height: 32px;
+  color: white;
+}
+
+.black-bar-footer p {
+  padding: .5rem 0;
+  text-align: center;
 }

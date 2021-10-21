@@ -26,7 +26,8 @@ function CardPage({...props}) {
                       description={x.description}
                       verified={x.verified}
                       showBrand={props.showBrand}
-                      brand={x.brand} 
+                      brand={x.brand}
+                      customCrumbs={x.crumbs} 
                     />
                   </Grid>
                 )

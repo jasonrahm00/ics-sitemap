@@ -8,7 +8,6 @@ const Brand = Brands.pentruder;
 export const cbkSaw = new Card(
   Brand,
   Type.wall,
-  '', //Use
   'CBK HF Wall Saw', //Header
   Page.pdp, //ctaText
   '', //Description
@@ -20,7 +19,6 @@ export const cbkSaw = new Card(
 export const eightTwentyWallSaw = new Card(
   Brand,
   Type.wall,
-  '', //Use
   '8-20 HF Wall Saw', //Header
   Page.pdp, //ctaText
   '', //Description
@@ -32,7 +30,6 @@ export const eightTwentyWallSaw = new Card(
 export const threePEightWireSaw = new Card(
   Brand,
   Type.wall,
-  '', //Use
   '3P8 HF Wire Saw', //Header
   Page.pdp, //ctaText
   '', //Description
@@ -44,7 +41,6 @@ export const threePEightWireSaw = new Card(
 export const hfChainSaw = new Card(
   Brand,
   Type.powerCut,
-  '', //Use
   'CW630 HF Electric Chain Saw', //Header
   Page.pdp, //ctaText
   '', //Description
@@ -56,7 +52,6 @@ export const hfChainSaw = new Card(
 export const pentruderPowerPack = new Card(
   Brand,
   Type.parts,
-  '', //Use
   'Pentpak 427 HF Power Pack', //Header
   Page.pdp, //ctaText
   '', //Description
@@ -68,7 +63,6 @@ export const pentruderPowerPack = new Card(
 export const remoteControl = new Card(
   Brand,
   Type.parts,
-  '', //Use
   'Pentruder Remote Controls', //Header
   Page.pdp, //ctaText
   '', //Description
@@ -80,7 +74,6 @@ export const remoteControl = new Card(
 export const track = new Card(
   Brand,
   Type.parts,
-  '', //Use
   'Pentruder Track', //Header
   Page.pdp, //ctaText
   '', //Description
@@ -92,7 +85,6 @@ export const track = new Card(
 export const trackFeet = new Card(
   Brand,
   Type.parts,
-  '', //Use
   'Pentruder Track Feet', //Header
   Page.pdp, //ctaText
   '', //Description
@@ -104,7 +96,6 @@ export const trackFeet = new Card(
 export const bladeGuards = new Card(
   Brand,
   Type.parts,
-  '', //Use
   'Pentruder Blade Guards', //Header
   Page.pdp, //ctaText
   '', //Description
@@ -116,7 +107,6 @@ export const bladeGuards = new Card(
 export const cables = new Card(
   Brand,
   Type.parts,
-  '', //Use
   'Pentruder Cables', //Header
   Page.pdp, //ctaText
   '', //Description
@@ -128,7 +118,6 @@ export const cables = new Card(
 export const bladeFlanges = new Card(
   Brand,
   Type.parts,
-  '', //Use
   'Pentruder Blade Flanges', //Header
   Page.pdp, //ctaText
   '', //Description

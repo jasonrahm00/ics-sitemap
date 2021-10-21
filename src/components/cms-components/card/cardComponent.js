@@ -28,7 +28,8 @@ function CardComponent({...props}) {
               pathname: props.link,
               state: { 
                 products: props.products,
-                pageTitle: props.header
+                pageTitle: props.header,
+                customCrumbs: props.customCrumbs ? props.customCrumbs : null
               },
             }}
           >

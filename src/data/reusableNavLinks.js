@@ -12,12 +12,20 @@ const sharedLinks = {
   concreteCutting: <Link to="/products/concrete-cutting">Concrete Cutting</Link>,
   pipeCutting: <Link to="/products/pipe-cutting">Pipe Cutting</Link>,
   steelCutting: <Link to={{
-                  pathname: '/products/steel-cutting',
-                  state: {products: ['Steel Wire – Longer Lasting', 'Steel Wire – Fast Cutting'],pageTitle: 'Steel Cutting'}
+                  pathname: '/plp',
+                  state: {
+                    products: ['Steel Wire – Longer Lasting', 'Steel Wire – Fast Cutting'],
+                    pageTitle: 'Steel Cutting', 
+                    customCrumbs: '/products/steel-cutting'
+                  }
                 }}>Steel Cutting</Link>,
   powerSupply: <Link to={{
-                  pathname: '/products/power-supply',
-                  state: {products: ['M300-23G-HPP Power Pack', 'Powerpack'],pageTitle: 'Power Supply'},
+                  pathname: '/plp',
+                  state: {
+                    products: ['M300-23G-HPP Power Pack', 'Powerpack'],
+                    pageTitle: 'Power Supply',
+                    customCrumbs: '/products/power-supply'
+                  },
                 }}>Power Supply</Link>,
   contactUs: <Link to="/contact-us">Contact Us</Link>,
   findDealer: <Link to="/find-dealer">Find a Dealer</Link>,

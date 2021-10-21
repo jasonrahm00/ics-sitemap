@@ -1,23 +1,23 @@
 export const Card = function (
   brand,
   type,
-  use,
   header,
   ctaText,
   description,
   link,
   productList,
-  verified
+  verified,
+  crumbs
 ) {
   this.brand = brand;
   this.type = type;
-  this.use = use;
   this.header = header;
   this.ctaText = ctaText;
   this.description = description;
   this.link = link;
   this.productList = productList;
   this.verified = verified;
+  this.crumbs = crumbs;
 };
 
 export const CardGroup = function(group, cards) {

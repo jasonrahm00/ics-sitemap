@@ -5,7 +5,11 @@ import './breadcrumbs.css';
 function Breadcrumbs() {
 
   const location = useLocation();
-  const breadcrumbs = location.pathname;
+  const breadcrumbs = location.state && 
+                      location.state.customCrumbs && 
+                      location.state.customCrumbs !== null ? 
+                      location.state.customCrumbs : 
+                      location.pathname;
   let breadPaths = breadcrumbs.split('/');
   breadPaths.splice(0, 1, 'home');
 

@@ -61,3 +61,7 @@ header.main a:hover {
 p {
   margin: 0;
 }
+
+.padding-top {
+  padding-top: 20px;
+}

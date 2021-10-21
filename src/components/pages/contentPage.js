@@ -1,7 +1,7 @@
 function ContentPage({...props}) {
   return (
     <>
-      <div className="content-wrapper">
+      <div className="content-wrapper padding-top">
         <h1>{props.title ? props.title : 'Content Page'}</h1>
         {/* Create json objects for each page including commponents and data. objects and object file = CMS */}
       </div>

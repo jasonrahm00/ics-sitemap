@@ -13,8 +13,8 @@ function HeaderNav() {
         <input type="text" placeholder="Search..." />
       </div>
       <ul>
-        <li><a href="#">Sign In</a></li>
-        <li><a href="#">Cart</a></li>
+        <li><a>Sign In</a></li>
+        <li><a>Cart</a></li>
       </ul>
     </nav>
   );

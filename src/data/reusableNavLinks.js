@@ -27,6 +27,7 @@ const sharedLinks = {
   demoRequest: <Link to="/demo-request">Request a Demo</Link>,
   successStories: <Link to="/success-stories">Sucess Stories</Link>,
   aboutICS: <Link to="/about-ics">About ICS</Link>,
+  allProducts: <Link to="/products">All Products</Link>,
 };
 
 export default sharedLinks;

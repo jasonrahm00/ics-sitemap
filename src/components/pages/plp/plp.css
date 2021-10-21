@@ -1,0 +1,34 @@
+.product-listing-page a,
+.product-listing-page a:visited {
+  color: #C8102E;
+}
+
+.product-listing-page a:hover {
+  color: #707070;
+}
+
+.product-listing-page ul {
+  list-style-type: none;
+  padding: 2rem 0 0 0;
+}
+
+.product-listing-page li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #999;
+}
+
+.product-listing-page li:first-child {
+  border-top: 1px solid #999;
+}
+
+.product-listing-page .image-wrapper {
+  width: 64px;
+  height: 64px;
+  margin-right: 1rem;
+}
+
+.product-listing-page .image-wrapper img {
+  width: 100%;
+}

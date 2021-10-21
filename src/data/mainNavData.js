@@ -30,6 +30,7 @@ const mainNavData = [
       targetUrl: null
     },
     submenuLinks: [
+      sharedLinks.allProducts,
       sharedLinks.powerCutters,
       sharedLinks.flatSaws,
       sharedLinks.wallWireSaws,

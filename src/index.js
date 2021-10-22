@@ -4,13 +4,13 @@ import App from './App';
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD1-dr2vE72mHd2Qz4Jo3V_b8UyS1nS36o",
-  authDomain: "ics-wireframe.firebaseapp.com",
-  projectId: "ics-wireframe",
-  storageBucket: "ics-wireframe.appspot.com",
-  messagingSenderId: "45147560215",
-  appId: "1:45147560215:web:1ffb5127981adddf62ff52",
-  measurementId: "G-HDV4HY9F59"
+  apiKey: process.env.ICS_WIREFRAME_FIREBASE_APIKEY,
+  authDomain: process.env.ICS_WIREFRAME_FIREBASE_AUTHDOMAIN,
+  projectId: process.env.ICS_WIREFRAME_FIREBASE_PORJECTID,
+  storageBucket: process.env.ICS_WIREFRAME_FIREBASE_STORAGEBUCKET,
+  messagingSenderId: process.env.ICS_WIREFRAME_FIREBASE_MESSAGINGSENDERID,
+  appId: process.env.ICS_WIREFRAME_FIREBASE_APPID,
+  measurementId: process.env.ICS_WIREFRAME_FIREBASE_MEASUREMENTID
 };
 
 // Initialize Firebase

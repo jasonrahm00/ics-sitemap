@@ -84,18 +84,18 @@ export const pipeClamp = new Card(
   '', //Description
   '/pdp', //Link
   ['Pipe Clamp'], //Product List
-  false //Verified
+  true //Verified
 );
 
 export const hydraulicHose = new Card(
   Brand,
   Type.parts,
   'Hydraulic Hoses', //Header
-  Page.plp, //ctaText
+  Page.pdp, //ctaText
   '', //Description
-  '/plp', //Link
+  '/pdp', //Link
   ['Hydraulic Hoses'], //Product List
-  false, //Verified
+  true, //Verified
   '/products/ics/hydraulic-hoses' //Breadcrumbs
 );
 
@@ -107,7 +107,7 @@ export const flowAdapter = new Card(
   '', //Description
   '/pdp', //Link
   ['Flow Adapter'], //Product List
-  false //Verified
+  true //Verified
 );
 
 export const engineOil = new Card(
@@ -118,30 +118,30 @@ export const engineOil = new Card(
   '', //Description
   '/pdp', //Link
   ['2-Stroke Engine Oil'], //Product List
-  false //Verified
+  true //Verified
 );
 
 export const powerPack = new Card(
   Brand,
   Type.parts,
   'Powerpack', //Header
-  Page.pdp, //ctaText
-  '', //Description
-  '/pdp', //Link
-  ['Powerpack'], //Product List
-  false //Verified
+  Page.plp, //ctaText
+  'Two Power Packs, needs to go to PLP', //Description
+  '/plp', //Link
+  ['Powerpack', 'Power Pack 2'], //Product List
+  true //Verified
 );
 
 export const wires = new Card(
   Brand,
   Type.parts,
-  'Wires', //Header
+  'Diamond Wire & Accessories', //Header
   Page.plp, //ctaText
   '', //Description
   '/plp', //Link
   ['Finish Wire', 'Heavy Concrete Wire', 'Hybrid Wire', 'Steel Wire – Fast Cutting', 'Steel Wire – Longer Lasting', 'Super Wire'], //Product List
-  false, //Verified
-  '/products/ics/wires' //Breadcrumbs //Verified
+  true, //Verified
+  '/products/ics/diamond-wires' //Breadcrumbs //Verified
 );
 
 export const carryBags = new Card(

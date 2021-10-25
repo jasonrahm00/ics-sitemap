@@ -8,7 +8,7 @@ const Brand = Brands.ics;
 export const pneumaticSaws = new Card(
   Brand,
   Type.powerCut,
-  '701A Pneumatic Power Cutter', //Header
+  'Pneumatic Power Cutter', //Header
   Page.pdp, //ctaText
   '', //Description
   '/pdp', //Link

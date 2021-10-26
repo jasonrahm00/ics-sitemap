@@ -1,20 +1,20 @@
 export const Card = function (
-  brand,
-  type,
   header,
-  ctaText,
+  subheader,
+  image,
   description,
-  link,
+  ctaUrl,
+  ctaText,
   productList,
   verified,
   crumbs
 ) {
-  this.brand = brand;
-  this.type = type;
   this.header = header;
-  this.ctaText = ctaText;
+  this.subheader = subheader;
+  this.image = image;
   this.description = description;
-  this.link = link;
+  this.ctaUrl = ctaUrl;
+  this.ctaText = ctaText;
   this.productList = productList;
   this.verified = verified;
   this.crumbs = crumbs;

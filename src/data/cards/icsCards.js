@@ -6,151 +6,151 @@ import { PageTypes as Page } from '../variables';
 const Brand = Brands.ics;
 
 export const pneumaticSaws = new Card(
-  Brand,
-  Type.powerCut,
   'Pneumatic Power Cutter', //Header
-  Page.pdp, //ctaText
+  Brand, //subheader
+  null, //image
   '', //Description
-  '/pdp', //Link
+  '/pdp', // ctaUrl
+  Page.pdp, //ctaText
   ['701A Pneumatic Power Cutter'], //Product List
   true //Verified
 );
 
 export const gasSaws = new Card(
-  Brand,
-  Type.powerCut,
   'Gas Power Saws', //Header
-  Page.categoryContent, //ctaText
+  Brand, //subheder
+  null, //image
   '680 vs 695, different power requirements changes chain needs. Discuss what the difference is between the two saws and why you would want one over the other. What is your cutting project? Different than cutting surface... need to make the deliniation', //Description
   '/category-content', //Link
+  Page.categoryContent, //ctaText
   ['695XL PG Gas Power Cutter', '695XL Gas Power Cutter', '680ES PG Gas Power Cutter', '680ES Gas Power Cutter'], //Product List
   true, //Verified
   '/products/ics/gas-power-saws' // Breadcrumbs
 );
 
 export const hydraulicSaws = new Card(
-  Brand,
-  Type.powerCut,
   'Hydraulic Power Saws', //Header
-  Page.categoryContent, //ctaText
+  Brand, //subheader
+  null, //image
   'Need to dilineate flush cut versus regular cut. What is your cutting project? Different than cutting surface... need to make the deliniation', //Description
   '/category-content', //Link
+  Page.categoryContent, //ctaText
   ['890PG Hydraulic Power Cutter', '890F4 Flush Cut Hydraulic Power Cutter', '890F4 Flush Cut Hydraulic Power Cutter'], //Product List
   true, //Verified
   '/products/ics/hydraulic-saws' // Breadcrumbs
 );
 
 export const forceThree = new Card(
-  Brand,
-  Type.chains,
   'FORCE3 Series Diamond Chains', //Header
-  Page.plp, //ctaText
+  Brand, //subheader
+  null, //image
   'Go to PLP, Add attribute for cuttinig surface to eliminate need for "abrasion type" content page explanation', //Description
   '/plp', //Link
+  Page.plp, //ctaText
   ['FORCE3 Standard 12"', 'FORCE3 Standard 10"', 'FORCE3 Standard 16"', 'FORCE3 Abrasive', 'FROCE3 Premium'], //Product List
   true, //Verified
   '/products/ics/force-3-diamond-chains' //Breadcrumbs
 );
 
 export const forceFour = new Card(
-  Brand,
-  Type.chains,
   'FORCE4 Series Chains', //Header
-  Page.plp, //ctaText
+  Brand, //subheader
+  null, //image
   '', //Description
   '/plp', //Link
+  Page.plp, //ctaText
   ['FORCE4® Cross-LINK® Chain', 'FORCE4® Texas Chain', 'FORCE4® Series Diamond Chains'], //Product List
   true, //Verified
   '/products/ics/force-4-diamond-chains' //Breadcrumbs
 );
 
 export const powerGrit = new Card(
-  Brand,
-  Type.chains,
   'PowerGrit Pipe Cutting Chains', //Header
-  Page.plp, //ctaText
+  Brand, //subheader
+  null, //image
   '', //Description
   '/plp', //Link
+  Page.plp, //ctaText
   ['PowerGrit® XL Pipe Cutting Chain', 'PowerGrit® Pipe Cutting Chain'], //Product List
   true, //Verified
   '/products/ics/power-grit' //Breadcrumbs
 );
 
 export const pipeClamp = new Card(
-  Brand,
-  Type.parts,
   'Pipe Clamp', //Header
-  Page.pdp, //ctaText
+  Brand, //subheader
+  null, //image
   '', //Description
   '/pdp', //Link
+  Page.pdp, //ctaText
   ['Pipe Clamp'], //Product List
   true //Verified
 );
 
 export const hydraulicHose = new Card(
-  Brand,
-  Type.parts,
   'Hydraulic Hoses', //Header
-  Page.pdp, //ctaText
+  Brand, //subheader
+  null, //image
   '', //Description
   '/pdp', //Link
+  Page.pdp, //ctaText
   ['Hydraulic Hoses'], //Product List
   true, //Verified
   '/products/ics/hydraulic-hoses' //Breadcrumbs
 );
 
 export const flowAdapter = new Card(
-  Brand,
-  Type.parts,
   'Flow Adapter', //Header
-  Page.pdp, //ctaText
+  Brand, //subheader
+  null, //image
   '', //Description
   '/pdp', //Link
+  Page.pdp, //ctaText
   ['Flow Adapter'], //Product List
   true //Verified
 );
 
 export const engineOil = new Card(
-  Brand,
-  Type.parts,
   '2-Stroke Engine Oil', //Header
-  Page.pdp, //ctaText
+  Brand, //subheader
+  null, //image
   '', //Description
   '/pdp', //Link
+  Page.pdp, //ctaText
   ['2-Stroke Engine Oil'], //Product List
   true //Verified
 );
 
 export const powerPack = new Card(
-  Brand,
-  Type.parts,
   'Powerpack', //Header
-  Page.plp, //ctaText
+  Brand, //subheader
+  null, //image
   'Two Power Packs, needs to go to PLP', //Description
   '/plp', //Link
+  Page.plp, //ctaText
   ['Powerpack', 'Power Pack 2'], //Product List
   true //Verified
 );
 
 export const wires = new Card(
-  Brand,
-  Type.parts,
   'Diamond Wire & Accessories', //Header
-  Page.plp, //ctaText
+  Brand, //subheader
+  null, //image
   '', //Description
   '/plp', //Link
+  Page.plp, //ctaText
   ['Finish Wire', 'Heavy Concrete Wire', 'Hybrid Wire', 'Steel Wire – Fast Cutting', 'Steel Wire – Longer Lasting', 'Super Wire'], //Product List
   true, //Verified
   '/products/ics/diamond-wires' //Breadcrumbs //Verified
 );
 
 export const carryBags = new Card(
-  Brand,
-  Type.parts,
   'ICS Carrying Bags', //Header
-  Page.plp, //ctaText
+  Brand, //subheader
+  null, //image
   '', //Description
   '/plp', //Link
+  Page.plp, //ctaText
   ['ICS Small Carrying Bag', 'ICS Large Carrying Bag'], //Product List
   false, //Verified
   '/products/ics/carrying-bags' //Breadcrumbs //Verified

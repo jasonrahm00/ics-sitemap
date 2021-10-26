@@ -21,12 +21,12 @@ function CardPage({...props}) {
                     <CardComponent 
                       header={x.header} 
                       dest={x.ctaText} 
-                      link={x.link} 
+                      link={x.ctaUrl} 
                       products={x.productList} 
                       description={x.description}
                       verified={x.verified}
                       showBrand={props.showBrand}
-                      brand={x.brand}
+                      brand={x.subheader}
                       customCrumbs={x.crumbs} 
                     />
                   </Grid>

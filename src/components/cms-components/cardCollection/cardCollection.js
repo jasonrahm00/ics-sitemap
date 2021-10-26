@@ -1,8 +1,8 @@
 import './cardCollection.css';
 
-function CardCollection({...props}) {
+const ComponentSpecs = () => {
   return (
-    <section>
+    <section className="content-wrapper">
       <h2>Tile Collection</h2>
       <ul>
         <li>Collection Header</li>
@@ -20,6 +20,13 @@ function CardCollection({...props}) {
         </li>
       </ul>
     </section>
+  )
+}
+function CardCollection({...props}) {
+  return (
+    <>
+      {props.showSpecs ? <ComponentSpecs /> : ''}
+    </>
   );
 }
 

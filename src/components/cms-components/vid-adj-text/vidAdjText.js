@@ -1,8 +1,8 @@
 import './vidAdjText.css';
 
-function VideoAdjacentText({...props}) {
+const ComponentSpecs = () => {
   return (
-    <section>
+    <section className="content-wrapper">
       <h2>Video with Adjacent Text</h2>
       <ul>
         <li>Adjacent Video (YouTube Hosting Only)</li>
@@ -16,6 +16,14 @@ function VideoAdjacentText({...props}) {
         <li>CTA Button</li>
       </ul>
     </section>
+  )
+}
+
+function VideoAdjacentText({...props}) {
+  return (
+    <>
+      {props.showSpecs ? <ComponentSpecs /> : ''}
+    </>
   );
 }
 

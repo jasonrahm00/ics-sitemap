@@ -1,8 +1,8 @@
 import './imgAdjText.css';
 
-function ImgAdjText({...props}) {
+const ComponentSpecs = () => {
   return (
-    <section>
+    <section className="content-wrapper">
       <h2>Image with Adjacent Text</h2>
       <ul>
         <li>Adjacent Image</li>
@@ -16,6 +16,13 @@ function ImgAdjText({...props}) {
         <li>CTA Button</li>
       </ul>
     </section>
+  )
+}
+function ImgAdjText({...props}) {
+  return (
+    <>
+      {props.showSpecs ? <ComponentSpecs /> : ''}
+    </>
   );
 }
 

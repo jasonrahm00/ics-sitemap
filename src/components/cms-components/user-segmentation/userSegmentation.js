@@ -1,8 +1,8 @@
 import './userSegmentation.css';
 
-function UserSegmentation({...props}) {
+const ComponentSpecs = () => {
   return (
-    <section>
+    <section className="content-wrapper">
       <h2>User Segmentation</h2>
       <ul>
         <li>Image</li>
@@ -13,6 +13,15 @@ function UserSegmentation({...props}) {
         <li>CTA Button</li>
       </ul>
     </section>
+  )
+}
+
+function UserSegmentation({...props}) {
+  return (
+    <>
+      {props.showSpecs ? <ComponentSpecs /> : ''}
+    </>
+    
   );
 }
 

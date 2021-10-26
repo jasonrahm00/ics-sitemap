@@ -1,8 +1,8 @@
 import './paragraphHeadSubheadBody.css';
 
-function ParagraphHeadSubheadBody({...props}) {
+const ComponentSpecs = () => {
   return (
-    <section>
+    <section className="content-wrapper">
       <h2>Paragraph with Header Subheader Body</h2>
       <ul>
         <li>Header</li>
@@ -10,6 +10,14 @@ function ParagraphHeadSubheadBody({...props}) {
         <li>Body Copy</li>
       </ul>
     </section>
+  )
+}
+
+function ParagraphHeadSubheadBody({...props}) {
+  return (
+    <>
+      {props.showSpecs ? <ComponentSpecs /> : ''}
+    </>
   );
 }
 

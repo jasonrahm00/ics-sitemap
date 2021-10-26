@@ -1,8 +1,8 @@
 import './paragraphLinks.css';
 
-function ParagraphLinks({...props}) {
+const ComponentSpecs = () => {
   return (
-    <section>
+    <section className="content-wrapper">
       <h2>Paragaph with Links</h2>
       <ul>
         <li>**No actual paragraph or header to edit</li>
@@ -11,6 +11,13 @@ function ParagraphLinks({...props}) {
         <li>Link groups for each column</li>
       </ul>
     </section>
+  )
+}
+function ParagraphLinks({...props}) {
+  return (
+    <>
+      {props.showSpecs ? <ComponentSpecs /> : ''}
+    </>
   );
 }
 

@@ -36,6 +36,7 @@ const sharedLinks = {
   successStories: <Link to="/success-stories">Sucess Stories</Link>,
   aboutICS: <Link to="/about-ics">About ICS</Link>,
   allProducts: <Link to="/products">All Products</Link>,
+  styleGuide: <Link to="/style-guide">Style Guide</Link>,
 };
 
 export default sharedLinks;

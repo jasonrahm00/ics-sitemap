@@ -57,7 +57,8 @@ const footerNavData = [
           sharedLinks.contactUs, 
           sharedLinks.productRegistration, 
           sharedLinks.proCorner, 
-          sharedLinks.docLibrary
+          sharedLinks.docLibrary,
+          sharedLinks.styleGuide
         ]
       }
     ]

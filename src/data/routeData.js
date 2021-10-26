@@ -5,6 +5,7 @@ import CategoryContent from "../components/pages/categoryContentPage";
 import ContentPage from '../components/pages/contentPage';
 import { RouteObject } from '../utility/constructors';
 import CardPage from "../components/pages/cardPage";
+import StyleGuide from '../components/pages/styleGuide';
 import { 
   ICSBrandCards, 
   MeritBrandCards, 
@@ -69,6 +70,8 @@ const routeData = [
 
   //Misc Routes
   new RouteObject('/about-ics', () => <ContentPage title={'About ICS'}/>),
+  new RouteObject('/style-guide', () => <StyleGuide />),
+
 ];
 
 export default routeData;

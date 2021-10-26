@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid';
 
-import CardComponent from "../cms-components/card/cardComponent";
-import HeroBanner from '../cms-components/hero-banner/heroBanner';
+import CardComponent from "../cms-components/cardCollection/card/cardComponent";
+import ImgTextOverlay from '../cms-components/image-text-overlay/imgTextOverlay';
 import Breadcrumbs from '../base/breadcrumbs/breadcrumbs';
 
 function CardPage({...props}) {
@@ -9,7 +9,7 @@ function CardPage({...props}) {
   return (
     <>
       <Breadcrumbs />
-      <HeroBanner header={props.title} />
+      <ImgTextOverlay header={props.title} />
       {cards && cards.map((item, index) => {
         return (
           <section className="content-wrapper" key={index}>

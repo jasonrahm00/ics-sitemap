@@ -43,3 +43,20 @@ export const PentruderPartList = [
   'Pentruder Blade Guards',
   'Pentruder Cables'
 ];
+
+export const Categories = {
+  powerCut: 'Power Cutters',
+  diamondChains: 'Diamond Chains',
+  parts: 'Parts and Accessories',
+  diamondWire: 'Diamond Wires',
+  powerSupply: 'Power Supply',
+  flatSaws: 'Flat Saws',
+  wallSaws: 'Wall Saws',
+  wireSaws: 'Wire Saws'
+};
+
+export const Attributes = {
+  power: function(type) {this.type = type;},
+  chainType: function(abrasion) {this.abrasion = abrasion},
+  series: function(name) {this.name = name},
+};

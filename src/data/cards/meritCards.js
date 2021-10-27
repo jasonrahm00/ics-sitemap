@@ -1,6 +1,6 @@
 import {Card} from '../../utility/constructors';
-import { Brands } from '../variables';
-import { PageTypes as Page, MeritFlatSawList } from '../variables';
+import { Brands } from '../../utility/variables';
+import { PageTypes as Page, MeritFlatSawList } from '../../utility/variables';
 
 const Brand = Brands.merit;
 

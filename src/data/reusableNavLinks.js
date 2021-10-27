@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import { MeritFlatSawList } from './variables';
+import { MeritFlatSawList } from '../utility/variables';
 
 const sharedLinks = {
   icsBrandLink: <Link to='/products/ics'>ICS</Link>,

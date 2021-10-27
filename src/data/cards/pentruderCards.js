@@ -1,10 +1,10 @@
 import {Card} from '../../utility/constructors';
-import { Brands } from '../variables';
+import { Brands } from '../../utility/variables';
 import { 
   PageTypes as Page, 
   PentruderWallSawsList,
   PentruderPartList 
-} from '../variables';
+} from '../../utility/variables';
 
 const Brand = Brands.pentruder;
 

@@ -35,3 +35,10 @@ export const SocialLink = function(channel, url, icon) {
   this.url = url;
   this.icon = icon;
 };
+
+export const Product = function(name, brand, primaryCat, attributes) {
+  this.name = name;
+  this.brand = brand;
+  this.primaryCat = primaryCat;
+  this.attributes = attributes
+};

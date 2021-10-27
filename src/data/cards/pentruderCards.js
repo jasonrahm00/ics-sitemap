@@ -1,6 +1,10 @@
 import {Card} from '../../utility/constructors';
 import { Brands } from '../variables';
-import { PageTypes as Page } from '../variables';
+import { 
+  PageTypes as Page, 
+  PentruderWallSawsList,
+  PentruderPartList 
+} from '../variables';
 
 const Brand = Brands.pentruder;
 
@@ -45,7 +49,7 @@ export const hfChainSaw = new Card(
   '/pdp', //Link
   Page.pdp, //ctaText
   ['CW630 HF Electric Chain Saw'], //Product List
-  false //Verified
+  true //Verified
 );
 
 export const pentruderPowerPack = new Card(
@@ -125,15 +129,31 @@ export const bladeFlanges = new Card(
   false //Verified
 );
 
-export const PentruderWallSaws = [cbkSaw, eightTwentyWallSaw];
+export const wallSaws = new Card (
+  'Wall Saws',
+  Brand,
+  null,
+  '',
+  '/plp',
+  Page.plp,
+  PentruderWallSawsList,
+  true,
+  '/products/wall-saws'
+);
+
+export const allPentruderPars = new Card (
+  'Pentruder Parts and Accessories',
+  Brand,
+  null,
+  '',
+  '/plp',
+  Page.plp,
+  PentruderPartList,
+  true,
+  '/products/pentruder/parts'
+)
+
+export const PentruderWallSaws = [wallSaws];
 export const PentruderWireSaws = [threePEightWireSaw];
 export const PentruderChainSaws = [hfChainSaw];
-export const PentruderParts = [
-  pentruderPowerPack, 
-  remoteControl,
-  track,
-  trackFeet,
-  bladeFlanges,
-  bladeGuards,
-  cables
-];
+export const PentruderParts = [allPentruderPars];

@@ -1,11 +1,19 @@
 import {Link} from 'react-router-dom';
+import { MeritFlatSawList } from './variables';
 
 const sharedLinks = {
   icsBrandLink: <Link to='/products/ics'>ICS</Link>,
   meritBrandLink: <Link to='/products/merit'>Merit</Link>,
   pentruderBrandLink: <Link to='/products/pentruder'>Pentruder</Link>,
   powerCutters: <Link to="/products/power-cutters">Power Cutters</Link>,
-  flatSaws: <Link to="/products/flat-saws">Flat Saws</Link>,
+  flatSaws: <Link to={{
+              pathname: '/plp',
+              state: {
+                products: MeritFlatSawList,
+                pageTitle: 'Flat Saws',
+                customCrumbs: '/products/flat-saws'
+              }
+            }}>Flat Saws</Link>,
   wallWireSaws: <Link to="/products/wall-wire-saws">Wall/Wire Saws</Link>,
   diamondChains: <Link to="/products/diamond-chains">Diamond Chains</Link>,
   partsAccessories: <Link to="/products/parts-accessories">Parts and Accessories</Link>,
@@ -33,7 +41,7 @@ const sharedLinks = {
   docLibrary: <Link to="/document-library">Document Library</Link>,
   proCorner: <Link to="/pro-corner">Pro Corner</Link>,
   demoRequest: <Link to="/demo-request">Request a Demo</Link>,
-  successStories: <Link to="/success-stories">Sucess Stories</Link>,
+  successStories: <Link to="/news-features">News and Features</Link>,
   aboutICS: <Link to="/about-ics">About ICS</Link>,
   allProducts: <Link to="/products">All Products</Link>,
   styleGuide: <Link to="/style-guide">Style Guide</Link>,

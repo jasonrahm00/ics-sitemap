@@ -54,8 +54,8 @@ const mainNavData = [
   },
   {
     topLevelLink: {
-      anchorText: 'Success Stories',
-      targetUrl: '/success-stories'
+      anchorText: 'News and Features',
+      targetUrl: '/news-features'
     },
     submenuLinks: []
   }

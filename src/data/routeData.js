@@ -11,7 +11,6 @@ import {
   MeritBrandCards, 
   PentruderBrandCards,
   AllChainSaws,
-  FlatSaws,
   WallWireSaws,
   DiamondChains,
   AllParts,
@@ -36,7 +35,7 @@ const routeData = [
   //Type Routes
   new RouteObject('/products', () => <PLP title={'All Products'} />),
   new RouteObject('/products/power-cutters', () => <CardPage title={'Power Cutters'} cards={[AllChainSaws]} showBrand="true" />),
-  new RouteObject('/products/flat-saws', () => <CardPage title={'Flat Saws'} cards={[FlatSaws]} showBrand="true" />),
+  new RouteObject('/products/flat-saws', () => <PLP title={'Flat Saws'} />),
   new RouteObject('/products/wall-wire-saws', () => <CardPage title={'Wall/Wire Saws'} cards={WallWireSaws} showBrand="true" />),
   new RouteObject('/products/diamond-chains', () => <CardPage title={'Diamond Chains'} cards={[DiamondChains]} showBrand="true" />),
   new RouteObject('/products/parts-accessories', () => <CardPage title={'Parts & Accessories'} cards={AllParts} />),
@@ -56,7 +55,7 @@ const routeData = [
   new RouteObject('/demo-request', () => <ContentPage title={'Request a Demo'}/>),
 
   //Success Story Routes
-  new RouteObject('/success-stories', () => <CategoryContent title={'Success Stories'} />),
+  new RouteObject('/news-features', () => <CategoryContent title={'News and Features'} />),
   new RouteObject('/success-stories/battle-tested', () => <ContentPage title={'Battle Tested'}/>),
   new RouteObject('/success-stories/change-is-good', () => <ContentPage title={'Change Is Good'}/>),
   new RouteObject('/success-stories/pentruder-beats-clock', () => <ContentPage title={'Pentruder Beats the Clock'}/>),

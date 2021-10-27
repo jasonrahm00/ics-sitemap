@@ -22,7 +22,7 @@ const routeData = [
 
   //Base Routes
   new RouteObject('/', () => <Homepage />),
-  new RouteObject('/pdp', () => <PDP title={'Product'} />),
+  new RouteObject('/pdp', () => <PDP />),
   new RouteObject('/plp', () => <PLP/>),
   new RouteObject('/category-content', () => <CategoryContent/>),
   new RouteObject('/plain-content', () => <ContentPage/>),
@@ -35,7 +35,7 @@ const routeData = [
   //Type Routes
   new RouteObject('/products', () => <PLP title={'All Products'} />),
   new RouteObject('/products/power-cutters', () => <CardPage title={'Power Cutters'} cards={[AllChainSaws]} showBrand="true" />),
-  new RouteObject('/products/flat-saws', () => <PLP title={'Flat Saws'} />),
+  new RouteObject('/products/flat-saws', () => <PLP />),
   new RouteObject('/products/wall-wire-saws', () => <CardPage title={'Wall/Wire Saws'} cards={WallWireSaws} showBrand="true" />),
   new RouteObject('/products/diamond-chains', () => <CardPage title={'Diamond Chains'} cards={[DiamondChains]} showBrand="true" />),
   new RouteObject('/products/parts-accessories', () => <CardPage title={'Parts & Accessories'} cards={AllParts} />),
@@ -43,8 +43,8 @@ const routeData = [
   //Use Routes
   new RouteObject('/products/concrete-cutting', () => <CardPage title={'Concrete Cutting'} cards={ConcreteCutting} showBrand="true" />),
   new RouteObject('/products/pipe-cutting', () => <CardPage title={'Pipe Cutting'} cards={PipeCutting} showBrand="true" />),
-  new RouteObject('/products/steel-cutting', () => <PLP title={'Steel Cutting'} />),
-  new RouteObject('/products/power-supply', () => <PLP title={'Power Supply'} />),
+  new RouteObject('/products/steel-cutting', () => <PLP />),
+  new RouteObject('/products/power-supply', () => <PLP />),
 
   //Customer Support Routes
   new RouteObject('/contact-us', () => <ContentPage title={'Contact Us'}/>),

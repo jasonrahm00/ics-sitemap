@@ -54,7 +54,7 @@ const MeritProducts = [
     new Attributes.series('M600'),
     new Attributes.power('gas'),
   ]),
-  new Product('M600EX-61G Flat Saw', Brands.merit, Categories.flatSaws, [
+  new Product('M600SS-61G Flat Saw', Brands.merit, Categories.flatSaws, [
     new Attributes.series('M600'),
     new Attributes.power('electric'),
   ]),

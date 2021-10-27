@@ -1,8 +1,12 @@
 import {Card} from '../../utility/constructors';
 import { Brands } from '../../utility/variables';
-import { PageTypes as Page, MeritFlatSawList } from '../../utility/variables';
+import { PageTypes as Page } from '../../utility/variables';
+import MeritProducts from '../products/meritProducts';
 
 const Brand = Brands.merit;
+
+const FlatSaws = MeritProducts.filter(product => product.primaryCat === 'Flat Saws');
+console.log(FlatSaws);
 
 export const flatSaws = new Card (
   'Flat Saws',
@@ -11,7 +15,7 @@ export const flatSaws = new Card (
   'Power source, weight and dimensions are the only real differences. All of which can be exposed through facet filters',
   '/plp',
   Page.plp,
-  MeritFlatSawList,
+  FlatSaws.map(product => product.name),
   true,
   '/products/flat-saws'
 );

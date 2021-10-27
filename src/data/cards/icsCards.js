@@ -1,7 +1,6 @@
 import { Card } from '../../utility/constructors';
 import { Brands } from '../../utility/variables';
 import { PageTypes as Page } from '../../utility/variables';
-import { Products } from '../products/icsProducts';
 
 const Brand = Brands.ics;
 

@@ -6,7 +6,6 @@ import MeritProducts from '../products/meritProducts';
 const Brand = Brands.merit;
 
 const FlatSaws = MeritProducts.filter(product => product.primaryCat === 'Flat Saws');
-console.log(FlatSaws);
 
 export const flatSaws = new Card (
   'Flat Saws',

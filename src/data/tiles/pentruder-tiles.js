@@ -1,34 +1,10 @@
 import { Tile } from '../../utility/constructors';
 import { Brands } from '../../utility/variables';
 import { 
-  PageTypes as Page, 
-  PentruderWallSawsList,
-  PentruderPartList 
+  PageTypes as Page
 } from '../../utility/variables';
 
 const Brand = Brands.pentruder;
-
-export const cbkSaw = new Tile(
-  'CBK HF Wall Saw', //Header
-  Brand, //subheader
-  null, //image
-  '', //Description
-  '/pdp', //Link
-  Page.pdp, //ctaText
-  ['CBK HF Wall Saw'], //Product List
-  false //Verified
-);
-
-export const eightTwentyWallSaw = new Tile(
-  '8-20 HF Wall Saw', //Header
-  Brand, //subhedaer
-  null, //image
-  '', //Description
-  '/pdp', //Link
-  Page.pdp, //ctaText
-  ['8-20 HF Wall Saw'], //Product List
-  false //Verified
-);
 
 export const threePEightWireSaw = new Tile(
   '3P8 HF Wire Saw', //Header
@@ -134,11 +110,10 @@ export const wallSaws = new Tile(
   Brand,
   null,
   '',
-  '/plp',
+  '/products/wall-saws',
   Page.plp,
-  PentruderWallSawsList,
+  [],
   true,
-  '/products/wall-saws'
 );
 
 export const allPentruderPars = new Tile(
@@ -146,11 +121,10 @@ export const allPentruderPars = new Tile(
   Brand,
   null,
   '',
-  '/plp',
+  '/products/pentruder/parts',
   Page.plp,
-  PentruderPartList,
+  [],
   true,
-  '/products/pentruder/parts'
 )
 
 export const PentruderWallSaws = [wallSaws];

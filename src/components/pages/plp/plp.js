@@ -1,16 +1,45 @@
-import { useLocation } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
 
 import './plp.css';
 import Breadcrumbs from '../../base/breadcrumbs/breadcrumbs';
 import imgPlaceholder from './no-image-available.png';
+import { Product } from '../../../utility/constructors';
 
-function PLP() {
+const placeholderProducts = [
+  new Product('Product 1'),
+  new Product('Product 2'),
+  new Product('Product 3')
+];
 
-  const location = useLocation();
-  const productList = location.state && location.state.products ? location.state.products : ['Product 1', 'Product 1', 'Product 1'];
-  const pageTitle = location.state && location.state.pageTitle ? location.state.pageTitle : 'Product Listing Page';
+const ProductListing = props => {
+  return(
+    props.productList.map((product, index) => {
+      return (
+        <li key={index}>
+          <div className="image-wrapper">
+            <img src={imgPlaceholder} alt="" />
+          </div>
+          <div>
+            <Link
+              to={{
+                pathname: '/pdp',
+                state: { 
+                  products: [product.name]
+                },
+              }}
+            >
+              {product.name}
+            </Link> 
+            <p><strong>Part# {'00000' + (index + 1)}</strong></p>
+          </div>
+      </li>
+      )
+    })
+  )
+}
+
+function PLP({...props}) {
 
   return (
     <>
@@ -21,34 +50,14 @@ function PLP() {
             <h2>Filters</h2>
           </Grid>
           <Grid item md={8}>
-            <h1>{pageTitle}</h1>
-            {productList.length ? (
-              <ul>
-                {productList.map((product, index) => {
-                  return (
-                    <li key={index}>
-                      <div className="image-wrapper">
-                        <img src={imgPlaceholder} alt="" />
-                      </div>
-                      <div>
-                        <Link
-                          to={{
-                            pathname: '/pdp',
-                            state: { 
-                              products: [product]
-                            },
-                          }}
-                        >
-                          {product}
-                        </Link> 
-                        <p><strong>Part# {'00000' + (index + 1)}</strong></p>
-                      </div>
-                      
-                  </li>
-                  )
-                })}
-              </ul>
-            ) : ''}
+            <h1>{props.title ? props.title : 'Product Listing Page'}</h1>
+            <ul>
+              {props.products && props.products.length ? (
+                <ProductListing productList={props.products} />
+              ) : (
+                <ProductListing productList={placeholderProducts} />
+              )}
+            </ul>
           </Grid>
         </Grid>
       </div>

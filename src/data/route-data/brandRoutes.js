@@ -1,7 +1,9 @@
 import CategoryContent from "../../components/pages/categoryContentPage";
 import { RouteObject } from '../../utility/constructors';
-
+import PLP from "../../components/pages/plp/plp";
 import ImgTextOverlay from '../../components/cms-components/image-text-overlay/imgTextOverlay';
+import PentruderProducts from "../products/pentruderProducts";
+import { Categories } from "../../utility/variables";
 
 import { 
   ICSBrandSaws, 
@@ -16,6 +18,8 @@ import {
 } from '../tiles/tile-groupings';
 
 import TileCollection from '../../components/cms-components/tile-collection/tileCollection';
+
+const ProductsPentruderParts = PentruderProducts.filter(product => product.primaryCat === Categories.parts);
 
 const BrandRoutes = [
   new RouteObject('/products/ics', 
@@ -38,6 +42,7 @@ const BrandRoutes = [
     <TileCollection tileGroup={WireSaws} />,
     <TileCollection tileGroup={PentruderBrandParts} />,
   ]} />),
+  new RouteObject('/products/pentruder/parts', () => <PLP title={'Pentruder Parts'} products={ProductsPentruderParts} />)
 ]
 
 export default BrandRoutes;

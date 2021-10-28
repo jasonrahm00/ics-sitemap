@@ -29,8 +29,8 @@ const ICSProducts = [
   new Product('Finish Wire', Brands.ics, Categories.diamondWire, []),
   new Product('Heavy Concrete Wire', Brands.ics, Categories.diamondWire, []),
   new Product('Hybrid Wire', Brands.ics, Categories.diamondWire, []),
-  new Product('Steel Wire – Fast Cutting', Brands.ics, Categories.diamondWire, []),
-  new Product('Steel Wire – Longer Lasting', Brands.ics, Categories.diamondWire, []),
+  new Product('Steel Wire – Fast Cutting', Brands.ics, Categories.diamondWire, [], Categories.steelCutting),
+  new Product('Steel Wire – Longer Lasting', Brands.ics, Categories.diamondWire, [], Categories.steelCutting),
   new Product('Super Wire', Brands.ics, Categories.diamondWire, []),
 ];
 

@@ -47,9 +47,10 @@ export const Tile = function (
   this.crumbs = crumbs;
 };
 
-export const TileGroup = function(group, cards) {
-  this.group = group;
-  this.cards = cards;
+export const TileGroup = function(header, subheader, tiles) {
+  this.header = header;
+  this.subheader = subheader;
+  this.tiles = tiles;
 };
 
 export const RouteObject = function(path, render) {

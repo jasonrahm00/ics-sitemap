@@ -1,4 +1,4 @@
-import {Card} from '../../utility/constructors';
+import {Tile} from '../../utility/constructors';
 import { Brands } from '../../utility/variables';
 import { PageTypes as Page } from '../../utility/variables';
 import MeritProducts from '../products/meritProducts';
@@ -7,7 +7,7 @@ const Brand = Brands.merit;
 
 const FlatSaws = MeritProducts.filter(product => product.primaryCat === 'Flat Saws');
 
-export const flatSaws = new Card (
+export const flatSaws = new Tile (
   'Flat Saws',
   Brand,
   null,
@@ -19,7 +19,7 @@ export const flatSaws = new Card (
   '/products/flat-saws'
 );
 
-export const m100FlatSaws = new Card(
+export const m100FlatSaws = new Tile(
   'M100 Flat Saws', //Header
   Brand, //subheader
   null, //image
@@ -31,7 +31,7 @@ export const m100FlatSaws = new Card(
   '/products/merit/m100-flat-saws' //Breadcrumbs
 );
 
-export const m250FlatSaws = new Card(
+export const m250FlatSaws = new Tile(
   'M250 Flat Saws', //Header
   Brand, //subheader
   null, //image
@@ -43,7 +43,7 @@ export const m250FlatSaws = new Card(
   '/products/merit/m250-flat-saws' //Breadcrumbs
 );
 
-export const m350FlatSaws = new Card(
+export const m350FlatSaws = new Tile(
   'M350 Flat Saws', //Header
   Brand, //subheader
   null, //image
@@ -55,7 +55,7 @@ export const m350FlatSaws = new Card(
   '/products/merit/m350-flat-saws' //Breadcrumbs //Verified
 );
 
-export const m400FlatSaws = new Card(
+export const m400FlatSaws = new Tile(
   'M400 Flat Saws', //Header
   Brand, //subheader
   null, //image
@@ -67,7 +67,7 @@ export const m400FlatSaws = new Card(
   '/products/merit/m400-flat-saws' //Breadcrumbs //Verified
 );
 
-export const m600FlatSaws = new Card(
+export const m600FlatSaws = new Tile(
   'M600 Flat Saws', //Header
   Brand, //subheader
   null, //image
@@ -79,7 +79,7 @@ export const m600FlatSaws = new Card(
   '/products/merit/m600-flat-saws' //Breadcrumbs //Verified
 );
 
-export const m800FlatSaws = new Card(
+export const m800FlatSaws = new Tile(
   'M800EX-87G Flat Saw', //Header
   Brand, //subheader
   null, //image
@@ -90,7 +90,7 @@ export const m800FlatSaws = new Card(
   false //Verified
 );
 
-export const meritPowerPack = new Card(
+export const meritPowerPack = new Tile(
   'M300-23G-HPP Power Pack', //Header
   Brand, //subheader
   null, //image
@@ -101,7 +101,7 @@ export const meritPowerPack = new Card(
   true //Verified
 );
 
-export const waterPump = new Card(
+export const waterPump = new Tile(
   'Merit Water Pump', //Header
   Brand, //subheader
   null, //image
@@ -112,7 +112,7 @@ export const waterPump = new Card(
   true //Verified
 );
 
-export const lightKit = new Card(
+export const lightKit = new Tile(
   'Merit Light Kit', //Header
   Brand, //subhedaer
   null, //image

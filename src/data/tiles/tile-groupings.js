@@ -1,63 +1,62 @@
-import { CardGroup } from '../../utility/constructors';
+import { TileGroup } from '../../utility/constructors';
 import { ICSSaws, ICSChains, ICSParts, wires, forceThree, forceFour, powerGrit, pipeClamp } from './ics-tiles';
-import { MeritFlatSaws, MeritParts } from './meritCards';
-import { PentruderWallSaws, PentruderChainSaws, PentruderWireSaws, PentruderParts, remoteControl  } from './pentruderCards';
+import { MeritFlatSaws, MeritParts } from './merit-tiles';
+import { PentruderWallSaws, PentruderChainSaws, PentruderWireSaws, PentruderParts, remoteControl  } from './pentruder-tiles';
 
-export const AllChainSaws = new CardGroup('Chain Saws', [...ICSSaws].concat([...PentruderChainSaws]));
-export const FlatSaws = new CardGroup('Flat Saws', MeritFlatSaws);
-export const DiamondChains = new CardGroup('Diamond Saw Chains', ICSChains);
+// export const AllChainSaws = new TileGroup('Chain Saws', '', [...ICSSaws].concat([...PentruderChainSaws]));
+// export const FlatSaws = new TileGroup('Flat Saws', '', MeritFlatSaws);
+// export const DiamondChains = new TileGroup('Diamond Saw Chains', '', ICSChains);
 
-const wallSaws = new CardGroup('Wall Saws', PentruderWallSaws);
-const wireSaws = new CardGroup('Wire Saws', PentruderWireSaws);
-const icsParts = new CardGroup('ICS Parts & Accessories', ICSParts);
-const meritParts = new CardGroup('Merit Parts & Accessories', MeritParts);
-const pentruderParts = new CardGroup('Pentruder Parts & Accessories', PentruderParts);
+// const wallSaws = new TileGroup('Wall Saws', '', PentruderWallSaws);
+// const wireSaws = new TileGroup('Wire Saws', '', PentruderWireSaws);
 
-export const ICSBrandCards = [
-  new CardGroup('Power Saws', ICSSaws),
-  DiamondChains,
-  icsParts
-];
+// const meritParts = new TileGroup('Merit Parts & Accessories', '', MeritParts);
+// const pentruderParts = new TileGroup('Pentruder Parts & Accessories', '', PentruderParts);
 
-export const MeritBrandCards = [
-  FlatSaws,
-  meritParts
-];
+// ICS Brand Tile Groups
+export const ICSBrandSaws = new TileGroup('Power Saws', '', ICSSaws);
+export const ICSBrandChains = new TileGroup('Diamond Saw Chains', '', ICSChains);
+export const ICSBrandParts = new TileGroup('ICS Parts & Accessories', '', ICSParts);
 
-export const PentruderBrandCards = [
-  new CardGroup('Power Cutters', PentruderChainSaws),
-  wallSaws,
-  wireSaws,
-  pentruderParts
-];
+// export const MeritBrandCards = [
+//   FlatSaws,
+//   meritParts
+// ];
 
-export const ConcreteCutting = [
-  AllChainSaws,
-  new CardGroup('Concrete Cutting Saw Chains', [forceThree, forceFour]),
-  new CardGroup('Flat Saws', MeritFlatSaws),
-  wallSaws,
-  wireSaws,
-  new CardGroup('Concrete Cutting Parts & Accessories', [remoteControl, wires])
-];
+// export const PentruderBrandCards = [
+//   new TileGroup('Power Cutters', '', PentruderChainSaws),
+//   wallSaws,
+//   wireSaws,
+//   pentruderParts
+// ];
 
-export const PipeCutting = [
-  AllChainSaws,
-  new CardGroup('Pipe Cutting Saw Chains', [powerGrit]),
-  new CardGroup('Pipe Cutting Accessories', [pipeClamp])
-];
+// export const ConcreteCutting = [
+//   AllChainSaws,
+//   new TileGroup('Concrete Cutting Saw Chains', '', [forceThree, forceFour]),
+//   new TileGroup('Flat Saws', '', MeritFlatSaws),
+//   wallSaws,
+//   wireSaws,
+//   new TileGroup('Concrete Cutting Parts & Accessories', '', [remoteControl, wires])
+// ];
 
-export const SteelCutting = [
-  new CardGroup('Steel Cutting Wires', )
-];
+// export const PipeCutting = [
+//   AllChainSaws,
+//   new TileGroup('Pipe Cutting Saw Chains', '', [powerGrit]),
+//   new TileGroup('Pipe Cutting Accessories', '', [pipeClamp])
+// ];
 
-export const WallWireSaws = [
-  wallSaws,
-  wireSaws,
-  new CardGroup('Wall/Wire Saw Accessories', [remoteControl])
-];
+// export const SteelCutting = [
+//   new TileGroup('Steel Cutting Wires')
+// ];
 
-export const AllParts = [
-  icsParts,
-  meritParts,
-  pentruderParts
-];
+// export const WallWireSaws = [
+//   wallSaws,
+//   wireSaws,
+//   new TileGroup('Wall/Wire Saw Accessories', '', [remoteControl])
+// ];
+
+// export const AllParts = [
+//   ICSBrandParts,
+//   meritParts,
+//   pentruderParts
+// ];

@@ -1,10 +1,10 @@
-import { Card } from '../../utility/constructors';
+import { Tile } from '../../utility/constructors';
 import { Brands } from '../../utility/variables';
 import { PageTypes as Page } from '../../utility/variables';
 
 const Brand = Brands.ics;
 
-export const pneumaticSaws = new Card(
+export const pneumaticSaws = new Tile(
   'Pneumatic Power Cutter', //Header
   Brand, //subheader
   null, //image
@@ -15,7 +15,7 @@ export const pneumaticSaws = new Card(
   true //Verified
 );
 
-export const gasSaws = new Card(
+export const gasSaws = new Tile(
   'Gas Power Saws', //Header
   Brand, //subheder
   null, //image
@@ -27,7 +27,7 @@ export const gasSaws = new Card(
   '/products/ics/gas-power-saws' // Breadcrumbs
 );
 
-export const hydraulicSaws = new Card(
+export const hydraulicSaws = new Tile(
   'Hydraulic Power Saws', //Header
   Brand, //subheader
   null, //image
@@ -39,7 +39,7 @@ export const hydraulicSaws = new Card(
   '/products/ics/hydraulic-saws' // Breadcrumbs
 );
 
-export const forceThree = new Card(
+export const forceThree = new Tile(
   'FORCE3 Series Diamond Chains', //Header
   Brand, //subheader
   null, //image
@@ -51,7 +51,7 @@ export const forceThree = new Card(
   '/products/ics/force-3-diamond-chains' //Breadcrumbs
 );
 
-export const forceFour = new Card(
+export const forceFour = new Tile(
   'FORCE4 Series Chains', //Header
   Brand, //subheader
   null, //image
@@ -63,7 +63,7 @@ export const forceFour = new Card(
   '/products/ics/force-4-diamond-chains' //Breadcrumbs
 );
 
-export const powerGrit = new Card(
+export const powerGrit = new Tile(
   'PowerGrit Pipe Cutting Chains', //Header
   Brand, //subheader
   null, //image
@@ -75,7 +75,7 @@ export const powerGrit = new Card(
   '/products/ics/power-grit' //Breadcrumbs
 );
 
-export const pipeClamp = new Card(
+export const pipeClamp = new Tile(
   'Pipe Clamp', //Header
   Brand, //subheader
   null, //image
@@ -86,7 +86,7 @@ export const pipeClamp = new Card(
   true //Verified
 );
 
-export const hydraulicHose = new Card(
+export const hydraulicHose = new Tile(
   'Hydraulic Hoses', //Header
   Brand, //subheader
   null, //image
@@ -98,7 +98,7 @@ export const hydraulicHose = new Card(
   '/products/ics/hydraulic-hoses' //Breadcrumbs
 );
 
-export const flowAdapter = new Card(
+export const flowAdapter = new Tile(
   'Flow Adapter', //Header
   Brand, //subheader
   null, //image
@@ -109,7 +109,7 @@ export const flowAdapter = new Card(
   true //Verified
 );
 
-export const engineOil = new Card(
+export const engineOil = new Tile(
   '2-Stroke Engine Oil', //Header
   Brand, //subheader
   null, //image
@@ -120,7 +120,7 @@ export const engineOil = new Card(
   true //Verified
 );
 
-export const powerPack = new Card(
+export const powerPack = new Tile(
   'Powerpack', //Header
   Brand, //subheader
   null, //image
@@ -131,7 +131,7 @@ export const powerPack = new Card(
   true //Verified
 );
 
-export const wires = new Card(
+export const wires = new Tile(
   'Diamond Wire & Accessories', //Header
   Brand, //subheader
   null, //image
@@ -143,7 +143,7 @@ export const wires = new Card(
   '/products/ics/diamond-wires' //Breadcrumbs //Verified
 );
 
-export const carryBags = new Card(
+export const carryBags = new Tile(
   'ICS Carrying Bags', //Header
   Brand, //subheader
   null, //image

@@ -1,5 +1,6 @@
-import TileComponent from './tile/tileComponent';
+import Grid from '@mui/material/Grid';
 
+import TileComponent from './tile/tileComponent';
 import './tileCollection.css';
 
 const ComponentSpecs = () => {
@@ -25,9 +26,40 @@ const ComponentSpecs = () => {
   )
 }
 function TileCollection({...props}) {
+
+  let {tileGroup} = props;
+  let tiles = tileGroup.tiles;
+
   return (
     <>
       {props.showSpecs ? <ComponentSpecs /> : ''}
+      {tileGroup ? (
+        <section className="content-wrapper">
+          {tileGroup.header ? (<h2>{tileGroup.header}</h2>) : ''}
+          {tileGroup.subheader ? (<h3>{tileGroup.subheader}</h3>) : ''}
+          
+          <Grid container spacing={12}>
+            {tiles && tiles.map((x, i) => {
+              return(
+                <Grid item key={i}>
+                  <TileComponent 
+                    header={x.header} 
+                    dest={x.ctaText} 
+                    link={x.ctaUrl}
+                    description={x.description}
+                    products={x.productList}
+                    verified={x.verified}
+                    showBrand={props.showBrand}
+                    brand={x.subheader}
+                    customCrumbs={x.crumbs} 
+                  />
+                </Grid>
+              )
+            })}
+          </Grid>
+        </section>
+      ) : ''}
+      
     </>
   );
 }

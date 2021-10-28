@@ -6,8 +6,10 @@ import ContentPage from '../components/pages/contentPage';
 import { RouteObject } from '../utility/constructors';
 import CardPage from "../components/pages/cardPage";
 import StyleGuide from '../components/pages/styleGuide';
-import { 
-  ICSBrandCards, 
+
+import ImgTextOverlay from '../components/cms-components/image-text-overlay/imgTextOverlay';
+
+import {  
   MeritBrandCards, 
   PentruderBrandCards,
   AllChainSaws,
@@ -17,6 +19,10 @@ import {
   ConcreteCutting,
   PipeCutting
 } from './cards/cardGroupings';
+
+import { ICSBrandSaws, ICSBrandChains, ICSBrandParts } from './tiles/tile-groupings';
+
+import TileCollection from '../components/cms-components/tile-collection/tileCollection';
 
 const routeData = [
 
@@ -28,7 +34,14 @@ const routeData = [
   new RouteObject('/plain-content', () => <ContentPage />),
 
   //Brand Routes
-  new RouteObject('/products/ics', () => <CardPage title={'ICS Brand'} cards={ICSBrandCards} />),
+  new RouteObject('/products/ics', 
+    () => <CategoryContent components={[
+      <ImgTextOverlay header={'ICS Brand'} />,
+      <TileCollection tileGroup={ICSBrandSaws} />,
+      <TileCollection tileGroup={ICSBrandChains} />,
+      <TileCollection tileGroup={ICSBrandParts} />,
+    ]} />
+  ),
   new RouteObject('/products/merit', () => <CardPage title={'Merit Brand'} cards={MeritBrandCards} />),
   new RouteObject('/products/pentruder', () => <CardPage title={'Pentruder Brand'} cards={PentruderBrandCards} />),
 

@@ -26,7 +26,7 @@ function TileComponent({...props}) {
           <Link 
             to={{
               pathname: props.link,
-              state: { 
+              state: {
                 products: props.products,
                 pageTitle: props.header,
                 customCrumbs: props.customCrumbs ? props.customCrumbs : null

@@ -24,8 +24,8 @@ const routeData = [
   new RouteObject('/', () => <Homepage />),
   new RouteObject('/pdp', () => <PDP />),
   new RouteObject('/plp', () => <PLP/>),
-  new RouteObject('/category-content', () => <CategoryContent/>),
-  new RouteObject('/plain-content', () => <ContentPage/>),
+  new RouteObject('/category-content', () => <CategoryContent />),
+  new RouteObject('/plain-content', () => <ContentPage />),
 
   //Brand Routes
   new RouteObject('/products/ics', () => <CardPage title={'ICS Brand'} cards={ICSBrandCards} />),

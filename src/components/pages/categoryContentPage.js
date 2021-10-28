@@ -4,7 +4,7 @@ import Breadcrumbs from '../base/breadcrumbs/breadcrumbs';
 
 function CategoryContent({...props}) {
   const location = useLocation();
-  const pageTitle = location.state && location.state.pageTitle ? location.state.pageTitle : 'Product Listing Page';
+  const pageTitle = location.state && location.state.pageTitle ? location.state.pageTitle : 'Category Content Page';
 
   return (
     <>

@@ -12,7 +12,7 @@ import ParagraphHeadSubheadBody from "../cms-components/paragraph-head-subhead-b
 import ParagraphLinks from "../cms-components/paragraph-links/paragraphLinks";
 import UserSegmentation from "../cms-components/user-segmentation/userSegmentation";
 import VideoAdjacentText from "../cms-components/vid-adj-text/vidAdjText";
-import CardCollection from '../cms-components/cardCollection/cardCollection';
+import TileCollection from '../cms-components/tileCollection/tileCollection';
 
 const components = [
   {
@@ -29,7 +29,7 @@ const components = [
   },
   {
     value: 'Tile Collection Component',
-    component: <CardCollection showSpecs="true" />
+    component: <TileCollection showSpecs="true" />
   },
   {
     value: 'Paragraph with Header Subheader Body',

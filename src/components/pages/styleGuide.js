@@ -12,7 +12,7 @@ import ParagraphHeadSubheadBody from "../cms-components/paragraph-head-subhead-b
 import ParagraphLinks from "../cms-components/paragraph-links/paragraphLinks";
 import UserSegmentation from "../cms-components/user-segmentation/userSegmentation";
 import VideoAdjacentText from "../cms-components/vid-adj-text/vidAdjText";
-import TileCollection from '../cms-components/tileCollection/tileCollection';
+import TileCollection from '../cms-components/tile-collection/tileCollection';
 
 const components = [
   {

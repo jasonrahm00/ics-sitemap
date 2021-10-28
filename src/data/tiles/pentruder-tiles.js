@@ -38,7 +38,7 @@ export const threePEightWireSaw = new Tile(
   '/pdp', //Link
   Page.pdp, //ctaText
   ['3P8 HF Wire Saw'], //Product List
-  false //Verified
+  true //Verified
 );
 
 export const hfChainSaw = new Tile(

@@ -5,7 +5,7 @@ import HeaderNav from './components/base/header/header-nav/headerNav';
 import MainNav from './components/base/header/main-nav/mainNav';
 import Footer from './components/base/footer/footer';
 import ScrollToTop from "./utility/scrollToTop";
-import routeData from './data/routeData';
+import AllRouteData from './data/route-data/allRouteData';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <main>
         <ScrollToTop />
         <Switch>
-          {routeData.map((route, index) => {
+          {AllRouteData.map((route, index) => {
             return (
               <Route exact key={index} {...route} />
             )

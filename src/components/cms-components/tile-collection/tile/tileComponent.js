@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CardMedia from '@mui/material/CardMedia';
 
-import './tileComponent.css';
+import { PlaceholderText } from '../../../../utility/variables';
 
-const placeholderText = "I'm baby artisan try-hard put a bird on it, literally tattooed banjo deep v salvia. Bushwick you probably haven't heard of them gluten-free selfies, tbh post-ironic scenester four dollar toast marfa umami. Meh coloring book etsy selvage mlkshk lumbersexual drinking vinegar photo booth pop-up. Chicharrones occupy poke, fixie cloud bread asymmetrical mixtape wayfarers typewriter hexagon intelligentsia.";
+import './tileComponent.css';
 
 function TileComponent({...props}) {
 
@@ -23,9 +23,9 @@ function TileComponent({...props}) {
         />
       ) : ''}
       <CardContent>
-        <CardHeader component="h3" title={props.header} subheader={props.subheader} action={props.verified ? <CheckCircleIcon /> : ''}/>
+        <CardHeader component="span" title={props.header} subheader={props.subheader} action={props.verified ? <CheckCircleIcon /> : ''}/>
         <Typography variant="body2" color="text.secondary" className={!props.description.length ? 'no-description' : ''}>
-          {props.description.length ? props.description : placeholderText}
+          {props.description.length ? props.description : PlaceholderText}
         </Typography>
       </CardContent>
       <CardActions>

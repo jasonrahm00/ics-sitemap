@@ -2,6 +2,10 @@
   color: green;
 }
 
+.MuiCardActions-root {
+  justify-content: center;
+}
+
 .MuiCardActions-root .MuiButton-root:hover,
 .MuiCardActions-root .MuiButton-root {
   transform: skewX(-8deg) translateZ(0);
@@ -21,6 +25,21 @@
   transform: skewX(8deg) translateZ(0);
 }
 
+.MuiCardHeader-content,
+.MuiCardContent-root .MuiTypography-body2 {
+  text-align: center;
+}
+
 .MuiCardContent-root .MuiTypography-body2.no-description {
   opacity: 0.3;
+}
+
+.MuiCardHeader-title {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #C8102E;
+}
+
+.MuiCardHeader-subheader {
+  color: black;
 }

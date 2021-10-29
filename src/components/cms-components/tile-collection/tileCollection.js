@@ -34,11 +34,12 @@ function TileCollection({...props}) {
     <>
       {props.showSpecs ? <ComponentSpecs /> : ''}
       {tileGroup ? (
-        <section className="content-wrapper">
-          {tileGroup.header ? (<h2>{tileGroup.header}</h2>) : ''}
-          {tileGroup.subheader ? (<h3>{tileGroup.subheader}</h3>) : ''}
-          
-          <Grid container spacing={12}>
+        <section className="content-wrapper tile-collection-component">
+          <header>
+            {tileGroup.header ? (<h2>{tileGroup.header}</h2>) : ''}
+            {tileGroup.subheader ? (<h3>{tileGroup.subheader}</h3>) : ''}
+          </header>
+          <Grid container justifyContent="center" spacing={12}>
             {tiles && tiles.map((x, i) => {
               return(
                 <Grid item key={i}>

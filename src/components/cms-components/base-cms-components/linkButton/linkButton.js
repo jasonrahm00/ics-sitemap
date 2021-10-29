@@ -7,7 +7,7 @@ function LinkButton({...props}) {
   return (
     <Button size="small" className="link-button">
       <Link to={props.to}>
-        {props.linkText}
+        {props.ctaText}
       </Link>
     </Button>
   )

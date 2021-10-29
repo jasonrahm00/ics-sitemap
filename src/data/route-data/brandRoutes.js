@@ -5,25 +5,26 @@ import ImgTextOverlay from '../../components/cms-components/image-text-overlay/i
 import PentruderProducts from "../products/pentruderProducts";
 import { Categories } from "../../utility/variables";
 import ReusableTileCollections from "../../components/cms-components/tile-collection/reusableTileCollections";
+import { PlaceholderText } from "../../utility/variables";
 
 const ProductsPentruderParts = PentruderProducts.filter(product => product.primaryCat === Categories.parts);
 
 const BrandRoutes = [
   new RouteObject('/products/ics', 
     () => <CategoryContent components={[
-      <ImgTextOverlay header={'ICS Brand'} />,
+      <ImgTextOverlay header={'ICS Brand'} text={PlaceholderText} />,
       ReusableTileCollections.icsSawCollection,
       ReusableTileCollections.icsChainsCollection,
       ReusableTileCollections.icsPartsCollection,
     ]} />
   ),
   new RouteObject('/products/merit', () => <CategoryContent components={[
-    <ImgTextOverlay header={'Merit Brand'} />,
+    <ImgTextOverlay header={'Merit Brand'} text={PlaceholderText} />,
     ReusableTileCollections.flatSawsCollection,
     ReusableTileCollections.meritPartsCollection,
   ]} />),
   new RouteObject('/products/pentruder', () => <CategoryContent components={[
-    <ImgTextOverlay header={'Pentruder Brand'} />,
+    <ImgTextOverlay header={'Pentruder Brand'} text={PlaceholderText} />,
     ReusableTileCollections.pentruderSawsCollection,
     ReusableTileCollections.wallSawsCollection,
     ReusableTileCollections.wireSawsCollection,

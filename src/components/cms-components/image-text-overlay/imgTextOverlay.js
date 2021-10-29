@@ -1,5 +1,6 @@
 import './imgTextOverlay.css';
 import HeroImage from './hero-banner.jpg';
+import LinkButton from '../base-cms-components/linkButton/linkButton';
 
 const ComponentSpecs = () => {
   return (
@@ -22,14 +23,22 @@ function ImgTextOverlay({...props}) {
   return (
     <>
       {props.showSpecs ? <ComponentSpecs /> : ''}
-      <div className="hero-banner">
+      <div className={'iwto-component ' + (props.withMargins === true ? 'content-wrapper' : '')}>
         <img src={HeroImage} alt="" />
-        <section>
-          {props.header ? (
-            <h1>{props.header}</h1>
-          ) : ''}
-          <p>Adaptogen chia occupy yr street art hoodie iceland kickstarter brooklyn ethical vape. Subway tile PBR&B man bun kinfolk gentrify flexitarian. Raw denim shabby chic yuccie sartorial, venmo etsy tilde taiyaki letterpress next level franzen wayfarers yr. Hoodie butcher cliche ennui.</p>
-        </section>
+        <div className="iwto-content-container">
+          <div className="content-wrapper">
+            <section>
+              {props.header ? (
+                <h1>{props.header}</h1>
+              ) : ''}
+              {props.subheader ? (<h2>{props.subheader}</h2>) : ''}
+              {props.text ? (<p>{props.text}</p>) : ''}
+              {props.to && props.ctaText ? (
+                <LinkButton ctaText={props.ctaText} to={props.to} />
+              ) : ''}
+            </section>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -1,12 +1,26 @@
-.hero-banner {
+.iwto-component {
   position: relative;
 }
 
-.hero-banner section {
+.iwto-component .iwto-content-container {
   position: absolute;
-  width: 30%;
-  top: 25%;
-  right: 5%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.iwto-content-container > div {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: 100%;
+  align-items: center;
+  width: 80%;
+}
+
+.iwto-content-container section {
+  width: 40%;
   color: white;
   background-color: rgba(0,0,0,0.5);
   padding: 1rem;

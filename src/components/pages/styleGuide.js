@@ -13,40 +13,43 @@ import ParagraphLinks from "../cms-components/paragraph-links/paragraphLinks";
 import UserSegmentation from "../cms-components/user-segmentation/userSegmentation";
 import VideoAdjacentText from "../cms-components/vid-adj-text/vidAdjText";
 import TileCollection from '../cms-components/tile-collection/tileCollection';
+
+//Component Defaults
 import DefaulTileCollection from '../cms-components/tile-collection/default-tile-collection';
+import { FullWidthImgTextOverlay, MarginsImgTextOverlay } from '../cms-components/image-text-overlay/default-img-text-overlay';
 
 const components = [
   {
     value: 'Image with Text Overlay',
-    component: <ImgTextOverlay showSpecs="true" header="Header" />
+    component: [<FullWidthImgTextOverlay />, <MarginsImgTextOverlay />]
   },
   {
     value: 'Image with Adjacent Text',
-    component: <ImgAdjText showSpecs="true" />
+    component: [<ImgAdjText showSpecs="true" />]
   },
   {
     value: 'Paragraph with Bullets',
-    component: <ParagraphBullets showSpecs="true" />
+    component: [<ParagraphBullets showSpecs="true" />]
   },
   {
     value: 'Tile Collection Component',
-    component: <TileCollection showSpecs="true" tileGroup={DefaulTileCollection} />
+    component: [<TileCollection showSpecs="true" tileGroup={DefaulTileCollection} />]
   },
   {
     value: 'Paragraph with Header Subheader Body',
-    component: <ParagraphHeadSubheadBody showSpecs="true" />
+    component: [<ParagraphHeadSubheadBody showSpecs="true" />]
   },
   {
     value: 'Paragraph with Links',
-    component: <ParagraphLinks showSpecs="true" />
+    component: [<ParagraphLinks showSpecs="true" />]
   },
   {
     value: 'User Segmentation Component',
-    component: <UserSegmentation showSpecs="true" />
+    component: [<UserSegmentation showSpecs="true" />]
   },
   {
     value: 'Video with Adjacent Text',
-    component: <VideoAdjacentText showSpecs="true" />
+    component: [<VideoAdjacentText showSpecs="true" />]
   }
 ];
 
@@ -85,7 +88,13 @@ function StyleGuide() {
       {componentIndex !== null ? (
         (
           <>
-            {components[componentIndex].component}
+            {components[componentIndex].component.map((comp, index) => {
+              return (
+                <div key={index} className="padding-top">
+                  {comp}
+                </div>
+              )
+            })}
           </>
         )
       ) : ''}

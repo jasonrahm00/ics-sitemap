@@ -5,13 +5,14 @@ import ImgTextOverlay from '../../components/cms-components/image-text-overlay/i
 import AllProducts from "../products/icsProducts";
 import { Categories } from "../../utility/variables";
 import ReusableTileCollections from "../../components/cms-components/tile-collection/reusableTileCollections";
+import { PlaceholderText } from "../../utility/variables";
 
 const ProductsSteelCutting = AllProducts.filter(product => product.useCat === Categories.steelCutting);
 const ProductsPowerSupply = AllProducts.filter(product => product.primaryCat === Categories.powerSupply);
 
 const UseRoutes = [
   new RouteObject('/products/concrete-cutting', () => <CategoryContent components={[
-    <ImgTextOverlay header={'Concrete Cutting'} />,
+    <ImgTextOverlay header={'Concrete Cutting'} text={PlaceholderText} />,
     ReusableTileCollections.allChainSawsCollection,
     ReusableTileCollections.concreteCuttingChainsCollection,
     ReusableTileCollections.flatSawsCollection,
@@ -21,7 +22,7 @@ const UseRoutes = [
   ]} />),
   new RouteObject('/products/pipe-cutting', 
     () => <CategoryContent components={[
-      <ImgTextOverlay header={'Pipe Cutting'} />,
+      <ImgTextOverlay header={'Pipe Cutting'} text={PlaceholderText} />,
       ReusableTileCollections.allChainSawsCollection,
       ReusableTileCollections.pipeCuttingChainsCollection,
       ReusableTileCollections.pipeCuttingAccessoriesCollection,

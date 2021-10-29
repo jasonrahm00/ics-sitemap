@@ -36,7 +36,7 @@ function TileComponent({...props}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <LinkButton linkText={props.dest} to={to} />
+        <LinkButton ctaText={props.dest} to={to} />
       </CardActions>
     </Card>
   );

@@ -33,7 +33,7 @@ const ReusableTileCollections = {
   concreteCuttingChainsCollection: <TileCollection tileGroup={ConcreteCuttingChains} />,
   concreteCuttingPartsCollection: <TileCollection tileGroup={ConcreteCuttingParts} />,
   pipeCuttingChainsCollection: <TileCollection tileGroup={PipeCuttingChains} />,
-  pipeCuttingPartsAccessories: <TileCollection tileGroup={PipeCuttingAccessories} />,
+  pipeCuttingAccessoriesCollection: <TileCollection tileGroup={PipeCuttingAccessories} />,
 };
 
 export default ReusableTileCollections

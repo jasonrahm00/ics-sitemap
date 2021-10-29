@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 
-const sharedLinks = {
+const SharedLinks = {
   icsBrandLink: <Link to='/products/ics'>ICS</Link>,
   meritBrandLink: <Link to='/products/merit'>Merit</Link>,
   pentruderBrandLink: <Link to='/products/pentruder'>Pentruder</Link>,
@@ -25,4 +25,4 @@ const sharedLinks = {
   styleGuide: <Link to="/style-guide">Style Guide</Link>,
 };
 
-export default sharedLinks;
+export default SharedLinks;

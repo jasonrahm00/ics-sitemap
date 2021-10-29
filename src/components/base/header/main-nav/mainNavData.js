@@ -1,4 +1,4 @@
-import sharedLinks from '../../../../data/reusableNavLinks';
+import SharedLinks from '../../reusableNavLinks';
 
 const mainNavData = [
   {
@@ -7,9 +7,9 @@ const mainNavData = [
       targetUrl: null
     },
     submenuLinks: [
-      sharedLinks.icsBrandLink, 
-      sharedLinks.meritBrandLink, 
-      sharedLinks.pentruderBrandLink
+      SharedLinks.icsBrandLink, 
+      SharedLinks.meritBrandLink, 
+      SharedLinks.pentruderBrandLink
     ]
   },
   {
@@ -18,10 +18,10 @@ const mainNavData = [
       targetUrl: null
     },
     submenuLinks: [
-      sharedLinks.concreteCutting, 
-      sharedLinks.pipeCutting, 
-      sharedLinks.steelCutting,
-      sharedLinks.powerSupply
+      SharedLinks.concreteCutting, 
+      SharedLinks.pipeCutting, 
+      SharedLinks.steelCutting,
+      SharedLinks.powerSupply
     ]
   },
   {
@@ -30,12 +30,12 @@ const mainNavData = [
       targetUrl: null
     },
     submenuLinks: [
-      sharedLinks.allProducts,
-      sharedLinks.powerCutters,
-      sharedLinks.flatSaws,
-      sharedLinks.wallWireSaws,
-      sharedLinks.diamondChains,
-      sharedLinks.partsAccessories
+      SharedLinks.allProducts,
+      SharedLinks.powerCutters,
+      SharedLinks.flatSaws,
+      SharedLinks.wallWireSaws,
+      SharedLinks.diamondChains,
+      SharedLinks.partsAccessories
     ]
   },
   {
@@ -44,12 +44,12 @@ const mainNavData = [
       targetUrl: null
     },
     submenuLinks: [
-      sharedLinks.contactUs,
-      sharedLinks.findDealer,
-      sharedLinks.productRegistration,
-      sharedLinks.docLibrary,
-      sharedLinks.proCorner,
-      sharedLinks.demoRequest
+      SharedLinks.contactUs,
+      SharedLinks.findDealer,
+      SharedLinks.productRegistration,
+      SharedLinks.docLibrary,
+      SharedLinks.proCorner,
+      SharedLinks.demoRequest
     ]
   },
   {

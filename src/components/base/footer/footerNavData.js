@@ -1,9 +1,10 @@
-import sharedLinks from '../../../data/reusableNavLinks';
-import { SocialLink } from '../../../utility/constructors';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
+
+import SharedLinks from '../reusableNavLinks';
+import { SocialLink } from '../../../utility/constructors';
 
 
 const CareersLink = () => {
@@ -25,14 +26,14 @@ const footerNavData = [
       {
         sectionHeader: 'products',
         sectionLinks: [
-          sharedLinks.icsBrandLink, 
-          sharedLinks.meritBrandLink, 
-          sharedLinks.pentruderBrandLink,
-          sharedLinks.powerCutters,
-          sharedLinks.flatSaws,
-          sharedLinks.wallWireSaws,
-          sharedLinks.diamondChains,
-          sharedLinks.partsAccessories
+          SharedLinks.icsBrandLink, 
+          SharedLinks.meritBrandLink, 
+          SharedLinks.pentruderBrandLink,
+          SharedLinks.powerCutters,
+          SharedLinks.flatSaws,
+          SharedLinks.wallWireSaws,
+          SharedLinks.diamondChains,
+          SharedLinks.partsAccessories
         ]
       }
     ]
@@ -41,11 +42,11 @@ const footerNavData = [
     sections: [
       {
         sectionHeader: 'About',
-        sectionLinks: [sharedLinks.aboutICS, <CareersLink />]
+        sectionLinks: [SharedLinks.aboutICS, <CareersLink />]
       },
       {
         sectionHeader: 'Where to Buy',
-        sectionLinks: [sharedLinks.findDealer]
+        sectionLinks: [SharedLinks.findDealer]
       }
     ]
   },
@@ -54,11 +55,11 @@ const footerNavData = [
       {
         sectionHeader: 'Resources',
         sectionLinks: [
-          sharedLinks.contactUs, 
-          sharedLinks.productRegistration, 
-          sharedLinks.proCorner, 
-          sharedLinks.docLibrary,
-          sharedLinks.styleGuide
+          SharedLinks.contactUs, 
+          SharedLinks.productRegistration, 
+          SharedLinks.proCorner, 
+          SharedLinks.docLibrary,
+          SharedLinks.styleGuide
         ]
       }
     ]

@@ -20,11 +20,10 @@ export const gasSaws = new Tile(
   Brand, //subheder
   null, //image
   '680 vs 695, different power requirements changes chain needs. Discuss what the difference is between the two saws and why you would want one over the other. What is your cutting project? Different than cutting surface... need to make the deliniation', //Description
-  '/category-content', //Link
+  '/products/ics/gas-power-saws', //Link
   Page.categoryContent, //ctaText
   ['695XL PG Gas Power Cutter', '695XL Gas Power Cutter', '680ES PG Gas Power Cutter', '680ES Gas Power Cutter'], //Product List
   true, //Verified
-  '/products/ics/gas-power-saws' // Breadcrumbs
 );
 
 export const hydraulicSaws = new Tile(
@@ -32,11 +31,10 @@ export const hydraulicSaws = new Tile(
   Brand, //subheader
   null, //image
   'Need to dilineate flush cut versus regular cut. What is your cutting project? Different than cutting surface... need to make the deliniation', //Description
-  '/category-content', //Link
+  '/products/ics/hydraulic-saws', //Link
   Page.categoryContent, //ctaText
   ['890PG Hydraulic Power Cutter', '890F4 Flush Cut Hydraulic Power Cutter', '890F4 Flush Cut Hydraulic Power Cutter'], //Product List
   true, //Verified
-  '/products/ics/hydraulic-saws' // Breadcrumbs
 );
 
 export const forceThree = new Tile(
@@ -44,11 +42,10 @@ export const forceThree = new Tile(
   Brand, //subheader
   null, //image
   'Go to PLP, Add attribute for cuttinig surface to eliminate need for "abrasion type" content page explanation', //Description
-  '/plp', //Link
+  '/products/ics/force-3-diamond-chains', //Link
   Page.plp, //ctaText
-  ['FORCE3 Standard 12"', 'FORCE3 Standard 10"', 'FORCE3 Standard 16"', 'FORCE3 Abrasive', 'FROCE3 Premium'], //Product List
+  [], //Product List
   true, //Verified
-  '/products/ics/force-3-diamond-chains' //Breadcrumbs
 );
 
 export const forceFour = new Tile(
@@ -56,11 +53,10 @@ export const forceFour = new Tile(
   Brand, //subheader
   null, //image
   '', //Description
-  '/plp', //Link
+  '/products/ics/force-4-diamond-chains', //Link
   Page.plp, //ctaText
-  ['FORCE4® Cross-LINK® Chain', 'FORCE4® Texas Chain', 'FORCE4® Series Diamond Chains'], //Product List
+  [], //Product List
   true, //Verified
-  '/products/ics/force-4-diamond-chains' //Breadcrumbs
 );
 
 export const powerGrit = new Tile(
@@ -68,11 +64,10 @@ export const powerGrit = new Tile(
   Brand, //subheader
   null, //image
   '', //Description
-  '/plp', //Link
+  '/products/ics/power-grit', //Link
   Page.plp, //ctaText
-  ['PowerGrit® XL Pipe Cutting Chain', 'PowerGrit® Pipe Cutting Chain'], //Product List
+  [], //Product List
   true, //Verified
-  '/products/ics/power-grit' //Breadcrumbs
 );
 
 export const pipeClamp = new Tile(
@@ -95,7 +90,6 @@ export const hydraulicHose = new Tile(
   Page.pdp, //ctaText
   ['Hydraulic Hoses'], //Product List
   true, //Verified
-  '/products/ics/hydraulic-hoses' //Breadcrumbs
 );
 
 export const flowAdapter = new Tile(
@@ -136,11 +130,10 @@ export const wires = new Tile(
   Brand, //subheader
   null, //image
   '', //Description
-  '/plp', //Link
+  '/products/ics/diamond-wires', //Link
   Page.plp, //ctaText
-  ['Finish Wire', 'Heavy Concrete Wire', 'Hybrid Wire', 'Steel Wire – Fast Cutting', 'Steel Wire – Longer Lasting', 'Super Wire'], //Product List
+  [], //Product List
   true, //Verified
-  '/products/ics/diamond-wires' //Breadcrumbs //Verified
 );
 
 export const carryBags = new Tile(
@@ -148,11 +141,10 @@ export const carryBags = new Tile(
   Brand, //subheader
   null, //image
   '', //Description
-  '/plp', //Link
+  '/products/ics/carrying-bags', //Link
   Page.plp, //ctaText
-  ['ICS Small Carrying Bag', 'ICS Large Carrying Bag'], //Product List
-  false, //Verified
-  '/products/ics/carrying-bags' //Breadcrumbs //Verified
+  [], //Product List
+  true, //Verified
 );
 
 export const ICSSaws = [
@@ -173,5 +165,6 @@ export const ICSParts = [
   flowAdapter,
   engineOil,
   powerPack,
-  wires
+  wires,
+  carryBags
 ];

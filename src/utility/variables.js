@@ -20,7 +20,8 @@ export const Categories = {
   flatSaws: 'Flat Saws',
   wallSaws: 'Wall Saws',
   wireSaws: 'Wire Saws',
-  steelCutting: 'Steel Cutting'
+  steelCutting: 'Steel Cutting',
+  carryingBags: 'Carrying Bags',
 };
 
 export const PowerTypes = {

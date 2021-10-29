@@ -32,6 +32,8 @@ const ICSProducts = [
   new Product('Steel Wire – Fast Cutting', Brands.ics, Categories.diamondWire, null, Categories.steelCutting),
   new Product('Steel Wire – Longer Lasting', Brands.ics, Categories.diamondWire, null, Categories.steelCutting),
   new Product('Super Wire', Brands.ics, Categories.diamondWire),
+  new Product('Small Carrying Bag', Brands.ics, Categories.parts,null,Categories.carryingBags),
+  new Product('Large Carrying Bag', Brands.ics, Categories.parts,null,Categories.carryingBags),
 ];
 
 export default ICSProducts;

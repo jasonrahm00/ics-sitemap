@@ -13,6 +13,7 @@ import ParagraphLinks from "../cms-components/paragraph-links/paragraphLinks";
 import UserSegmentation from "../cms-components/user-segmentation/userSegmentation";
 import VideoAdjacentText from "../cms-components/vid-adj-text/vidAdjText";
 import TileCollection from '../cms-components/tile-collection/tileCollection';
+import DefaulTileCollection from '../cms-components/tile-collection/default-tile-collection';
 
 const components = [
   {
@@ -29,7 +30,7 @@ const components = [
   },
   {
     value: 'Tile Collection Component',
-    component: <TileCollection showSpecs="true" />
+    component: <TileCollection showSpecs="true" tileGroup={DefaulTileCollection} />
   },
   {
     value: 'Paragraph with Header Subheader Body',

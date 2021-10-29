@@ -49,9 +49,9 @@ function TileCollection({...props}) {
                     description={x.description}
                     products={x.productList}
                     verified={x.verified}
-                    showBrand={props.showBrand}
-                    brand={x.subheader}
-                    customCrumbs={x.crumbs} 
+                    subheader={x.subheader}
+                    customCrumbs={x.crumbs}
+                    image={x.image} 
                   />
                 </Grid>
               )

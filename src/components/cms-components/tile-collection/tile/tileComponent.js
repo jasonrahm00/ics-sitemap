@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import CardHeader from '@mui/material/CardHeader';
 import { Link } from 'react-router-dom';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CardMedia from '@mui/material/CardMedia';
 
 import './tileComponent.css';
 
@@ -15,8 +16,14 @@ function TileComponent({...props}) {
 
   return (
     <Card sx={{ maxWidth: 345 }} raised={true}>
+      {props.image ? (
+        <CardMedia 
+          component="img"
+          image={props.image}
+        />
+      ) : ''}
       <CardContent>
-        <CardHeader component="h3" title={props.header} subheader={props.showBrand ? props.brand : ''} action={props.verified ? <CheckCircleIcon /> : ''}/>
+        <CardHeader component="h3" title={props.header} subheader={props.subheader} action={props.verified ? <CheckCircleIcon /> : ''}/>
         <Typography variant="body2" color="text.secondary" className={!props.description.length ? 'no-description' : ''}>
           {props.description.length ? props.description : placeholderText}
         </Typography>

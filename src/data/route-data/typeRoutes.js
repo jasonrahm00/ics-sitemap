@@ -16,7 +16,7 @@ import {
   PentruderBrandParts,
   MeritBrandParts,
   WallWireAccessories
-} from '../tiles/tile-groupings';
+} from '../../components/cms-components/tile-collection/tiles/tile-groupings';
 
 const ProductsFlatSaws = AllProducts.filter(product => product.primaryCat === Categories.flatSaws);
 const ProductsWallSaws = AllProducts.filter(product => product.primaryCat === Categories.wallSaws);

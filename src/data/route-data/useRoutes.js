@@ -16,7 +16,7 @@ import {
   ConcreteCuttingParts,
   PipeCuttingChains,
   PipeCuttingAccessories
-} from '../tiles/tile-groupings';
+} from '../../components/cms-components/tile-collection/tiles/tile-groupings';
 
 const ProductsSteelCutting = AllProducts.filter(product => product.useCat === Categories.steelCutting);
 const ProductsPowerSupply = AllProducts.filter(product => product.primaryCat === Categories.powerSupply);

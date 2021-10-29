@@ -1,8 +1,8 @@
-import { Tile } from '../../utility/constructors';
-import { Brands } from '../../utility/variables';
+import { Tile } from '../../../../utility/constructors';
+import { Brands } from '../../../../utility/variables';
 import { 
   PageTypes as Page
-} from '../../utility/variables';
+} from '../../../../utility/variables';
 
 const Brand = Brands.pentruder;
 

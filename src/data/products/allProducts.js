@@ -5,4 +5,3 @@ import PentruderProducts from "./pentruderProducts";
 const AllProducts = ICSProducts.concat(MeritProducts, PentruderProducts);
 
 export default AllProducts;
-

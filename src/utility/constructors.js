@@ -41,6 +41,12 @@ export const Product = function(name, brand, primaryCat, attributes, useCat) {
   this.name = name;
   this.brand = brand;
   this.primaryCat = primaryCat;
-  this.attributes = attributes;
+  this.attributes = attributes ? attributes : null;
   this.useCat = useCat
 };
+
+export const Attributes = function(power, chainType, series) {
+  this.power = power;
+  this.chainType = chainType;
+  this.series = series;
+}

@@ -1,0 +1,18 @@
+.MuiButton-root.link-button:hover,
+.MuiButton-root.link-button {
+  transform: skewX(-8deg) translateZ(0);
+  padding: 0;
+  font-size: .875rem;
+  margin: .5rem 0 .5rem .5rem;
+  text-transform: uppercase;
+  background-color: #eec00a;
+  border-radius: 0;
+}
+
+.MuiButton-root.link-button a,
+.MuiButton-root.link-button a:visited {
+  padding: .5rem 1.5rem;
+  color: black;
+  text-decoration: none;
+  transform: skewX(8deg) translateZ(0);
+}

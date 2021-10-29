@@ -1,21 +1,28 @@
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardHeader from '@mui/material/CardHeader';
-import { Link } from 'react-router-dom';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CardMedia from '@mui/material/CardMedia';
 
 import { PlaceholderText } from '../../../../utility/variables';
-
+import LinkButton from '../../base-cms-components/linkButton/linkButton';
 import './tileComponent.css';
 
 function TileComponent({...props}) {
 
+  let to = {
+    pathname: props.link,
+    state: {
+      products: props.products,
+      pageTitle: props.header,
+      customCrumbs: props.customCrumbs ? props.customCrumbs : null
+    },
+  };
+
   return (
-    <Card sx={{ maxWidth: 345 }} raised={true}>
+    <Card sx={{ width: props.width }} raised={true}>
       {props.image ? (
         <CardMedia 
           component="img"
@@ -29,20 +36,7 @@ function TileComponent({...props}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">
-          <Link 
-            to={{
-              pathname: props.link,
-              state: {
-                products: props.products,
-                pageTitle: props.header,
-                customCrumbs: props.customCrumbs ? props.customCrumbs : null
-              },
-            }}
-          >
-            {props.dest}
-          </Link>
-        </Button>
+        <LinkButton linkText={props.dest} to={to} />
       </CardActions>
     </Card>
   );

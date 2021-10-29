@@ -52,7 +52,8 @@ function TileCollection({...props}) {
                     verified={x.verified}
                     subheader={x.subheader}
                     customCrumbs={x.crumbs}
-                    image={x.image} 
+                    image={x.image}
+                    width={345}
                   />
                 </Grid>
               )

@@ -7,7 +7,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CardMedia from '@mui/material/CardMedia';
 
 import { PlaceholderText } from '../../../../utility/variables';
-import LinkButton from '../../base-cms-components/linkButton/linkButton';
+import LinkButton from '../../base-cms-components/link-button/linkButton';
 import './tileComponent.css';
 
 function TileComponent({...props}) {

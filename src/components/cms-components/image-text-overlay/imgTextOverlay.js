@@ -1,6 +1,6 @@
 import './imgTextOverlay.css';
 import HeroImage from './hero-banner.jpg';
-import LinkButton from '../base-cms-components/linkButton/linkButton';
+import LinkButton from '../base-cms-components/link-button/linkButton';
 
 const ComponentSpecs = () => {
   return (

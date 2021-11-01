@@ -10,12 +10,11 @@ import ParagraphHeadSubheadBody from "../cms-components/paragraph-head-subhead-b
 import ParagraphLinks from "../cms-components/paragraph-links/paragraphLinks";
 import UserSegmentation from "../cms-components/user-segmentation/userSegmentation";
 import TileCollection from '../cms-components/tile-collection/tileCollection';
-import MediaAdjText from '../cms-components/media-adj-text/mediaAdjText';
 
 //Component Defaults
 import DefaulTileCollection from '../cms-components/tile-collection/default-tile-collection';
 import { FullWidthImgTextOverlay, MarginsImgTextOverlay } from '../cms-components/image-text-overlay/default-img-text-overlay';
-import { IWATDefault, VWATDefault } from '../cms-components/media-adj-text/media-adj-text-defaults';
+import { IWATDefault, VWATDefault } from '../cms-components/media-adj-text/default-media-adj-text';
 
 const components = [
   {
@@ -24,7 +23,7 @@ const components = [
   },
   {
     value: 'Image with Adjacent Text',
-    component: [<MediaAdjText showSpecs="true" specs={<IWATDefault />} />]
+    component: [<IWATDefault />]
   },
   {
     value: 'Paragraph with Bullets',
@@ -48,7 +47,7 @@ const components = [
   },
   {
     value: 'Video with Adjacent Text',
-    component: [<MediaAdjText showSpecs="true" specs={<VWATDefault />} />]
+    component: [<VWATDefault />]
   }
 ];
 

@@ -1,73 +1,33 @@
 import './mediaAdjText.css';
-import AdjText from '../base-cms-components/adj-text/adjText';
-import AdjMedia from '../base-cms-components/adj-media/adjMedia';
-import { PlaceholderText } from '../../../utility/variables';
-import largePlaceholderImg from '../../../media/placeholder-image-large.png';
 import LinkButton from '../base-cms-components/link-button/linkButton'; 
 
-const ComponentSpecs = () => {
-  return (
-    <section className="content-wrapper">
-      <h2>Image with Adjacent Text</h2>
-      <ul>
-        <li>Adjacent Image</li>
-        <li>Image/Text Placement (left, right)</li>
-        <li>Image Span (25%, 50%, 75%)</li>
-        <li>Header</li>
-        <li>Subheader</li>
-        <li>Body Copy</li>
-        <li>Bullet List Section with Title</li>
-        <li>Link List Section with Title</li>
-        <li>CTA Button</li>
-      </ul>
-    </section>
-  )
-}
 function MediaAdjText({...props}) {
   return (
     <>
-      {props.showSpecs ? <ComponentSpecs /> : ''}
+      {props.showSpecs ? props.specs : ''}
       <div className={props.withMargins === true ? 'content-wrapper' : ''}>
-        <div className="media-adj-text-content content-wrapper">
+        <div className={"media-adj-text-content content-wrapper " + (props.textPlacement === 'left' ? 'text-left' : '')}>
           <div className='media-wrapper'>
-            <img src={largePlaceholderImg} alt="" />
+            {props.videoId ? (
+              <>
+                <iframe width="650" height="366" src={'https://www.youtube-nocookie.com/embed/' + props.videoId} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </>
+            ) : ''}
+            {props.image ? (<img src={props.image} alt="" />) : ''}
           </div>
           <div className='text-wrapper'>
-            <h2>Header</h2>
-            <h3>Subheader</h3>
-            <p>{PlaceholderText}</p>
-            <LinkButton to="/" ctaText="CTA Text" />
+            {props.header ? (<h2>{props.header}</h2>) : ''}
+            {props.subheader ? (<h3>{props.subheader}</h3>) : ''}
+            {props.bodyText ? (<p>{props.bodyText}</p>) : ''}
+            {props.ctaText && props.ctaUrl ? (
+              <LinkButton to={props.ctaUrl} ctaText={props.ctaText} />
+            ) : ''}
 
             {/* Bullet Section */}
-            <section className="list-group-component">
-              <h3>Bullet Section Header</h3>
-              <section>
-                <h4>Left Column Bullets</h4>
-                <ul>
-                  <li>Bullet 1</li>
-                  <li>Bullet 2</li>
-                  <li>Bullet 3</li>
-                </ul>
-              </section>
-              <section>
-                <h4>Right Column Bullets</h4>
-                <ul>
-                  <li>Bullet 1</li>
-                  <li>Bullet 2</li>
-                  <li>Bullet 3</li>
-                </ul>
-              </section>
-            </section>
+            {props.bulletGroup ? props.bulletGroup : ''}
 
             {/* Link Group */}
-            <section className="list-group-component links">
-              <h3>Link Section Header</h3>
-              <ul>
-                <li><a href="/">Link 1</a></li>
-                <li><a href="/">Link 2</a></li>
-                <li><a href="/">Link 3</a></li>
-              </ul>
-            </section>
+            {props.linkGroup ? props.linkGroup : ''}
           </div>
         </div>
       </div>

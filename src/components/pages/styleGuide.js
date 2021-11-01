@@ -9,13 +9,13 @@ import ParagraphBullets from "../cms-components/paragraph-bullets/paragraphBulle
 import ParagraphHeadSubheadBody from "../cms-components/paragraph-head-subhead-body/paragraphHeadSubheadBody";
 import ParagraphLinks from "../cms-components/paragraph-links/paragraphLinks";
 import UserSegmentation from "../cms-components/user-segmentation/userSegmentation";
-import VideoAdjacentText from "../cms-components/vid-adj-text/vidAdjText";
 import TileCollection from '../cms-components/tile-collection/tileCollection';
 import MediaAdjText from '../cms-components/media-adj-text/mediaAdjText';
 
 //Component Defaults
 import DefaulTileCollection from '../cms-components/tile-collection/default-tile-collection';
 import { FullWidthImgTextOverlay, MarginsImgTextOverlay } from '../cms-components/image-text-overlay/default-img-text-overlay';
+import { IWATDefault, VWATDefault } from '../cms-components/media-adj-text/media-adj-text-defaults';
 
 const components = [
   {
@@ -24,7 +24,7 @@ const components = [
   },
   {
     value: 'Image with Adjacent Text',
-    component: [<MediaAdjText showSpecs="true" />]
+    component: [<MediaAdjText showSpecs="true" specs={<IWATDefault />} />]
   },
   {
     value: 'Paragraph with Bullets',
@@ -48,7 +48,7 @@ const components = [
   },
   {
     value: 'Video with Adjacent Text',
-    component: [<VideoAdjacentText showSpecs="true" />]
+    component: [<MediaAdjText showSpecs="true" specs={<VWATDefault />} />]
   }
 ];
 

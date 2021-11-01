@@ -1,0 +1,18 @@
+.paragraph-bullets header,
+.paragraph-bullets p {
+  text-align: center;
+}
+
+.paragraph-bullets .list-group-component {
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.paragraph-bullets .list-group-component h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.paragraph-bullets .list-group-component section {
+  width: 33%;
+}

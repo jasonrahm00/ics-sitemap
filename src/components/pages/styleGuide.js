@@ -15,6 +15,7 @@ import TileCollection from '../cms-components/tile-collection/tileCollection';
 import DefaulTileCollection from '../cms-components/tile-collection/default-tile-collection';
 import { FullWidthImgTextOverlay, MarginsImgTextOverlay } from '../cms-components/image-text-overlay/default-img-text-overlay';
 import { IWATDefault, VWATDefault } from '../cms-components/media-adj-text/default-media-adj-text';
+import DefaultParagraphBullets from '../cms-components/paragraph-bullets/default-paragraph-bullets';
 
 const components = [
   {
@@ -27,7 +28,7 @@ const components = [
   },
   {
     value: 'Paragraph with Bullets',
-    component: [<ParagraphBullets showSpecs="true" />]
+    component: [<DefaultParagraphBullets />]
   },
   {
     value: 'Tile Collection Component',

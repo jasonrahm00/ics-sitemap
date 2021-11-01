@@ -6,8 +6,8 @@ export const DefaultBulletGroup = () => {
     <BullletListGroup 
       groupHeader='Bullet Group Header'
       bulletLists={[
-        <BulletList listHeader='Column 1 Header' bullets={['Column 1, Bullet 1', 'Column 1, Bullet 2', 'Column 1, Bullet 3']} />,
-        <BulletList listHeader='Column 2 Header' bullets={['Column 2, Bullet 1', 'Column 2, Bullet 2', 'Column 2, Bullet 3']} />
+        <BulletList listHeader='List 1 Header' bullets={['List 1, Bullet 1', 'List 1, Bullet 2', 'List 1, Bullet 3']} />,
+        <BulletList listHeader='List 2 Header' bullets={['List 2, Bullet 1', 'List 2, Bullet 2', 'List 2, Bullet 3']} />
       ]}
     />
   )

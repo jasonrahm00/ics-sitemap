@@ -25,6 +25,14 @@ function ParagraphBullets({...props}) {
   return (
     <>
       {props.showSpecs ? <ComponentSpecs /> : ''}
+      <section className="paragraph-bullets content-wrapper">
+        <header>
+          {props.header ? (<h2>{props.header}</h2>) : ''}
+          {props.subheader ? (<h3>{props.subheader}</h3>) : ''}
+        </header>
+        {props.bodyText ? (<p>{props.bodyText}</p>) : ''}
+        {props.bulletGroup ? props.bulletGroup : ''}
+      </section>
     </>
   );
 }

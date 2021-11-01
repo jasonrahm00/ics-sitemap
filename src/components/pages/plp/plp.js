@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './plp.css';
 import Breadcrumbs from '../../base/breadcrumbs/breadcrumbs';
-import imgPlaceholder from './no-image-available.png';
+import smallPlaceholderImg from '../../../media/placeholder-image-small.png'
 import { Product } from '../../../utility/constructors';
 
 const placeholderProducts = [
@@ -18,7 +18,7 @@ const ProductListing = props => {
       return (
         <li key={index}>
           <div className="image-wrapper">
-            <img src={imgPlaceholder} alt="" />
+            <img src={smallPlaceholderImg} alt="" />
           </div>
           <div>
             <Link

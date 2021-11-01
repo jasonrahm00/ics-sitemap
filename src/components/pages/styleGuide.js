@@ -5,14 +5,13 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-import ImgTextOverlay from "../cms-components/image-text-overlay/imgTextOverlay";
-import ImgAdjText from "../cms-components/img-adj-text/imgAdjText";
 import ParagraphBullets from "../cms-components/paragraph-bullets/paragraphBullets";
 import ParagraphHeadSubheadBody from "../cms-components/paragraph-head-subhead-body/paragraphHeadSubheadBody";
 import ParagraphLinks from "../cms-components/paragraph-links/paragraphLinks";
 import UserSegmentation from "../cms-components/user-segmentation/userSegmentation";
 import VideoAdjacentText from "../cms-components/vid-adj-text/vidAdjText";
 import TileCollection from '../cms-components/tile-collection/tileCollection';
+import MediaAdjText from '../cms-components/media-adj-text/mediaAdjText';
 
 //Component Defaults
 import DefaulTileCollection from '../cms-components/tile-collection/default-tile-collection';
@@ -25,7 +24,7 @@ const components = [
   },
   {
     value: 'Image with Adjacent Text',
-    component: [<ImgAdjText showSpecs="true" />]
+    component: [<MediaAdjText showSpecs="true" />]
   },
   {
     value: 'Paragraph with Bullets',

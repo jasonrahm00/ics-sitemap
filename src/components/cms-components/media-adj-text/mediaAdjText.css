@@ -46,30 +46,34 @@
   padding-top: .5rem;
 }
 
-.list-group {
+.list-group-component section {
   width: 50%;
 }
 
-.list-group a,
-.list-group a:visited {
+.list-group-component a,
+.list-group-component a:visited {
   text-decoration: none;
   color: #006DA3
 }
 
-.list-group a:hover {
+.list-group-component a:hover {
   text-decoration: underline;
 }
 
-.list-group ul {
+.list-group-component ul {
   margin: 0;
   padding: .5rem 0 .5rem 1rem;
 }
 
-.list-group.links ul {
+.list-group-component.links ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   padding: 0;
 }
 
-.list-group.links li {
+.list-group-component.links li {
   list-style-type: none;
+  width: 50%;
+  padding-bottom: 1rem;
 }
-

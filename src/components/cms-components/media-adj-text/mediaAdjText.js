@@ -41,7 +41,7 @@ function MediaAdjText({...props}) {
             {/* Bullet Section */}
             <section className="list-group-component">
               <h3>Bullet Section Header</h3>
-              <section className="list-group">
+              <section>
                 <h4>Left Column Bullets</h4>
                 <ul>
                   <li>Bullet 1</li>
@@ -49,7 +49,7 @@ function MediaAdjText({...props}) {
                   <li>Bullet 3</li>
                 </ul>
               </section>
-              <section className="list-group">
+              <section>
                 <h4>Right Column Bullets</h4>
                 <ul>
                   <li>Bullet 1</li>
@@ -60,22 +60,13 @@ function MediaAdjText({...props}) {
             </section>
 
             {/* Link Group */}
-            <section className="list-group-component">
+            <section className="list-group-component links">
               <h3>Link Section Header</h3>
-              <section className="list-group links">
-                <ul>
-                  <li><a href="/">Link 1</a></li>
-                  <li><a href="/">Link 2</a></li>
-                  <li><a href="/">Link 3</a></li>
-                </ul>
-              </section>
-              <section className="list-group links">
-                <ul>
-                  <li><a href="/">Link 1</a></li>
-                  <li><a href="/">Link 2</a></li>
-                  <li><a href="/">Link 3</a></li>
-                </ul>
-              </section>
+              <ul>
+                <li><a href="/">Link 1</a></li>
+                <li><a href="/">Link 2</a></li>
+                <li><a href="/">Link 3</a></li>
+              </ul>
             </section>
           </div>
         </div>

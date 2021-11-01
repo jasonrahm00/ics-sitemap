@@ -6,6 +6,7 @@ const ComponentSpecs = () => {
   return (
     <div className="content-wrapper">
       <h2>Image with Text Overlay</h2>
+      <p>Image container will re-adjust to center over main focus on mobile and text will drop below image and preserve any gradient background added (including opacity)</p>
       <ul>
         <li>Background image, full width or with margins</li>
         <li>Header</li>

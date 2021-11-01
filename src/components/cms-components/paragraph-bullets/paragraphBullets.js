@@ -3,7 +3,7 @@ import './paragraphBullets.css';
 const ComponentSpecs = () => {
   return (
     <section className="content-wrapper">
-      <h2>Paragrph with Bullets</h2>
+      <h2>Paragraph with Bullets</h2>
       <ul>
         <li>Header</li>
         <li>Subhead</li>

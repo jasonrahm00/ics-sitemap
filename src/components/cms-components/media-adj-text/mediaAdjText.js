@@ -6,7 +6,7 @@ function MediaAdjText({...props}) {
     <>
       {props.showSpecs ? props.specs : ''}
       <div className={props.withMargins === true ? 'content-wrapper' : ''}>
-        <div className={"media-adj-text-content content-wrapper " + (props.textPlacement === 'left' ? 'text-left' : '')}>
+        <div className={'media-adj-text-content content-wrapper ' + (props.textPlacement === 'left' ? 'text-left' : '')}>
           <div className='media-wrapper'>
             {props.videoId ? (
               <>
@@ -15,7 +15,7 @@ function MediaAdjText({...props}) {
             ) : ''}
             {props.image ? (<img src={props.image} alt="" />) : ''}
           </div>
-          <div className='text-wrapper'>
+          <div className={'text-wrapper ' + (props.textPlacement === 'left' ? 'padding-right' : '')}>
             {props.header ? (<h2>{props.header}</h2>) : ''}
             {props.subheader ? (<h3>{props.subheader}</h3>) : ''}
             {props.bodyText ? (<p>{props.bodyText}</p>) : ''}

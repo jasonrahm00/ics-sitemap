@@ -5,7 +5,6 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-import ParagraphBullets from "../cms-components/paragraph-bullets/paragraphBullets";
 import ParagraphHeadSubheadBody from "../cms-components/paragraph-head-subhead-body/paragraphHeadSubheadBody";
 import ParagraphLinks from "../cms-components/paragraph-links/paragraphLinks";
 import UserSegmentation from "../cms-components/user-segmentation/userSegmentation";
@@ -16,6 +15,7 @@ import DefaulTileCollection from '../cms-components/tile-collection/default-tile
 import { FullWidthImgTextOverlay, MarginsImgTextOverlay } from '../cms-components/image-text-overlay/default-img-text-overlay';
 import { IWATDefault, VWATDefault } from '../cms-components/media-adj-text/default-media-adj-text';
 import DefaultParagraphBullets from '../cms-components/paragraph-bullets/default-paragraph-bullets';
+import { PlaceholderText } from '../../utility/variables';
 
 const components = [
   {
@@ -36,7 +36,20 @@ const components = [
   },
   {
     value: 'Paragraph with Header Subheader Body',
-    component: [<ParagraphHeadSubheadBody showSpecs="true" />]
+    component: [
+      <ParagraphHeadSubheadBody 
+        showSpecs="true" 
+        header="Paragraph with Header Subheader Body" 
+        subheader="Full Width" 
+        bodyText={PlaceholderText} 
+      />,
+      <ParagraphHeadSubheadBody 
+        header="Paragraph with Header Subheader Body" 
+        subheader="With Margins" 
+        bodyText={PlaceholderText}
+        withMargins={true} 
+      />,
+    ]
   },
   {
     value: 'Paragraph with Links',
@@ -64,7 +77,7 @@ function StyleGuide() {
     <>
       <div className="content-wrapper padding-top">
         <h1>Hybris Custom Component Style Guide</h1>
-        <p>All components allow site editors to individually control the header and body copy colors, rudimentary control of the width of the component as well as background color or the inclusion of a background image; use of a background image for anything other than the Image with Text Overlay component is not recommended.</p>
+        <p>All components allow site editors to individually control the header and body copy colors, rudimentary control of the width of the component as well as background color or the inclusion of a background image; use of a background image for anything other than the Image with Text Overlay component is not recommended. Most components also include a Body Text field that is a WYSIWYG Editor, so additional text effects and layouts are available beyond what is controlled by the component template.</p>
         <Box sx={{ width: 400, paddingTop: 2.5, paddingBottom: 2.5 }}>
           <FormControl fullWidth>
             <InputLabel id="component-selector-label">Component</InputLabel>

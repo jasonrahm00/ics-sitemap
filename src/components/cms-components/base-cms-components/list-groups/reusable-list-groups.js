@@ -16,7 +16,7 @@ export const DefaultBulletGroup = () => {
 export const DefaultLinkGroup = () => {
   return (
     <LinkListGroup 
-      groupHeader='Link Group Header'
+      header='Link Group Header'
       links={[
         <Link to="#">Link 1</Link>,
         <Link to="#">Link 2</Link>,

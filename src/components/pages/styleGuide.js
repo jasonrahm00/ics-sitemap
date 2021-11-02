@@ -4,6 +4,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { Link } from 'react-router-dom';
 
 import ParagraphHeadSubheadBody from "../cms-components/paragraph-head-subhead-body/paragraphHeadSubheadBody";
 import ParagraphLinks from "../cms-components/paragraph-links/paragraphLinks";
@@ -38,7 +39,7 @@ const components = [
     value: 'Paragraph with Header Subheader Body',
     component: [
       <ParagraphHeadSubheadBody 
-        showSpecs="true" 
+        showSpecs={true} 
         header="Paragraph with Header Subheader Body" 
         subheader="Full Width" 
         bodyText={PlaceholderText} 
@@ -53,11 +54,29 @@ const components = [
   },
   {
     value: 'Paragraph with Links',
-    component: [<ParagraphLinks showSpecs="true" />]
+    component: [
+      <ParagraphLinks 
+        showSpecs={true}
+        column1Header='Column 1 Header'
+        column1Subheader='Column 1 Subheader' 
+        column1Links={[
+          <Link to="#">Column 1, Link 1</Link>,
+          <Link to="#">Column 1, Link 2</Link>,
+          <Link to="#">Column 1, Link 3</Link>
+        ]}
+        column2Header='Column 2 Header'
+        column2Subheader='Column 2 Subheader'  
+        column2Links={[
+          <Link to="#">Column 2, Link 1</Link>,
+          <Link to="#">Column 2, Link 2</Link>,
+          <Link to="#">Column 2, Link 3</Link>
+        ]}
+      />,
+    ]
   },
   {
     value: 'User Segmentation Component',
-    component: [<UserSegmentation showSpecs="true" />]
+    component: [<UserSegmentation showSpecs={true} />]
   },
   {
     value: 'Video with Adjacent Text',

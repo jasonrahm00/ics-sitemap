@@ -19,7 +19,7 @@ export const WireSaws = new TileGroup('Wire Saws', '', PentruderWireSaws);
 export const PentruderBrandParts = new TileGroup('Pentruder Parts & Accessories', '', PentruderParts);
 
 // Use and Type Tiles
-export const AllChainSaws = new TileGroup('Chain Saws', '', [...ICSSaws].concat([...PentruderChainSaws]));
+export const AllChainSaws = new TileGroup('Power Cutters', '', [...ICSSaws].concat([...PentruderChainSaws]));
 export const ConcreteCuttingChains = new TileGroup('Concrete Cutting Saw Chains', '', [forceThree, forceFour]);
 export const ConcreteCuttingParts = new TileGroup('Concrete Cutting Parts & Accessories', '', [remoteControl, wires]);
 export const PipeCuttingChains = new TileGroup('Pipe Cutting Saw Chains', '', [powerGrit]);

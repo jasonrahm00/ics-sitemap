@@ -7,7 +7,7 @@ import ReusableTileCollections from "../../components/cms-components/tile-collec
 import { PlaceholderText } from "../../utility/variables";
 import AllProducts from "../products/allProducts";
 
-import {IWATMeritFlatSaws} from '../../components/cms-components/media-adj-text/default-media-adj-text';
+import {IWATMeritFlatSaws, IWATPentruderSaws} from '../../components/cms-components/media-adj-text/default-media-adj-text';
 
 const ProductsPentruderParts = AllProducts.filter(product => product.brand === Brands.pentruder && product.primaryCat === Categories.parts);
 const ProductsForce3 = AllProducts.filter(product => product.attributes && product.attributes.series === Series.force3);
@@ -16,6 +16,13 @@ const ProductsPowerGrit = AllProducts.filter(product => product.attributes && pr
 const ProductsDiamondWires = AllProducts.filter(product => product.primaryCat === Categories.diamondWire);
 const ProductsICSBags = AllProducts.filter(product => product.brand === Brands.ics && product.useCat === Categories.carryingBags);
 const ProductsPentruderAccessories = AllProducts.filter(product => product.brand === Brands.pentruder && product.primaryCat === Categories.access);
+const ProductsPentruderSaws = AllProducts.filter(
+  product => product.brand === Brands.pentruder && (
+    product.primaryCat === Categories.wallSaws ||
+    product.primaryCat === Categories.wireSaws ||
+    product.primaryCat === Categories.powerCut
+  )
+);
 
 const BrandRoutes = [
 
@@ -46,13 +53,12 @@ const BrandRoutes = [
   // Pentruder Brand Routes
   new RouteObject('/products/pentruder', () => <CategoryContent components={[
     <ImgTextOverlay header={'Pentruder Brand'} text={PlaceholderText} />,
-    ReusableTileCollections.pentruderSawsCollection,
-    ReusableTileCollections.wallSawsCollection,
-    ReusableTileCollections.wireSawsCollection,
+    <IWATPentruderSaws />,
     ReusableTileCollections.pentruderPartsCollection,
   ]} />),
   new RouteObject('/products/pentruder/parts', () => <PLP title={'Pentruder Parts'} products={ProductsPentruderParts} />),
-  new RouteObject('/products/pentruder/accessories', () => <PLP title={'Pentruder Accessories'} products={ProductsPentruderAccessories} />)
+  new RouteObject('/products/pentruder/accessories', () => <PLP title={'Pentruder Accessories'} products={ProductsPentruderAccessories} />),
+  new RouteObject('/products/pentruder/saws', () => <PLP title={'Pentruder Saws'} products={ProductsPentruderSaws} />),
 ]
 
 export default BrandRoutes;

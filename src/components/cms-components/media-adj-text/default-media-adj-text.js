@@ -91,3 +91,16 @@ export const IWATMeritFlatSaws = () => {
     />
   )
 }
+
+export const IWATPentruderSaws = () => {
+  return (
+    <MediaAdjText 
+      header='Pentruder Saws'
+      ctaUrl='/products/pentruder/saws'
+      ctaText='Pentruder Saws'
+      bodyText={PlaceholderText}
+      textPlacement='right'
+      image={LargePlaceholderImage}
+    />
+  )
+}

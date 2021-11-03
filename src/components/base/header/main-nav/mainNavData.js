@@ -14,18 +14,6 @@ const mainNavData = [
   },
   {
     topLevelLink: {
-      anchorText: 'Shop by Use',
-      targetUrl: null
-    },
-    submenuLinks: [
-      SharedLinks.concreteCutting, 
-      SharedLinks.pipeCutting, 
-      SharedLinks.steelCutting,
-      SharedLinks.powerSupply
-    ]
-  },
-  {
-    topLevelLink: {
       anchorText: 'Shop by Type',
       targetUrl: null
     },
@@ -36,6 +24,18 @@ const mainNavData = [
       SharedLinks.wallWireSaws,
       SharedLinks.diamondChains,
       SharedLinks.partsAccessories
+    ]
+  },
+  {
+    topLevelLink: {
+      anchorText: 'Shop by Use',
+      targetUrl: null
+    },
+    submenuLinks: [
+      SharedLinks.concreteCutting, 
+      SharedLinks.pipeCutting, 
+      SharedLinks.steelCutting,
+      SharedLinks.powerSupply
     ]
   },
   {

@@ -13,6 +13,7 @@ function HeaderNav() {
         <input type="text" placeholder="Search..." />
       </div>
       <ul>
+        <li><a>Find a Dealer</a></li>
         <li><a>Sign In</a></li>
         <li><a>Cart</a></li>
       </ul>

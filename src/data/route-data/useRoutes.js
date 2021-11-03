@@ -13,11 +13,8 @@ const ProductsPowerSupply = AllProducts.filter(product => product.primaryCat ===
 const UseRoutes = [
   new RouteObject('/products/concrete-cutting', () => <CategoryContent components={[
     <ImgTextOverlay header={'Concrete Cutting'} text={PlaceholderText} />,
-    ReusableTileCollections.allChainSawsCollection,
+    ReusableTileCollections.concreteCuttingSaws,
     ReusableTileCollections.concreteCuttingChainsCollection,
-    ReusableTileCollections.flatSawsCollection,
-    ReusableTileCollections.wallSawsCollection,
-    ReusableTileCollections.wireSawsCollection,
     ReusableTileCollections.concreteCuttingPartsCollection,
   ]} />),
   new RouteObject('/products/pipe-cutting', 

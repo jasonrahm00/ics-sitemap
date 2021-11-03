@@ -9,13 +9,13 @@ import {
   PentruderBrandParts,
   PentruderBrandSaws,
   WallSaws,
-  WireSaws,
   AllChainSaws,
   WallWireAccessories,
   ConcreteCuttingChains,
   ConcreteCuttingParts,
   PipeCuttingChains,
-  PipeCuttingAccessories
+  PipeCuttingAccessories,
+  ConcreteCuttingSaws
 } from './tiles/tile-groupings';
 
 const ReusableTileCollections = {
@@ -26,7 +26,6 @@ const ReusableTileCollections = {
   meritPartsCollection: <TileCollection tileGroup={MeritBrandParts} />,
   pentruderSawsCollection: <TileCollection tileGroup={PentruderBrandSaws} />,
   wallSawsCollection: <TileCollection tileGroup={WallSaws} />,
-  wireSawsCollection: <TileCollection tileGroup={WireSaws} />,
   pentruderPartsCollection: <TileCollection tileGroup={PentruderBrandParts} />,
   allChainSawsCollection: <TileCollection tileGroup={AllChainSaws} />,
   wallWireAccessCollection: <TileCollection tileGroup={WallWireAccessories} />,
@@ -34,6 +33,7 @@ const ReusableTileCollections = {
   concreteCuttingPartsCollection: <TileCollection tileGroup={ConcreteCuttingParts} />,
   pipeCuttingChainsCollection: <TileCollection tileGroup={PipeCuttingChains} />,
   pipeCuttingAccessoriesCollection: <TileCollection tileGroup={PipeCuttingAccessories} />,
+  concreteCuttingSaws: <TileCollection tileGroup={ConcreteCuttingSaws} />,
 };
 
 export default ReusableTileCollections

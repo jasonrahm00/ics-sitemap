@@ -1,7 +1,7 @@
 import { TileGroup } from '../../../../utility/constructors';
 import { ICSSaws, ICSChains, ICSParts, wires, forceThree, forceFour, powerGrit, pipeClamp } from './ics-tiles';
 import { MeritFlatSaws, MeritParts } from './merit-tiles';
-import { PentruderWallSaws, PentruderChainSaws, PentruderWireSaws, PentruderParts, remoteControl  } from './pentruder-tiles';
+import { PentruderWallSaws, PentruderChainSaws, PentruderParts, remoteControl  } from './pentruder-tiles';
 
 // ICS Brand Tile Groups
 export const ICSBrandSaws = new TileGroup('Power Cutters', '', ICSSaws);
@@ -15,7 +15,6 @@ export const MeritBrandParts = new TileGroup('Merit Parts & Accessories', '', Me
 // Pentruder Brand Tiles
 export const PentruderBrandSaws = new TileGroup('Power Cutters', '', PentruderChainSaws);
 export const WallSaws = new TileGroup('Wall Saws', '', PentruderWallSaws);
-export const WireSaws = new TileGroup('Wire Saws', '', PentruderWireSaws);
 export const PentruderBrandParts = new TileGroup('Pentruder Parts & Accessories', '', PentruderParts);
 
 // Use and Type Tiles
@@ -25,3 +24,4 @@ export const ConcreteCuttingParts = new TileGroup('Concrete Cutting Parts & Acce
 export const PipeCuttingChains = new TileGroup('Pipe Cutting Saw Chains', '', [powerGrit]);
 export const PipeCuttingAccessories = new TileGroup('Pipe Cutting Accessories', '', [pipeClamp]);
 export const WallWireAccessories = new TileGroup('Wall/Wire Saw Accessories', '', [remoteControl]);
+export const ConcreteCuttingSaws = new TileGroup('Concrete Cutting Saws', '', [...ICSSaws].concat([...PentruderChainSaws]).concat([...MeritFlatSaws]).concat([...PentruderWallSaws]))

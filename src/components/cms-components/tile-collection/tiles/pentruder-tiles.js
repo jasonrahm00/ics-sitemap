@@ -100,12 +100,12 @@ export const bladeFlanges = new Tile(
 );
 
 export const wallSaws = new Tile(
-  'Wall Saws',
+  'Wall/Wire Saws',
   null,
   null,
   '',
-  '/products/wall-saws',
-  'Wall Saws',
+  '/products/wall-wire-saws',
+  'Wall/Wire Saws',
   [],
   true,
 );

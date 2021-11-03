@@ -8,7 +8,9 @@ import ReusableTileCollections from "../../components/cms-components/tile-collec
 import { PlaceholderText } from "../../utility/variables";
 
 const ProductsFlatSaws = AllProducts.filter(product => product.primaryCat === Categories.flatSaws);
-const ProductsWallSaws = AllProducts.filter(product => product.primaryCat === Categories.wallSaws);
+const ProductsWallWireSaws = AllProducts.filter(
+  product => product.primaryCat === Categories.wallSaws || product.primaryCat === Categories.wireSaws
+);
 
 const TypeRoutes = [
   new RouteObject('/products', () => <PLP title={'All Products'} products={AllProducts} />),
@@ -19,14 +21,7 @@ const TypeRoutes = [
     ]} />
   ),
   new RouteObject('/products/flat-saws', () => <PLP title={'Flat Saws'} products={ProductsFlatSaws}/>),
-  new RouteObject('/products/wall-wire-saws', 
-    () => <CategoryContent components={[
-      <ImgTextOverlay header={'Wall/Wire Saws'} text={PlaceholderText} />,
-      ReusableTileCollections.wallSawsCollection,
-      ReusableTileCollections.wireSawsCollection,
-      ReusableTileCollections.wallWireAccessCollection,
-    ]} />
-  ),
+  new RouteObject('/products/wall-wire-saws', () => <PLP title={'Wall/Wire Saws'} products={ProductsWallWireSaws} />),
   new RouteObject('/products/diamond-chains', 
     () => <CategoryContent components={[
       <ImgTextOverlay header={'Diamond Chains'} text={PlaceholderText} />,
@@ -40,8 +35,7 @@ const TypeRoutes = [
       ReusableTileCollections.meritPartsCollection,
       ReusableTileCollections.pentruderPartsCollection,
     ]} />
-  ),
-  new RouteObject('/products/wall-saws', () => <PLP title={'Wall Saws'} products={ProductsWallSaws} />)
+  )
 ]
 
 export default TypeRoutes;

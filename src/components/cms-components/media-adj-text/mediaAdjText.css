@@ -1,6 +1,7 @@
 .media-adj-text-content  {
   display: flex;
   align-items: center;
+  padding: 2.5rem;
 }
 
 .media-adj-text-content h2, 

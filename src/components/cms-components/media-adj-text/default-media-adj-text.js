@@ -78,3 +78,16 @@ export const VWATDefault = () => {
     />
   )
 }
+
+export const IWATMeritFlatSaws = () => {
+  return (
+    <MediaAdjText 
+      header='Merit Flat Saws'
+      ctaUrl='/products/flat-saws'
+      ctaText='Merit Flat Saws'
+      bodyText={PlaceholderText}
+      textPlacement='right'
+      image={LargePlaceholderImage}
+    />
+  )
+}

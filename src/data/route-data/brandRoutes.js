@@ -7,6 +7,8 @@ import ReusableTileCollections from "../../components/cms-components/tile-collec
 import { PlaceholderText } from "../../utility/variables";
 import AllProducts from "../products/allProducts";
 
+import {IWATMeritFlatSaws} from '../../components/cms-components/media-adj-text/default-media-adj-text';
+
 const ProductsPentruderParts = AllProducts.filter(product => product.brand === Brands.pentruder && product.primaryCat === Categories.parts);
 const ProductsForce3 = AllProducts.filter(product => product.attributes && product.attributes.series === Series.force3);
 const ProductsForce4 = AllProducts.filter(product => product.attributes && product.attributes.series === Series.force4);
@@ -37,7 +39,7 @@ const BrandRoutes = [
   // Merit Brand Routes
   new RouteObject('/products/merit', () => <CategoryContent components={[
     <ImgTextOverlay header={'Merit Brand'} text={PlaceholderText} />,
-    ReusableTileCollections.flatSawsCollection,
+    <IWATMeritFlatSaws />,
     ReusableTileCollections.meritPartsCollection,
   ]} />),
 

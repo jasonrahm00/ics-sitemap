@@ -79,7 +79,7 @@ export const VWATDefault = () => {
   )
 }
 
-export const IWATMeritFlatSaws = () => {
+export const MWATMeritFlatSaws = () => {
   return (
     <MediaAdjText 
       header='Merit Flat Saws'
@@ -92,12 +92,64 @@ export const IWATMeritFlatSaws = () => {
   )
 }
 
-export const IWATPentruderSaws = () => {
+export const MWATPentruderSaws = () => {
   return (
     <MediaAdjText 
       header='Pentruder Saws'
       ctaUrl='/products/pentruder/saws'
       ctaText='Pentruder Saws'
+      bodyText={PlaceholderText}
+      textPlacement='right'
+      image={LargePlaceholderImage}
+    />
+  )
+}
+
+export const MWATICS680Cutters = () => {
+  return (
+    <MediaAdjText 
+      header='680 Series Power Cutters'
+      ctaUrl='/products/ics/gas-power-cutters/680-series'
+      ctaText='680 Series Power Cutters'
+      bodyText={PlaceholderText}
+      textPlacement='right'
+      image={LargePlaceholderImage}
+    />
+  )
+}
+
+export const MWATICS695Cutters = () => {
+  return (
+    <MediaAdjText 
+      header='695 Series Power Cutters'
+      ctaUrl='/products/ics/gas-power-cutters/695-series'
+      ctaText='695 Series Power Cutters'
+      bodyText={PlaceholderText}
+      textPlacement='right'
+      image={LargePlaceholderImage}
+    />
+  )
+}
+
+export const MWATICS890Cutters = () => {
+  return (
+    <MediaAdjText 
+      header='890 Series Power Cutters'
+      ctaUrl='/products/ics/gas-power-cutters/890-series'
+      ctaText='890 Series Power Cutters'
+      bodyText={PlaceholderText}
+      textPlacement='right'
+      image={LargePlaceholderImage}
+    />
+  )
+}
+
+export const MWATICS890FCutters = () => {
+  return (
+    <MediaAdjText 
+      header='890F Series Power Cutters'
+      ctaUrl='/products/ics/gas-power-cutters/890-f-series'
+      ctaText='890F Series Power Cutters'
       bodyText={PlaceholderText}
       textPlacement='right'
       image={LargePlaceholderImage}

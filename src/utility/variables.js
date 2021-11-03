@@ -43,6 +43,10 @@ export const Series = {
   force3: 'FORCE3',
   force4: 'FORCE4',
   powerGrit: 'PowerGrit',
+  series695: '695 Series',
+  series680: '680 Series',
+  series890: '890 Series',
+  series890F: '890 Series Flush Cut',
 
   // Merit Seies
   m100: 'M100',

@@ -13,6 +13,7 @@ const ProductsForce4 = AllProducts.filter(product => product.attributes && produ
 const ProductsPowerGrit = AllProducts.filter(product => product.attributes && product.attributes.series === Series.powerGrit);
 const ProductsDiamondWires = AllProducts.filter(product => product.primaryCat === Categories.diamondWire);
 const ProductsICSBags = AllProducts.filter(product => product.brand === Brands.ics && product.useCat === Categories.carryingBags);
+const ProductsPentruderAccessories = AllProducts.filter(product => product.brand === Brands.pentruder && product.primaryCat === Categories.access);
 
 const BrandRoutes = [
 
@@ -30,8 +31,8 @@ const BrandRoutes = [
   new RouteObject('/products/ics/power-grit', () => <PLP title={'Power Grit Chains'} products={ProductsPowerGrit} />),
   new RouteObject('/products/ics/diamond-wires', () => <PLP title={'Diamond Wire and Accessories'} products={ProductsDiamondWires} />),
   new RouteObject('/products/ics/carrying-bags', () => <PLP title={'Carrying Bags'} products={ProductsICSBags} />),
-  new RouteObject('/products/ics/gas-power-saws', () => <CategoryContent />),
-  new RouteObject('/products/ics/hydraulic-saws', () => <CategoryContent />),
+  new RouteObject('/products/ics/gas-power-cutters', () => <CategoryContent />),
+  new RouteObject('/products/ics/hydraulic-power-cutters', () => <CategoryContent />),
 
   // Merit Brand Routes
   new RouteObject('/products/merit', () => <CategoryContent components={[
@@ -48,7 +49,8 @@ const BrandRoutes = [
     ReusableTileCollections.wireSawsCollection,
     ReusableTileCollections.pentruderPartsCollection,
   ]} />),
-  new RouteObject('/products/pentruder/parts', () => <PLP title={'Pentruder Parts'} products={ProductsPentruderParts} />)
+  new RouteObject('/products/pentruder/parts', () => <PLP title={'Pentruder Parts'} products={ProductsPentruderParts} />),
+  new RouteObject('/products/pentruder/accessories', () => <PLP title={'Pentruder Accessories'} products={ProductsPentruderAccessories} />)
 ]
 
 export default BrandRoutes;

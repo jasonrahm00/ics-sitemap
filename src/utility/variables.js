@@ -14,7 +14,7 @@ export const PageTypes = {
 export const Categories = {
   powerCut: 'Power Cutters',
   diamondChains: 'Diamond Chains',
-  parts: 'Parts and Accessories',
+  parts: 'Parts',
   diamondWire: 'Diamond Wires',
   powerSupply: 'Power Supply',
   flatSaws: 'Flat Saws',
@@ -22,6 +22,7 @@ export const Categories = {
   wireSaws: 'Wire Saws',
   steelCutting: 'Steel Cutting',
   carryingBags: 'Carrying Bags',
+  access: 'Accessories'
 };
 
 export const PowerTypes = {

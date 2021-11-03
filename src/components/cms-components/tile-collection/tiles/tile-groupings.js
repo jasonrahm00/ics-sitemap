@@ -4,7 +4,7 @@ import { MeritFlatSaws, MeritParts } from './merit-tiles';
 import { PentruderWallSaws, PentruderChainSaws, PentruderWireSaws, PentruderParts, remoteControl  } from './pentruder-tiles';
 
 // ICS Brand Tile Groups
-export const ICSBrandSaws = new TileGroup('Power Saws', '', ICSSaws);
+export const ICSBrandSaws = new TileGroup('Power Cutters', '', ICSSaws);
 export const ICSBrandChains = new TileGroup('Diamond Saw Chains', '', ICSChains);
 export const ICSBrandParts = new TileGroup('ICS Parts & Accessories', '', ICSParts);
 

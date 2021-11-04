@@ -2,6 +2,7 @@ import MediaAdjText from "./mediaAdjText";
 import LargePlaceholderImage from '../../../media/placeholder-image-large.png';
 import { PlaceholderText } from "../../../utility/variables";
 import { DefaultLinkGroup, DefaultBulletGroup } from "../base-cms-components/list-groups/reusable-list-groups";
+import { BulletList, BullletListGroup } from "../base-cms-components/list-groups/listGroups";
 
 const IWATComponentSpecs = () => {
   return (
@@ -114,6 +115,14 @@ export const MWATICS680Cutters = () => {
       bodyText={PlaceholderText}
       textPlacement='right'
       image={LargePlaceholderImage}
+      bulletGroup={
+        <BullletListGroup 
+          groupHeader='Key Features of the 680 Series'
+          bulletLists={[
+            <BulletList bullets={['List 1, Bullet 1', 'List 1, Bullet 2', 'List 1, Bullet 3']} />
+          ]}
+        />
+      }
     />
   )
 }
@@ -127,6 +136,14 @@ export const MWATICS695Cutters = () => {
       bodyText={PlaceholderText}
       textPlacement='right'
       image={LargePlaceholderImage}
+      bulletGroup={
+        <BullletListGroup 
+          groupHeader='Key Features of the 695 Series'
+          bulletLists={[
+            <BulletList bullets={['List 1, Bullet 1', 'List 1, Bullet 2', 'List 1, Bullet 3']} />
+          ]}
+        />
+      }
     />
   )
 }
@@ -140,6 +157,14 @@ export const MWATICS890Cutters = () => {
       bodyText={PlaceholderText}
       textPlacement='right'
       image={LargePlaceholderImage}
+      bulletGroup={
+        <BullletListGroup 
+          groupHeader='Key Features of the 890 Series'
+          bulletLists={[
+            <BulletList bullets={['List 1, Bullet 1', 'List 1, Bullet 2', 'List 1, Bullet 3']} />
+          ]}
+        />
+      }
     />
   )
 }
@@ -153,6 +178,14 @@ export const MWATICS890FCutters = () => {
       bodyText={PlaceholderText}
       textPlacement='right'
       image={LargePlaceholderImage}
+      bulletGroup={
+        <BullletListGroup 
+          groupHeader='Key Features of the 890F Series'
+          bulletLists={[
+            <BulletList bullets={['List 1, Bullet 1', 'List 1, Bullet 2', 'List 1, Bullet 3']} />
+          ]}
+        />
+      }
     />
   )
 }

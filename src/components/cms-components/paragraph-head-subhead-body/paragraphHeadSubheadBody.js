@@ -16,13 +16,17 @@ const ComponentSpecs = () => {
 }
 
 function ParagraphHeadSubheadBody({...props}) {
+
+  const HeaderTag = props.headerTag ? props.headerTag : 'h2';
+  const SubHeaderTag = props.subheaderTag ? props.subheaderTag : 'h3';
+
   return (
     <>
       {props.showSpecs ? <ComponentSpecs /> : ''}
       <section className="content-wrapper phsb-component">
         <div className={props.withMargins ? 'content-wrapper' : ''}>
-          {props.header ? (<h2>{props.header}</h2>) : ''}
-          {props.subheader ? (<h3>{props.subheader}</h3>) : ''}
+          {props.header ? (<HeaderTag>{props.header}</HeaderTag>) : ''}
+          {props.subheader ? (<SubHeaderTag>{props.subheader}</SubHeaderTag>) : ''}
           {props.bodyText ? (<p>{props.bodyText}</p>) : ''}
         </div>
       </section>

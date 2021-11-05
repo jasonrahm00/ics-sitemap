@@ -46,9 +46,10 @@ const mainNavData = [
     submenuLinks: [
       SharedLinks.contactUs,
       SharedLinks.findDealer,
+      SharedLinks.serviceCenters,
       SharedLinks.productRegistration,
       SharedLinks.docLibrary,
-      SharedLinks.proCorner,
+      SharedLinks.videos,
       SharedLinks.demoRequest
     ]
   },

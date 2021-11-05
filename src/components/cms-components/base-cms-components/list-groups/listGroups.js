@@ -18,9 +18,10 @@ export const BulletList = ({...props}) => {
 }
 
 export const BullletListGroup = ({...props}) => {
+  const HeaderTag = props.headerTag ? props.headerTag : 'h3';
   return (
     <section className="list-group-component">
-      {props.groupHeader && <h3>{props.groupHeader}</h3> }
+      {props.groupHeader && <HeaderTag>{props.groupHeader}</HeaderTag> }
       {props.bulletLists && props.bulletLists.map((list, index) => {
         return (
           <section key={index}>

@@ -57,7 +57,7 @@ const footerNavData = [
         sectionLinks: [
           SharedLinks.contactUs, 
           SharedLinks.productRegistration, 
-          SharedLinks.proCorner, 
+          SharedLinks.videos, 
           SharedLinks.docLibrary,
           SharedLinks.styleGuide
         ]

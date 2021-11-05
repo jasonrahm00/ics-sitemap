@@ -189,3 +189,15 @@ export const MWATICS890FCutters = () => {
     />
   )
 }
+
+export const VWATVideoLibraryDefault = () => {
+  return (
+    <MediaAdjText 
+      header='Some Popular Brand Video'
+      bodyText={PlaceholderText}
+      textPlacement='left'
+      videoId='NnaJTRqgXWE'
+      linkGroup={<DefaultLinkGroup />}
+    />
+  )
+}

@@ -17,12 +17,13 @@ const SharedLinks = {
   findDealer: <Link to="/find-dealer">Find a Dealer</Link>,
   productRegistration: <Link to="/product-registration">Product Registration</Link>,
   docLibrary: <Link to="/document-library">Document Library</Link>,
-  proCorner: <Link to="/pro-corner">Pro Corner</Link>,
+  videos: <Link to="/videos">How-To Videos</Link>,
   demoRequest: <Link to="/demo-request">Request a Demo</Link>,
   successStories: <Link to="/news-features">News and Features</Link>,
   aboutICS: <Link to="/about-ics">About ICS</Link>,
   allProducts: <Link to="/products">All Products</Link>,
   styleGuide: <Link to="/style-guide">Style Guide</Link>,
+  serviceCenters: <Link to="/service-centers">Service Centers</Link>,
 };
 
 export default SharedLinks;

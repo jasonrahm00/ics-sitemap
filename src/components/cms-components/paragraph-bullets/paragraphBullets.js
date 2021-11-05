@@ -22,14 +22,18 @@ const ComponentSpecs = () => {
 }
 
 function ParagraphBullets({...props}) {
+  const HeaderTag = props.headerTag ? props.headerTag : 'h3';
+  const SubheaderTag = props.subheaderTag ? props.subheaderTag : 'h3';
   return (
     <>
       {props.showSpecs ? <ComponentSpecs /> : ''}
       <section className="paragraph-bullets content-wrapper">
-        <header>
-          {props.header ? (<h2>{props.header}</h2>) : ''}
-          {props.subheader ? (<h3>{props.subheader}</h3>) : ''}
-        </header>
+        {props.header && (
+          <header>
+            <HeaderTag>{props.header}</HeaderTag>
+            {props.subheader ? (<SubheaderTag>{props.subheader}</SubheaderTag>) : ''}
+          </header>
+        )}
         {props.bodyText ? (<p>{props.bodyText}</p>) : ''}
         {props.bulletGroup ? props.bulletGroup : ''}
       </section>

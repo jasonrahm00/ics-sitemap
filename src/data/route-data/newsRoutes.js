@@ -16,7 +16,7 @@ const NewsRoutes = [
       <TileCollection tileGroup={new TileGroup('', '', AllNewsTiles)} />
     ]} />
   ),
-  new RouteObject('/success-stories/battle-tested', 
+  new RouteObject('/news-features/battle-tested', 
     () => <CategoryContent components={[
       <ParagraphHeadSubheadBody 
         headerTag="h1"
@@ -25,7 +25,7 @@ const NewsRoutes = [
       />,
     ]} />
   ),
-  new RouteObject('/success-stories/change-is-good', 
+  new RouteObject('/news-features/change-is-good', 
     () => <CategoryContent components={[
       <ParagraphHeadSubheadBody 
         headerTag="h1"
@@ -34,7 +34,7 @@ const NewsRoutes = [
       />,
     ]} />
   ),
-  new RouteObject('/success-stories/pentruder-beats-clock', 
+  new RouteObject('/news-features/pentruder-beats-clock', 
     () => <CategoryContent components={[
       <ParagraphHeadSubheadBody 
         headerTag="h1"
@@ -43,7 +43,7 @@ const NewsRoutes = [
       />,
     ]} />
   ),
-  new RouteObject('/success-stories/bridging-gap', 
+  new RouteObject('/news-features/bridging-gap', 
     () => <CategoryContent components={[
       <ParagraphHeadSubheadBody 
         headerTag="h1"
@@ -52,7 +52,7 @@ const NewsRoutes = [
       />,
     ]} />
   ),
-  new RouteObject('/success-stories/precision-required', 
+  new RouteObject('/news-features/precision-required', 
     () => <CategoryContent components={[
       <ParagraphHeadSubheadBody 
         headerTag="h1"
@@ -61,7 +61,7 @@ const NewsRoutes = [
       />,
     ]} />
   ),
-  new RouteObject('/success-stories/concrete-pipe-tap', 
+  new RouteObject('/news-features/concrete-pipe-tap', 
     () => <CategoryContent components={[
       <ParagraphHeadSubheadBody 
         headerTag="h1"
@@ -70,7 +70,7 @@ const NewsRoutes = [
       />,
     ]} />
   ),
-  new RouteObject('/success-stories/egress-window', 
+  new RouteObject('/news-features/egress-window', 
     () => <CategoryContent components={[
       <ParagraphHeadSubheadBody 
         headerTag="h1"
@@ -79,7 +79,7 @@ const NewsRoutes = [
       />,
     ]} />
   ),
-  new RouteObject('/success-stories/small-openings', 
+  new RouteObject('/news-features/small-openings', 
     () => <CategoryContent components={[
       <ParagraphHeadSubheadBody 
         headerTag="h1"
@@ -88,7 +88,7 @@ const NewsRoutes = [
       />,
     ]} />
   ),
-  new RouteObject('/success-stories/kickback-study', 
+  new RouteObject('/news-features/kickback-study', 
     () => <CategoryContent components={[
       <ParagraphHeadSubheadBody 
         headerTag="h1"
@@ -97,7 +97,7 @@ const NewsRoutes = [
       />,
     ]} />
   ),
-  new RouteObject('/success-stories/overview-crosslink', 
+  new RouteObject('/news-features/overview-crosslink', 
     () => <CategoryContent components={[
       <ParagraphHeadSubheadBody 
         headerTag="h1"

@@ -5,7 +5,7 @@ export const battleTested = new Tile(
   null,
   null,
   '',
-  '/success-stories/battle-tested',
+  '/news-features/battle-tested',
   'Battle Tested'
 )
 
@@ -14,7 +14,7 @@ export const changeGood = new Tile(
   null,
   null,
   '',
-  '/success-stories/change-is-good',
+  '/news-features/change-is-good',
   'Change Is Good'
 )
 
@@ -23,7 +23,7 @@ export const pentruderBeatsClock = new Tile(
   null,
   null,
   '',
-  '/success-stories/pentruder-beats-clock',
+  '/news-features/pentruder-beats-clock',
   'Pentruder Beats the Clock'
 )
 
@@ -32,7 +32,7 @@ export const bridgingGap = new Tile(
   null,
   null,
   '',
-  '/success-stories/bridging-gap',
+  '/news-features/bridging-gap',
   'Bridging the Gap'
 )
 
@@ -41,7 +41,7 @@ export const precisonRequired = new Tile(
   null,
   null,
   '',
-  '/success-stories/precision-required',
+  '/news-features/precision-required',
   'Precision Required'
 )
 
@@ -50,7 +50,7 @@ export const concretePipeTap = new Tile(
   null,
   null,
   '',
-  '/success-stories/concrete-pipe-tap',
+  '/news-features/concrete-pipe-tap',
   'Concrete Pipe Tap'
 )
 
@@ -59,7 +59,7 @@ export const egressWindow = new Tile(
   null,
   null,
   '',
-  '/success-stories/egress-window',
+  '/news-features/egress-window',
   'Egress Window'
 )
 
@@ -68,7 +68,7 @@ export const smallOpenings = new Tile(
   null,
   null,
   '',
-  '/success-stories/small-openings',
+  '/news-features/small-openings',
   'Small Openings'
 )
 
@@ -77,7 +77,7 @@ export const kickbackStudy = new Tile(
   null,
   null,
   '',
-  '/success-stories/kickback-study',
+  '/news-features/kickback-study',
   'Kickback Study'
 )
 
@@ -86,7 +86,7 @@ export const overviewCrosslink = new Tile(
   null,
   null,
   '',
-  '/success-stories/overview-crosslink',
+  '/news-features/overview-crosslink',
   'Overview: Crosslink'
 )
 

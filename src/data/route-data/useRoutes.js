@@ -12,14 +12,20 @@ const ProductsPowerSupply = AllProducts.filter(product => product.primaryCat ===
 
 const UseRoutes = [
   new RouteObject('/products/concrete-cutting', () => <CategoryContent components={[
-    <ImgTextOverlay header={'Concrete Cutting'} text={PlaceholderText} />,
+    <ImgTextOverlay 
+      header={'Concrete Cutting'} 
+      headerTag='h1'
+      text={`It’s ok to take the occasional gamble, as long as it’s something like switching from regular to decaf coffee.  But if you cut concrete for a living, you know rolling the dice on your equipment is not a trade-off you should make.  You’re working for every dollar and so should your tools. At ICS, we design and manufacture all our concrete cutting equipment with high-quality, top-of-the-line materials.  Because we know, our tools shouldn’t stop working until you do.`} />,
     ReusableTileCollections.concreteCuttingSaws,
     ReusableTileCollections.concreteCuttingChainsCollection,
     ReusableTileCollections.concreteCuttingPartsCollection,
   ]} />),
   new RouteObject('/products/pipe-cutting', 
     () => <CategoryContent components={[
-      <ImgTextOverlay header={'Pipe Cutting'} text={PlaceholderText} />,
+      <ImgTextOverlay 
+        header={'Pipe Cutting'} 
+        headerTag='h1'
+        text={`If you’re in the water and wastewater industry or road and bridge maintenance,  ICS technology is literally changing the way you work. With products that virtually eliminate rotational kickback, designs that give you more control and tools that create practically no debris or dust, we have a range of solutions that make your job safer, faster, and easier.`} />,
       ReusableTileCollections.allChainSawsCollection,
       ReusableTileCollections.pipeCuttingChainsCollection,
       ReusableTileCollections.pipeCuttingAccessoriesCollection,

@@ -94,7 +94,7 @@ export const wallSaws = new Tile(
   'Wall/Wire Saws',
   null,
   null,
-  '',
+  'Pentruder offers a high frequency drive system with reliable power and high efficiency to keep you in the cut.  Our wall saws and wire saws are built with the highest quality components: hand built copper rotors, aircraft-grade billet aluminum and precision ground gears, just to name a few. Thanks to the intelligent Pentruder autofeed system, these high frequency machines will always work at maximum power, just like you.',
   '/products/wall-wire-saws',
   'Wall/Wire Saws',
   [],

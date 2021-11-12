@@ -4,7 +4,7 @@ export const flatSaws = new Tile (
   'Flat Saws',
   null,
   null,
-  'Power source, weight and dimensions are the only real differences. All of which can be exposed through facet filters',
+  'Our flat saws are available multiple configurations and power sources to fit your job requirements. Hand crafted, machined, assembled, and fully welded with high grade steel in the USA.',
   '/products/flat-saws',
   'Flat Saws',
   [],

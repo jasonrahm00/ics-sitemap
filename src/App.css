@@ -15,6 +15,13 @@ main {
   min-height: calc(100vh - 147px - 534px);
 }
 
+main a:link,
+main a:link:hover,
+main a:link:visited {
+  color: #2697D2;
+  text-decoration: none;
+}
+
 img {
   width: 100%;
   display: block;

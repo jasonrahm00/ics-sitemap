@@ -14,7 +14,10 @@ const CustomerSupportRoutes = [
     <ParagraphHeadSubheadBody headerTag='h1' header='Find a Dealer' bodyText='Interested in purchasing an ICS product? Our network of dealers is here to help.' />,
     <ParagraphHeadSubheadBody bodyText='Insert Storepoint App here' />
   ]} />),
-  new RouteObject('/product-registration', () => <ContentPage title={'Product Registration'}/>),
+  new RouteObject('/product-registration', () => <ContentPage components={[
+    <ParagraphHeadSubheadBody headerTag='h1' header='Register a Product' bodyText="Get ICS's full range of customer support, including product notices, maintenance reminders, troubleshooting tips and previews of new products. Register your cutting systems, power pack and accessories today." />,
+    <ParagraphHeadSubheadBody headerTag='h2' header='Product Registration Form' bodyText='Insert HubSpot Product Registration Form' />
+  ]} />),
   new RouteObject('/videos', 
   () => <ContentPage components={[
     <ParagraphHeadSubheadBody header="Video Library" bodyText="Display a handful of videos in VWTO component with either links to additional videos or a separate CTA somehwere on the page linking to the YouTube channel"/>,

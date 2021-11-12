@@ -21,6 +21,8 @@ const ComponentSpecs = () => {
 };
 
 function ImgTextOverlay({...props}) {
+  const HeaderTag = props.headerTag ? props.headerTag : 'h2';
+  const SubheaderTag = props.subheaderTag ? props.subheaderTag : 'h3';
   return (
     <>
       {props.showSpecs ? <ComponentSpecs /> : ''}
@@ -30,9 +32,9 @@ function ImgTextOverlay({...props}) {
           <div className="content-wrapper">
             <section>
               {props.header ? (
-                <h1>{props.header}</h1>
+                <HeaderTag>{props.header}</HeaderTag>
               ) : ''}
-              {props.subheader ? (<h2>{props.subheader}</h2>) : ''}
+              {props.subheader ? (<SubheaderTag>{props.subheader}</SubheaderTag>) : ''}
               {props.text ? (<p>{props.text}</p>) : ''}
               {props.to && props.ctaText ? (
                 <LinkButton ctaText={props.ctaText} to={props.to} />

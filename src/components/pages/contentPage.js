@@ -11,7 +11,7 @@ function ContentPage({...props}) {
             {component}
           </div>
         )
-      })}
+        })}
       </div>
     </>
   );

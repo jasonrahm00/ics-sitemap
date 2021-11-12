@@ -22,7 +22,7 @@ const ComponentSpecs = () => {
 }
 
 function ParagraphBullets({...props}) {
-  const HeaderTag = props.headerTag ? props.headerTag : 'h3';
+  const HeaderTag = props.headerTag ? props.headerTag : 'h2';
   const SubheaderTag = props.subheaderTag ? props.subheaderTag : 'h3';
   return (
     <>

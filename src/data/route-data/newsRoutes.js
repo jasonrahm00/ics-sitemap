@@ -1,9 +1,8 @@
 import CategoryContent from "../../components/pages/categoryContentPage";
-import { RouteObject, TileGroup } from '../../utility/constructors';
-import TileCollection from "../../components/cms-components/tile-collection/tileCollection";
+import { RouteObject } from '../../utility/constructors';
 import ParagraphHeadSubheadBody from "../../components/cms-components/paragraph-head-subhead-body/paragraphHeadSubheadBody";
 import { PlaceholderText } from "../../utility/variables";
-import { AllNewsTiles } from "../../components/cms-components/tile-collection/tiles/news-tiles";
+import ReusableTileCollections from "../../components/cms-components/tile-collection/reusableTileCollections";
 
 const NewsRoutes = [
   new RouteObject('/news-features', 
@@ -11,9 +10,11 @@ const NewsRoutes = [
       <ParagraphHeadSubheadBody 
         headerTag="h1"
         header="News & Features"
-        bodyText={PlaceholderText}
+        bodyText={`Find feature articles, new product information, photos, how-to-videos and ways ICS is changing the industry.`}
       />,
-      <TileCollection tileGroup={new TileGroup('', '', AllNewsTiles)} />
+      ReusableTileCollections.newsFeatures,
+      ReusableTileCollections.newsProducts,
+      ReusableTileCollections.newsGuides
     ]} />
   ),
   new RouteObject('/news-features/battle-tested', 

@@ -16,7 +16,10 @@ import {
   PipeCuttingChains,
   PipeCuttingAccessories,
   ConcreteCuttingSaws,
-  ICSBrandPartsSingleTile
+  ICSBrandPartsSingleTile,
+  NewsTilesFeatures,
+  NewsTilesProducts,
+  NewsTilesGuides
 } from './tiles/tile-groupings';
 
 const ReusableTileCollections = {
@@ -36,6 +39,9 @@ const ReusableTileCollections = {
   pipeCuttingAccessoriesCollection: <TileCollection tileGroup={PipeCuttingAccessories} />,
   concreteCuttingSaws: <TileCollection tileGroup={ConcreteCuttingSaws} />,
   singleICSPartsTile: <TileCollection tileGroup={ICSBrandPartsSingleTile} />,
+  newsFeatures: <TileCollection tileGroup={NewsTilesFeatures} />,
+  newsProducts: <TileCollection tileGroup={NewsTilesProducts} />,
+  newsGuides: <TileCollection tileGroup={NewsTilesGuides} />,
 };
 
 export default ReusableTileCollections

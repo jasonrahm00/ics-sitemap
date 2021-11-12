@@ -2,6 +2,7 @@ import { TileGroup } from '../../../../utility/constructors';
 import { ICSSaws, ICSChains, ICSPartsTiles, wires, forceThree, forceFour, powerGrit, pipeClamp, icsParts } from './ics-tiles';
 import { MeritFlatSaws, MeritParts } from './merit-tiles';
 import { PentruderWallSaws, PentruderChainSaws, PentruderParts, remoteControl  } from './pentruder-tiles';
+import { FeaturesNewsTiles, ProductsNewsTiles, GuidesNewsTiles } from './news-tiles';
 
 // ICS Brand Tile Groups
 export const ICSBrandSaws = new TileGroup('Power Cutters', '', ICSSaws);
@@ -25,4 +26,9 @@ export const ConcreteCuttingParts = new TileGroup('Concrete Cutting Parts & Acce
 export const PipeCuttingChains = new TileGroup('Pipe Cutting Chains', '', [powerGrit]);
 export const PipeCuttingAccessories = new TileGroup('Pipe Cutting Accessories', '', [pipeClamp]);
 export const WallWireAccessories = new TileGroup('Wall/Wire Saw Accessories', '', [remoteControl]);
-export const ConcreteCuttingSaws = new TileGroup('Concrete Power Cutters', '', [...ICSSaws].concat([...PentruderChainSaws]).concat([...MeritFlatSaws]).concat([...PentruderWallSaws]))
+export const ConcreteCuttingSaws = new TileGroup('Concrete Power Cutters', '', [...ICSSaws].concat([...PentruderChainSaws]).concat([...MeritFlatSaws]).concat([...PentruderWallSaws]));
+
+// News Tile Groups
+export const NewsTilesFeatures = new TileGroup('Features', '', FeaturesNewsTiles);
+export const NewsTilesProducts = new TileGroup('Products', '', ProductsNewsTiles);
+export const NewsTilesGuides = new TileGroup('Step-By-Step Guides', '', GuidesNewsTiles);

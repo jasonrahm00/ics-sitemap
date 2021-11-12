@@ -31,13 +31,15 @@ function TileComponent({...props}) {
       ) : ''}
       <CardContent>
         <CardHeader component="span" title={props.header} subheader={props.subheader} action={props.verified ? <CheckCircleIcon /> : ''}/>
-        <Typography variant="body2" color="text.secondary" className={!props.description.length ? 'no-description' : ''}>
-          {props.description.length ? props.description : PlaceholderText}
+        <Typography variant="body2" color="text.secondary" className={!props.description ? 'no-description' : ''}>
+          {props.description ? props.description : PlaceholderText}
         </Typography>
       </CardContent>
-      <CardActions>
-        <LinkButton ctaText={props.dest} to={to} />
-      </CardActions>
+      {props.dest && props.link && (
+        <CardActions>
+          <LinkButton ctaText={props.dest} to={to} />
+        </CardActions>
+      )}
     </Card>
   );
 }

@@ -43,7 +43,7 @@ const ReusableTileCollections = {
   newsFeatures: <TileCollection tileGroup={NewsTilesFeatures} />,
   newsProducts: <TileCollection tileGroup={NewsTilesProducts} />,
   newsGuides: <TileCollection tileGroup={NewsTilesGuides} />,
-  allPentruderTiles: <TileCollection tileGroup={PentruderBrandAllTiles} />,
+  allPentruderTiles: <TileCollection tileGroup={PentruderBrandAllTiles} />
 };
 
 export default ReusableTileCollections

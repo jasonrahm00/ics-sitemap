@@ -6,9 +6,10 @@ import { AllDocTiles } from '../../components/cms-components/tile-collection/til
 import TileCollection from '../../components/cms-components/tile-collection/tileCollection';
 import { TileGroup } from '../../utility/constructors';
 import { VWATVideoLibraryDefault } from '../../components/cms-components/media-adj-text/default-media-adj-text';
+import ContactUs from '../../components/pages/contactUs';
 
 const CustomerSupportRoutes = [
-  new RouteObject('/contact-us', () => <ContentPage title={'Contact Us'}/>),
+  new RouteObject('/contact-us', () => <ContactUs />),
   new RouteObject('/find-dealer', () => <ContentPage components={[
     <ParagraphHeadSubheadBody headerTag='h1' header='Find a Dealer' bodyText='Interested in purchasing an ICS product? Our network of dealers is here to help.' />,
     <ParagraphHeadSubheadBody bodyText='Insert Storepoint App here' />

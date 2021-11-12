@@ -27,7 +27,7 @@ function ParagraphHeadSubheadBody({...props}) {
         <div className={props.withMargins ? 'content-wrapper' : ''}>
           {props.header ? (<HeaderTag>{props.header}</HeaderTag>) : ''}
           {props.subheader ? (<SubHeaderTag>{props.subheader}</SubHeaderTag>) : ''}
-          {props.bodyText ? (<p>{props.bodyText}</p>) : ''}
+          {props.bodyText ? <>{props.bodyText}</> : ''}
         </div>
       </section>
     </>

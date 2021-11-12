@@ -3,6 +3,7 @@ import { ICSSaws, ICSChains, ICSPartsTiles, wires, forceThree, forceFour, powerG
 import { MeritFlatSaws, MeritParts } from './merit-tiles';
 import { PentruderWallSaws, PentruderChainSaws, PentruderParts, remoteControl, AllPentruderTiles  } from './pentruder-tiles';
 import { FeaturesNewsTiles, ProductsNewsTiles, GuidesNewsTiles } from './news-tiles';
+import { AddressTiles } from './misc-tiles';
 
 // ICS Brand Tile Groups
 export const ICSBrandSaws = new TileGroup('Power Cutters', '', ICSSaws);
@@ -33,3 +34,6 @@ export const ConcreteCuttingSaws = new TileGroup('Concrete Power Cutters', '', [
 export const NewsTilesFeatures = new TileGroup('Features', '', FeaturesNewsTiles);
 export const NewsTilesProducts = new TileGroup('Products', '', ProductsNewsTiles);
 export const NewsTilesGuides = new TileGroup('Step-By-Step Guides', '', GuidesNewsTiles);
+
+// Misc Tile Groups
+export const AddressTilesGroup = new TileGroup('', '', AddressTiles);

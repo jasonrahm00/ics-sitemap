@@ -34,6 +34,7 @@ const Products680Series = AllProducts.filter(product => product.attributes && pr
 const Products695Series = AllProducts.filter(product => product.attributes && product.attributes.series === Series.series695);
 const Products890Series = AllProducts.filter(product => product.attributes && product.attributes.series === Series.series890);
 const Products890FSeries = AllProducts.filter(product => product.attributes && product.attributes.series === Series.series890F);
+const ProductICSParts = AllProducts.filter(product => product.brand === Brands.ics && product.primaryCat === Categories.parts);
 
 const BrandRoutes = [
 
@@ -43,7 +44,7 @@ const BrandRoutes = [
       <ImgTextOverlay header={'ICS Brand'} text={PlaceholderText} />,
       ReusableTileCollections.icsSawCollection,
       ReusableTileCollections.icsChainsCollection,
-      ReusableTileCollections.icsPartsCollection,
+      ReusableTileCollections.singleICSPartsTile,
     ]} />
   ),
   new RouteObject('/products/ics/force-3-diamond-chains', () => <PLP title={'FORCE3 Diamond Chains'} products={ProductsForce3} />),
@@ -65,6 +66,7 @@ const BrandRoutes = [
   new RouteObject('/products/ics/gas-power-cutters/695-series', () => <PLP title={'695 Series Power Cutters'} products={Products695Series} />),
   new RouteObject('/products/ics/gas-power-cutters/890-series', () => <PLP title={'890 Series Power Cutters'} products={Products890Series} />),
   new RouteObject('/products/ics/gas-power-cutters/890-f-series', () => <PLP title={'890F Series Power Cutters'} products={Products890FSeries} />),
+  new RouteObject('/products/ics/parts', () => <PLP title={'ICS Parts and Accessories'} products={ProductICSParts} />),
 
   // Merit Brand Routes
   new RouteObject('/products/merit', () => <CategoryContent components={[

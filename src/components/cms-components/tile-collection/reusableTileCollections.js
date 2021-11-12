@@ -15,7 +15,8 @@ import {
   ConcreteCuttingParts,
   PipeCuttingChains,
   PipeCuttingAccessories,
-  ConcreteCuttingSaws
+  ConcreteCuttingSaws,
+  ICSBrandPartsSingleTile
 } from './tiles/tile-groupings';
 
 const ReusableTileCollections = {
@@ -34,6 +35,7 @@ const ReusableTileCollections = {
   pipeCuttingChainsCollection: <TileCollection tileGroup={PipeCuttingChains} />,
   pipeCuttingAccessoriesCollection: <TileCollection tileGroup={PipeCuttingAccessories} />,
   concreteCuttingSaws: <TileCollection tileGroup={ConcreteCuttingSaws} />,
+  singleICSPartsTile: <TileCollection tileGroup={ICSBrandPartsSingleTile} />,
 };
 
 export default ReusableTileCollections

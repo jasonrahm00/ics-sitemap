@@ -70,7 +70,10 @@ const BrandRoutes = [
 
   // Merit Brand Routes
   new RouteObject('/products/merit', () => <CategoryContent components={[
-    <ImgTextOverlay header={'Merit Brand'} text={PlaceholderText} />,
+    <ImgTextOverlay 
+      header={'Merit'}
+      headerTag='h1' 
+      text={`These are Merit Flat Saws.  Made with high-strength, high-quality steel and a fully welded frame. Odds are, if you cut concrete for a living, you know how tough your tools need to be.  Each Merit by ICS saw is built to stand up to the abrasive abuse of concrete cutting, and power you through to the end of each job with ease.`} />,
     <MWATMeritFlatSaws />,
     ReusableTileCollections.meritPartsCollection,
   ]} />),

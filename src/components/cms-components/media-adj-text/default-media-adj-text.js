@@ -83,10 +83,10 @@ export const VWATDefault = () => {
 export const MWATMeritFlatSaws = () => {
   return (
     <MediaAdjText 
-      header='Merit Flat Saws'
+      header='Flat Saws'
       ctaUrl='/products/flat-saws'
       ctaText='Merit Flat Saws'
-      bodyText={PlaceholderText}
+      bodyText={`Our flat saws are available multiple configurations and power sources to fit your job requirements. Hand crafted, machined, assembled, and fully welded with high grade steel in the USA.`}
       textPlacement='right'
       image={LargePlaceholderImage}
     />

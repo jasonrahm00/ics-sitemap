@@ -16,7 +16,10 @@ const TypeRoutes = [
   new RouteObject('/products', () => <PLP title={'All Products'} products={AllProducts} />),
   new RouteObject('/products/power-cutters', 
     () => <CategoryContent components={[
-      <ImgTextOverlay header={'Power Cutters'} text={PlaceholderText} />,
+      <ImgTextOverlay 
+        header={'Power Cutters'} 
+        headerTag='h1'
+        text={`As the world leader and pioneering force in Diamond Chain Technology, ICS concrete power cutters and diamond chain technology deliver the perfect blend of power, precision, efficiency, and safety. Whether you’re a contractor, concrete professional, industrial artist, or homeowner, we help you get the job done faster and easier—so you can move on to the next one.`} />,
       ReusableTileCollections.allChainSawsCollection,
     ]} />
   ),
@@ -24,7 +27,10 @@ const TypeRoutes = [
   new RouteObject('/products/wall-wire-saws', () => <PLP title={'Wall/Wire Saws'} products={ProductsWallWireSaws} />),
   new RouteObject('/products/diamond-chains', 
     () => <CategoryContent components={[
-      <ImgTextOverlay header={'Diamond Chains'} text={PlaceholderText} />,
+      <ImgTextOverlay 
+        header={'Diamond Chains'}
+        headerTag='h1' 
+        text={`Diamond chains are not all created equal. Sure, there are less expensive options out there, but the old adage of "you get what you pay for" isn't just a cliché. Insist on genuine diamond chains from ICS, the people who invented the technology. Our engineers show up, every day, committed to continuously improve quality, durability and versatility.  Our chains are built to outwork our competition.`} />,
       ReusableTileCollections.icsChainsCollection,
     ]} />
   ),
@@ -35,7 +41,7 @@ const TypeRoutes = [
       ReusableTileCollections.meritPartsCollection,
       ReusableTileCollections.pentruderPartsCollection,
     ]} />
-  )
+  ),
 ]
 
 export default TypeRoutes;

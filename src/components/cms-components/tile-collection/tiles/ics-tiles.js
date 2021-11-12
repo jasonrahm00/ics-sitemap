@@ -64,77 +64,70 @@ export const pipeClamp = new Tile(
   'Pipe Clamp', //Header
   null, //subheader
   null, //image
-  '', //Description
+  'The ICS pipe clamp brings a new level of safety, accuracy, and ease of use to the job. For use with our hydraulic and pneumatic power cutters.  Reduce effort, enhance operator safety and improve the precision of your cut.', //Description
   '/pdp', //Link
   'Pipe Clamp', //ctaText
   ['Pipe Clamp'], //Product List
-  true //Verified
 );
 
 export const hydraulicHose = new Tile(
   'Hydraulic Hoses', //Header
   null, //subheader
   null, //image
-  '', //Description
+  'A reliable hydraulic hose for your most demanding applications.  With quick disconnect couplers and a 3000 psi rating, these 25 ft, two-way hoses, help you get the most out of your ICS hydraulic power cutters.', //Description
   '/pdp', //Link
   'Hydraulic Hoses', //ctaText
   ['Hydraulic Hoses'], //Product List
-  true, //Verified
 );
 
 export const flowAdapter = new Tile(
   'Flow Adapter', //Header
   null, //subheader
   null, //image
-  '', //Description
+  'Enjoy the convenience and efficiency of powering your ICS hydraulic saw from skid steers, backhoes, and other common construction equipment. Available for both 8 gpm and 12 gpm (30 lpm and 45 lpm) saws.', //Description
   '/pdp', //Link
   'Flow Adapter', //ctaText
   ['Flow Adapter'], //Product List
-  true //Verified
 );
 
 export const engineOil = new Tile(
   '2-Stroke Engine Oil', //Header
   null, //subheader
   null, //image
-  '', //Description
+  'ICS has developed an oil formula that is cleaner-burning, provides better thermal protection and an improved film barrier which reduces piston ring wear.', //Description
   '/pdp', //Link
   '2-Stroke Engine Oil', //ctaText
   ['2-Stroke Engine Oil'], //Product List
-  true //Verified
 );
 
 export const powerPack = new Tile(
   'Powerpack', //Header
   null, //subheader
   null, //image
-  'Two Power Packs, needs to go to PLP', //Description
-  '/plp', //Link
+  'ICS & Merit gas-operated powerpacks are a dependable, self-contained source of hydraulic power that offers superior cooling capacity. The functional, ergonomic design makes them easily transportable to any job site.', //Description
+  '/products/power-supply', //Link
   'Powerpack', //ctaText
   ['Powerpack', 'Power Pack 2'], //Product List
-  true //Verified
 );
 
 export const wires = new Tile(
   'Diamond Wire & Accessories', //Header
   null, //subheader
   null, //image
-  '', //Description
+  'ICS is proud to offer the next generation of diamond wire. Available in 3 types: Brazed - optimized for long life and fast cutting; Sintered – designed for smooth operation and extremely efficient use of the diamonds; and Electroplated – optimizes your wire sawing operations. Speak with your ICS sales manager to find the right wire for your job.', //Description
   '/products/ics/diamond-wires', //Link
   'Diamond Wire & Accessories', //ctaText
   [], //Product List
-  true, //Verified
 );
 
 export const carryBags = new Tile(
   'ICS Carrying Bags', //Header
   null, //subheader
   null, //image
-  '', //Description
+  'Get your gear from the truck to your worksite with the ICS Toolbag.  Crafted for durability with a polyester shell, waterproofed polyester interior lining, heavy-duty zipper closure, two large outside Velcro pockets, and multiple roomy interior pockets, this might just become your favorite ICS accessory.', //Description
   '/products/ics/carrying-bags', //Link
   'ICS Carrying Bags', //ctaText
   [], //Product List
-  true, //Verified
 );
 
 export const icsParts = new Tile(

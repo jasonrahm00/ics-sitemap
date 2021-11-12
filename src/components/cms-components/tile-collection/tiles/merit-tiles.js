@@ -8,7 +8,6 @@ export const flatSaws = new Tile (
   '/products/flat-saws',
   'Flat Saws',
   [],
-  true,
 );
 
 export const meritPowerPack = new Tile(
@@ -19,7 +18,6 @@ export const meritPowerPack = new Tile(
   '/pdp', //Link
   'Power Pack', //ctaText
   ['M300-23G-HPP Power Pack'], //Product List
-  true //Verified
 );
 
 export const waterPump = new Tile(
@@ -30,7 +28,6 @@ export const waterPump = new Tile(
   '/pdp', //Link
   'Merit Water Pump', //ctaText
   ['Merit Water Pump'], //Product List
-  true //Verified
 );
 
 export const lightKit = new Tile(
@@ -41,7 +38,6 @@ export const lightKit = new Tile(
   '/pdp', //Link
   'Merit Light Kit', //ctaText
   ['Merit Light Kit'], //Product List
-  true //Verified
 );
 
 export const MeritFlatSaws = [

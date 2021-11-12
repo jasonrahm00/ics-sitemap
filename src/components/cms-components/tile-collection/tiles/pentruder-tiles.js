@@ -8,18 +8,16 @@ export const threePEightWireSaw = new Tile(
   '/pdp', //Link
   '3P8 HF Wire Saw', //ctaText
   ['3P8 HF Wire Saw'], //Product List
-  true //Verified
 );
 
 export const hfChainSaw = new Tile(
-  'CW630 HF Electric Chain Saw', //Header
+  'CW630 HF Electric Power Cutter', //Header
   null, //subheader
   null, //image
-  '', //Description
+  'Built to complement Pentruder wall saws, the CWF630 is the most powerful electric chainsaw on the market today with up to 9 kW (12 hp) of output power thanks to the digital 400V Pentpak power pack. It is fully compatible with hydraulic 890F4 bars and chains, and cuts up to 25 inches deep. With no emissions or heavy hydraulic hoses, the CWF630 is ideal for indoor and obstructed spaces.', //Description
   '/pdp', //Link
-  'CW630 HF Electric Chain Saw', //ctaText
-  ['CW630 HF Electric Chain Saw'], //Product List
-  true //Verified
+  'CW630 HF Electric Power Cutter', //ctaText
+  ['CW630 HF Electric Power Cutter'], //Product List
 );
 
 export const pentruderPowerPack = new Tile(
@@ -30,7 +28,6 @@ export const pentruderPowerPack = new Tile(
   '/pdp', //Link
   'Pentpak 427 HF Power Pack', //ctaText
   ['Pentpak 427 HF Power Pack'], //Product List
-  false //Verified
 );
 
 export const remoteControl = new Tile(
@@ -41,7 +38,6 @@ export const remoteControl = new Tile(
   '/pdp', //Link
   'Pentruder Remote Controls', //ctaText
   ['Pentruder Remote Controls'], //Product List
-  false //Verified
 );
 
 export const track = new Tile(
@@ -52,7 +48,6 @@ export const track = new Tile(
   '/pdp', //Link
   'Pentruder Track', //ctaText
   ['Pentruder Track'], //Product List
-  false //Verified
 );
 
 export const trackFeet = new Tile(
@@ -63,7 +58,6 @@ export const trackFeet = new Tile(
   '/pdp', //Link
   'Pentruder Track Feet', //ctaText
   ['Pentruder Track Feet'], //Product List
-  false //Verified
 );
 
 export const bladeGuards = new Tile(
@@ -74,7 +68,6 @@ export const bladeGuards = new Tile(
   '/pdp', //Link
   'Pentruder Blade Guards', //ctaText
   ['Pentruder Blade Guards'], //Product List
-  false //Verified
 );
 
 export const cables = new Tile(
@@ -85,7 +78,6 @@ export const cables = new Tile(
   '/pdp', //Link
   'Pentruder Cables', //ctaText
   ['Pentruder Cables'], //Product List
-  false //Verified
 );
 
 export const bladeFlanges = new Tile(
@@ -96,7 +88,6 @@ export const bladeFlanges = new Tile(
   '/pdp', //Link
   'Pentruder Blade Flanges', //ctaText
   ['Pentruder Blade Flanges'], //Product List
-  false //Verified
 );
 
 export const wallSaws = new Tile(
@@ -107,7 +98,6 @@ export const wallSaws = new Tile(
   '/products/wall-wire-saws',
   'Wall/Wire Saws',
   [],
-  true,
 );
 
 export const pentruderParts = new Tile(
@@ -118,7 +108,6 @@ export const pentruderParts = new Tile(
   '/products/pentruder/parts',
   'Pentruder Parts',
   [],
-  true,
 );
 
 export const pentruderAccessories = new Tile(
@@ -129,7 +118,6 @@ export const pentruderAccessories = new Tile(
   '/products/pentruder/accessories',
   'Pentruder Accessories',
   [],
-  true,
 );
 
 export const PentruderWallSaws = [wallSaws];

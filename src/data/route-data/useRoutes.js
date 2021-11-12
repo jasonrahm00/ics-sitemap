@@ -2,7 +2,7 @@ import PLP from "../../components/pages/plp/plp";
 import CategoryContent from "../../components/pages/categoryContentPage";
 import { RouteObject } from '../../utility/constructors';
 import ImgTextOverlay from '../../components/cms-components/image-text-overlay/imgTextOverlay';
-import AllProducts from "../products/icsProducts";
+import AllProducts from "../products/allProducts";
 import { Categories } from "../../utility/variables";
 import ReusableTileCollections from "../../components/cms-components/tile-collection/reusableTileCollections";
 import { PlaceholderText } from "../../utility/variables";

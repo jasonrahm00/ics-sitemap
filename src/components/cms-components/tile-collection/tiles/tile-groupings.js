@@ -1,7 +1,7 @@
 import { TileGroup } from '../../../../utility/constructors';
 import { ICSSaws, ICSChains, ICSPartsTiles, wires, forceThree, forceFour, powerGrit, pipeClamp, icsParts } from './ics-tiles';
 import { MeritFlatSaws, MeritParts } from './merit-tiles';
-import { PentruderWallSaws, PentruderChainSaws, PentruderParts, remoteControl  } from './pentruder-tiles';
+import { PentruderWallSaws, PentruderChainSaws, PentruderParts, remoteControl, AllPentruderTiles  } from './pentruder-tiles';
 import { FeaturesNewsTiles, ProductsNewsTiles, GuidesNewsTiles } from './news-tiles';
 
 // ICS Brand Tile Groups
@@ -18,6 +18,7 @@ export const MeritBrandParts = new TileGroup('Merit Parts & Accessories', '', Me
 export const PentruderBrandSaws = new TileGroup('Power Cutters', '', PentruderChainSaws);
 export const WallSaws = new TileGroup('Wall Saws', '', PentruderWallSaws);
 export const PentruderBrandParts = new TileGroup('Pentruder Parts & Accessories', '', PentruderParts);
+export const PentruderBrandAllTiles = new TileGroup('', '', AllPentruderTiles);
 
 // Use and Type Tiles
 export const AllChainSaws = new TileGroup('Power Cutters', '', [...ICSSaws].concat([...PentruderChainSaws]));

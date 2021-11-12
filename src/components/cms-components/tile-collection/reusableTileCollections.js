@@ -19,7 +19,8 @@ import {
   ICSBrandPartsSingleTile,
   NewsTilesFeatures,
   NewsTilesProducts,
-  NewsTilesGuides
+  NewsTilesGuides,
+  PentruderBrandAllTiles
 } from './tiles/tile-groupings';
 
 const ReusableTileCollections = {
@@ -42,6 +43,7 @@ const ReusableTileCollections = {
   newsFeatures: <TileCollection tileGroup={NewsTilesFeatures} />,
   newsProducts: <TileCollection tileGroup={NewsTilesProducts} />,
   newsGuides: <TileCollection tileGroup={NewsTilesGuides} />,
+  allPentruderTiles: <TileCollection tileGroup={PentruderBrandAllTiles} />,
 };
 
 export default ReusableTileCollections

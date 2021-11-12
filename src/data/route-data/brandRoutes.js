@@ -34,7 +34,7 @@ const Products680Series = AllProducts.filter(product => product.attributes && pr
 const Products695Series = AllProducts.filter(product => product.attributes && product.attributes.series === Series.series695);
 const Products890Series = AllProducts.filter(product => product.attributes && product.attributes.series === Series.series890);
 const Products890FSeries = AllProducts.filter(product => product.attributes && product.attributes.series === Series.series890F);
-const ProductICSParts = AllProducts.filter(product => product.brand === Brands.ics && product.primaryCat === Categories.parts);
+const ProductICSParts = AllProducts.filter(product => product.brand === Brands.ics && (product.primaryCat === Categories.parts || product.primaryCat === Categories.powerSupply));
 
 const BrandRoutes = [
 
@@ -83,8 +83,7 @@ const BrandRoutes = [
     <ImgTextOverlay 
       header={'Pentruder'} 
       text={`You don't want just a saw.  You want a Pentruder. With state-of-the-art features, cutting-edge technology and world-class engineering, it takes first place in every measure of tough. Pentruder is the gold standard for concrete cutters worldwide. Powerful, high-frequency motors, aircraft-grade billet aluminum, a multi-speed gearbox and the only saw on the market today that runs a 79" blade like a hot knife though butter. You and your team will be the rock stars of the job site. Go ahead, let the other guys stare jealously, slack-jawed, while standing to the side. You eat, sleep and breath this, and it looks good on you. `} />,
-    <MWATPentruderSaws />,
-    ReusableTileCollections.pentruderPartsCollection,
+    ReusableTileCollections.allPentruderTiles,
   ]} />),
   new RouteObject('/products/pentruder/parts', () => <PLP title={'Pentruder Parts'} products={ProductsPentruderParts} />),
   new RouteObject('/products/pentruder/accessories', () => <PLP title={'Pentruder Accessories'} products={ProductsPentruderAccessories} />),

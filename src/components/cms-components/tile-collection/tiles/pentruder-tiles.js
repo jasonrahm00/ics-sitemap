@@ -120,7 +120,35 @@ export const pentruderAccessories = new Tile(
   [],
 );
 
+export const eightTwentyHFWalllSaw = new Tile(
+  '8-20 HF Wall Saw',
+  null,
+  null,
+  '',
+  '/pdp',
+  '8-20 HF Wall Saw',
+  ['8-20 HF Wall Saw']
+);
+
+export const cbkWallSaw = new Tile(
+  'CBK HF Wall Saw',
+  null,
+  null,
+  '',
+  '/pdp',
+  'CBK HF Wall Saw',
+  ['CBK HF Wall Saw']
+);
+
 export const PentruderWallSaws = [wallSaws];
 export const PentruderWireSaws = [threePEightWireSaw];
 export const PentruderChainSaws = [hfChainSaw];
 export const PentruderParts = [pentruderParts, pentruderAccessories];
+export const AllPentruderTiles = [
+  cbkWallSaw,
+  threePEightWireSaw,
+  eightTwentyHFWalllSaw,
+  hfChainSaw,
+  pentruderPowerPack,
+  remoteControl
+];

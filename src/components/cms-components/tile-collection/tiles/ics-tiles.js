@@ -85,9 +85,9 @@ export const flowAdapter = new Tile(
   null, //subheader
   null, //image
   'Enjoy the convenience and efficiency of powering your ICS hydraulic saw from skid steers, backhoes, and other common construction equipment. Available for both 8 gpm and 12 gpm (30 lpm and 45 lpm) saws.', //Description
-  '/pdp', //Link
+  '/plp', //Link
   'Flow Adapter', //ctaText
-  ['Flow Adapter'], //Product List
+  ['70350', '71287'], //Product List
 );
 
 export const engineOil = new Tile(

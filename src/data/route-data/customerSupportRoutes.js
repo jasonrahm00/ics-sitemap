@@ -9,7 +9,10 @@ import { VWATVideoLibraryDefault } from '../../components/cms-components/media-a
 
 const CustomerSupportRoutes = [
   new RouteObject('/contact-us', () => <ContentPage title={'Contact Us'}/>),
-  new RouteObject('/find-dealer', () => <ContentPage title={'Find a Dealer'}/>),
+  new RouteObject('/find-dealer', () => <ContentPage components={[
+    <ParagraphHeadSubheadBody headerTag='h1' header='Find a Dealer' bodyText='Interested in purchasing an ICS product? Our network of dealers is here to help.' />,
+    <ParagraphHeadSubheadBody bodyText='Insert Storepoint App here' />
+  ]} />),
   new RouteObject('/product-registration', () => <ContentPage title={'Product Registration'}/>),
   new RouteObject('/videos', 
   () => <ContentPage components={[
@@ -22,7 +25,13 @@ const CustomerSupportRoutes = [
   ]}/>
 ),
   new RouteObject('/demo-request', () => <ContentPage title={'Request a Demo'}/>),
-  new RouteObject('/service-centers', () => <ContentPage title={'Service Centers'}/>),
+  new RouteObject('/service-centers', () => <ContentPage components={[
+    <ParagraphHeadSubheadBody 
+      headerTag='h1' 
+      header='Service Centers'
+      bodyText={`At ICS, your satisfaction is paramount. If for some reason, your equipment is not performing as promised, we want to know. Please call 800.321.1240 or email ics.service@oregontool.com`} 
+      />
+  ]} />),
   new RouteObject('/document-library', 
     () => <CategoryContent components={[
       <ParagraphHeadSubheadBody header="Document Library" />,

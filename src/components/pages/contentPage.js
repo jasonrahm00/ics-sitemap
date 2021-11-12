@@ -3,7 +3,7 @@ function ContentPage({...props}) {
     <>
       <div className="padding-top">
         {props.title && (
-          <h1 className="content-wrapper">{props.title ? props.title : 'Content Page'}</h1>
+          <h1 className="content-wrapper">{props.title}</h1>
         )}
         {props.components && props.components.map((component, index) => {
         return (

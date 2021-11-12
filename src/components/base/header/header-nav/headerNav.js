@@ -1,5 +1,6 @@
 import './headerNav.css';
 import logo from './ics-logo.png';
+import SharedLinks from '../../reusable-nav-links';
 
 function HeaderNav() {
   return (
@@ -13,7 +14,7 @@ function HeaderNav() {
         <input type="text" placeholder="Search..." />
       </div>
       <ul>
-        <li><a>Find a Dealer</a></li>
+        <li>{SharedLinks.findDealer}</li>
         <li><a>Sign In</a></li>
         <li><a>Cart</a></li>
       </ul>

@@ -80,7 +80,9 @@ const BrandRoutes = [
 
   // Pentruder Brand Routes
   new RouteObject('/products/pentruder', () => <CategoryContent components={[
-    <ImgTextOverlay header={'Pentruder Brand'} text={PlaceholderText} />,
+    <ImgTextOverlay 
+      header={'Pentruder'} 
+      text={`You don't want just a saw.  You want a Pentruder. With state-of-the-art features, cutting-edge technology and world-class engineering, it takes first place in every measure of tough. Pentruder is the gold standard for concrete cutters worldwide. Powerful, high-frequency motors, aircraft-grade billet aluminum, a multi-speed gearbox and the only saw on the market today that runs a 79" blade like a hot knife though butter. You and your team will be the rock stars of the job site. Go ahead, let the other guys stare jealously, slack-jawed, while standing to the side. You eat, sleep and breath this, and it looks good on you. `} />,
     <MWATPentruderSaws />,
     ReusableTileCollections.pentruderPartsCollection,
   ]} />),

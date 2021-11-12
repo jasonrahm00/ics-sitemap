@@ -31,13 +31,13 @@ export const pentruderPowerPack = new Tile(
 );
 
 export const remoteControl = new Tile(
-  'Pentruder Remote Controls', //Header
+  'Pentruder Remote Control', //Header
   null, //subheader
   null, //image
   '', //Description
   '/pdp', //Link
-  'Pentruder Remote Controls', //ctaText
-  ['Pentruder Remote Controls'], //Product List
+  'Pentruder Remote Control', //ctaText
+  ['Pentruder Remote Control'], //Product List
 );
 
 export const track = new Tile(

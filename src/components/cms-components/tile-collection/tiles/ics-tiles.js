@@ -135,7 +135,7 @@ export const icsParts = new Tile(
   null, //subheader
   null, //image
   'Whether it\'s making cuts straighter or job sites cleaner, there\'s an ICS accessory that gets the job done. Twenty years of experience and a whole lot of ingenuity have gone into making these work-proven products indispensable complements to your ICS concrete or pipe cutter power cutter.', //Description
-  '/products/ics/parts', //Link
+  '/products/parts-accessories', //Link
   'Parts & Accessories', //ctaText
   [], //Product List
 );

@@ -5,7 +5,6 @@ import ImgTextOverlay from '../../components/cms-components/image-text-overlay/i
 import AllProducts from "../products/allProducts";
 import { Categories } from "../../utility/variables";
 import ReusableTileCollections from "../../components/cms-components/tile-collection/reusableTileCollections";
-import { PlaceholderText } from "../../utility/variables";
 
 const ProductsSteelCutting = AllProducts.filter(product => product.useCat === Categories.steelCutting);
 const ProductsPowerSupply = AllProducts.filter(product => product.primaryCat === Categories.powerSupply);

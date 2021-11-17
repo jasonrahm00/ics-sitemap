@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 import './headerNav.css';
 import logo from './ics-logo.png';
 import SharedLinks from '../../reusable-nav-links';
@@ -15,8 +17,8 @@ function HeaderNav() {
       </div>
       <ul>
         <li>{SharedLinks.findDealer}</li>
-        <li><a>Sign In</a></li>
-        <li><a>Cart</a></li>
+        <li><Link to="#">Sign In</Link></li>
+        <li><Link to="#">Cart</Link></li>
       </ul>
     </nav>
   );

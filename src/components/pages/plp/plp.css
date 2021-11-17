@@ -1,9 +1,9 @@
-.product-listing-page a,
+.product-listing-page a:link,
 .product-listing-page a:visited {
   color: #C8102E;
 }
 
-.product-listing-page a:hover {
+.product-listing-page a:link:hover {
   color: #707070;
 }
 

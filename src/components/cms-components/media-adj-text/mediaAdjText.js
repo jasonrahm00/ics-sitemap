@@ -18,7 +18,7 @@ function MediaAdjText({...props}) {
           <div className={'text-wrapper ' + (props.textPlacement === 'left' ? 'padding-right' : '')}>
             {props.header ? (<h2>{props.header}</h2>) : ''}
             {props.subheader ? (<h3>{props.subheader}</h3>) : ''}
-            {props.bodyText ? (<p>{props.bodyText}</p>) : ''}
+            {props.bodyText ? props.bodyText : ''}
             {props.ctaText && props.ctaUrl ? (
               <LinkButton to={props.ctaUrl} ctaText={props.ctaText} />
             ) : ''}

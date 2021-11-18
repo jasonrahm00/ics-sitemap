@@ -54,7 +54,7 @@ export const IWATDefault = () => {
       specs={<IWATComponentSpecs />}
       ctaUrl='#'
       ctaText='CTA Text'
-      bodyText={PlaceholderText}
+      bodyText={<p>{PlaceholderText}</p>}
       textPlacement='right'
       bulletGroup={<DefaultBulletGroup />}
       linkGroup={<DefaultLinkGroup />}
@@ -71,7 +71,7 @@ export const VWATDefault = () => {
       specs={<VWATComponentSpecs />}
       ctaUrl='#'
       ctaText='CTA Text'
-      bodyText={PlaceholderText}
+      bodyText={<p>{PlaceholderText}</p>}
       textPlacement='left'
       videoId='NnaJTRqgXWE'
       bulletGroup={<DefaultBulletGroup />}
@@ -86,7 +86,7 @@ export const MWATMeritFlatSaws = () => {
       header='Flat Saws'
       ctaUrl='/products/flat-saws'
       ctaText='Merit Flat Saws'
-      bodyText={`Our flat saws are available multiple configurations and power sources to fit your job requirements. Hand crafted, machined, assembled, and fully welded with high grade steel in the USA.`}
+      bodyText={<p>Our flat saws are available multiple configurations and power sources to fit your job requirements. Hand crafted, machined, assembled, and fully welded with high grade steel in the USA.</p>}
       textPlacement='right'
       image={LargePlaceholderImage}
     />
@@ -99,7 +99,7 @@ export const MWATPentruderSaws = () => {
       header='Pentruder Saws'
       ctaUrl='/products/pentruder/saws'
       ctaText='Pentruder Saws'
-      bodyText={PlaceholderText}
+      bodyText={<p>{PlaceholderText}</p>}
       textPlacement='right'
       image={LargePlaceholderImage}
     />
@@ -113,9 +113,7 @@ export const MWATICS680Cutters = () => {
       ctaUrl='/products/ics/gas-power-cutters/680-series'
       ctaText='680ES Series Gas Power Cutters'
       bodyText={
-        <>
-        'Built to meet the operation and flexibility demands of the general construction user, the 680ES stands alone in terms of reliability and value. Easy to start with a new multifunction lever to control choke, run, and stop functions. The powerhead houses specially designed carburetion and ignition systems that work together for easy starting, cooler operation, and dependable performance at just about any elevation. Available with 12 in. (30 cm) and 14 in. (35 cm) guide bars and the entire line of FORCE3® Series diamond chain.'
-        </>
+        <p>Built to meet the operation and flexibility demands of the general construction user, the 680ES stands alone in terms of reliability and value. Easy to start with a new multifunction lever to control choke, run, and stop functions. The powerhead houses specially designed carburetion and ignition systems that work together for easy starting, cooler operation, and dependable performance at just about any elevation. Available with 12 in. (30 cm) and 14 in. (35 cm) guide bars and the entire line of FORCE3® Series diamond chain.</p>
       }
       textPlacement='right'
       image={LargePlaceholderImage}
@@ -144,7 +142,7 @@ export const MWATICS695Cutters = () => {
       header='695XL Series Gas Power Cutters'
       ctaUrl='/products/ics/gas-power-cutters/695-series'
       ctaText='695XL Series Gas Power Cutters'
-      bodyText={PlaceholderText}
+      bodyText={<p>{PlaceholderText}</p>}
       textPlacement='right'
       image={LargePlaceholderImage}
       bulletGroup={
@@ -165,7 +163,7 @@ export const MWATICS890Cutters = () => {
       header='890 Series Power Cutters'
       ctaUrl='/products/ics/gas-power-cutters/890-series'
       ctaText='890 Series Power Cutters'
-      bodyText={PlaceholderText}
+      bodyText={<p>{PlaceholderText}</p>}
       textPlacement='right'
       image={LargePlaceholderImage}
       bulletGroup={
@@ -186,7 +184,7 @@ export const MWATICS890FCutters = () => {
       header='890F Series Power Cutters'
       ctaUrl='/products/ics/gas-power-cutters/890-f-series'
       ctaText='890F Series Power Cutters'
-      bodyText={PlaceholderText}
+      bodyText={<p>{PlaceholderText}</p>}
       textPlacement='right'
       image={LargePlaceholderImage}
       bulletGroup={
@@ -205,7 +203,7 @@ export const VWATVideoLibraryDefault = () => {
   return (
     <MediaAdjText 
       header='Some Popular Brand Video'
-      bodyText={PlaceholderText}
+      bodyText={<p>{PlaceholderText}</p>}
       textPlacement='left'
       videoId='NnaJTRqgXWE'
       linkGroup={<DefaultLinkGroup />}

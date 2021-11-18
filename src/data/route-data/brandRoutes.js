@@ -64,7 +64,7 @@ const BrandRoutes = [
     <MWATICS695Cutters />
   ]}/>),
   new RouteObject('/products/ics/hydraulic-power-cutters', () => <CategoryContent components={[
-    <ImgTextOverlay header={'ICS Hydraulic Power Cutters'} text={PlaceholderText} />,
+    <ImgTextOverlay header={'ICS Hydraulic Power Cutters'} text={<p>ICS concrete hydraulic power cutters let you make deeper, cleaner and more accurate cuts, in less time.  Deeper cuts and square corners mean getting the job done with fewer steps. No more trying to match up cuts from both sides.  No more impact tools that risk damage to the surrounding concrete or masonry.  No more over-cutting corners. The ICS hydraulic 890F4 offers unmatched power to cut stone, masonry, brick, block, ductile iron, cast iron and more.</p>} />,
     <MWATICS890Cutters />,
     <MWATICS890FCutters />
   ]}/>),

@@ -170,17 +170,28 @@ export const MWATICS695Cutters = () => {
 export const MWATICS890Cutters = () => {
   return (
     <MediaAdjText 
-      header='890 Series Power Cutters'
+      header='890F4 Series'
       ctaUrl='/products/ics/gas-power-cutters/890-series'
-      ctaText='890 Series Power Cutters'
-      bodyText={<p>{PlaceholderText}</p>}
+      ctaText='890F4 Series'
+      bodyText={
+        <>
+          <p>The ICS 890 Series hydraulic cutting system offers the superior strength of FORCE4® technology. From the redesigned, more durable rear handle, to the easy to replace drive sprocket, this power cutter is engineered to stand up to your toughest jobs. In a package that exceeds industry standards, this sleek powerhouse is packed with features designed to make it work as hard as you do.</p>
+          <ChemicalWarning />
+        </>
+      }
       textPlacement='right'
       image={LargePlaceholderImage}
       bulletGroup={
         <BullletListGroup 
-          groupHeader='Key Features of the 890 Series'
           bulletLists={[
-            <BulletList bullets={['List 1, Bullet 1', 'List 1, Bullet 2', 'List 1, Bullet 3']} />
+            <BulletList bullets={[
+              'Redesigned rear handle offers improved ergonomic cutting and greater durability',
+              '3 scratch resistant bubble levels for more accurate vertical and horizontal cutting',
+              'New drive sprocket design allows for quick replacement in the field',
+              'Universal motor across 890 series power cutter platforms and compatible with ICS 880 series power cutter',
+              'Available with 1 ft and 8 ft hoses; ½ in quick disconnects included for convenience',
+              'New secondary water shut off valve for flow metering and water conservation',
+            ]} />
           ]}
         />
       }
@@ -191,17 +202,29 @@ export const MWATICS890Cutters = () => {
 export const MWATICS890FCutters = () => {
   return (
     <MediaAdjText 
-      header='890F Series Power Cutters'
+      header='890F4-FLUSH Series'
       ctaUrl='/products/ics/gas-power-cutters/890-f-series'
-      ctaText='890F Series Power Cutters'
-      bodyText={<p>{PlaceholderText}</p>}
+      ctaText='890F4-FLUSH Series'
+      bodyText={
+        <>
+          <p>The ICS 890 Series hydraulic cutting system offers the superior strength of FORCE4® technology. From the redesigned, more durable rear handle, to the easy to replace drive sprocket, this power cutter is engineered to stand up to your toughest jobs. In a package that exceeds industry standards, this sleek powerhouse is packed with features designed to make it work as hard as you do.</p>
+          <ChemicalWarning />
+        </>
+      }
       textPlacement='right'
       image={LargePlaceholderImage}
       bulletGroup={
         <BullletListGroup 
-          groupHeader='Key Features of the 890F Series'
           bulletLists={[
-            <BulletList bullets={['List 1, Bullet 1', 'List 1, Bullet 2', 'List 1, Bullet 3']} />
+            <BulletList bullets={[
+              'Cuts within 3/16 in of a wall',
+              'Redesigned rear handle offers improved ergonomic cutting and greater durability',
+              '3 scratch resistant bubble levels for more accurate vertical and horizontal cutting',
+              'New drive sprocket design allows for quick replacement in the field',
+              'Universal motor across 890 series power cutter platforms and compatible with ICS 880 series power cutter',
+              'Available with 1 ft or 8 ft hoses; 1/2 in quick disconnects included for convenience',
+              'New secondary water shut off valve for flow metering and water conservation',
+            ]} />
           ]}
         />
       }

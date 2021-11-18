@@ -4,7 +4,7 @@ export const threePEightWireSaw = new Tile(
   '3P8 HF Wire Saw', //Header
   null, //subheader
   null, //image
-  '', //Description
+  'For cuts that are too deep for wall sawing, the powerful and versatile 3P8 HF Wire Saw will cut any depth your job requires. The electric, automatic feed, and high-torque high-frequency motor simplify the start of the wire while extending its life. The 3P8’s light-weight modular component design makes set-up quick and easy. The 3P8 HF Wire Saw operates using the same Pentpak, high-frequency motor, cables, and remote control as Pentruder Wall Saw systems.', //Description
   '/pdp', //Link
   '3P8 HF Wire Saw', //ctaText
   ['3P8 HF Wire Saw'], //Product List
@@ -24,20 +24,20 @@ export const pentruderPowerPack = new Tile(
   'Pentpak 427 HF Power Pack', //Header
   null, //subheader
   null, //image
-  '', //Description
+  'Operate a full range of Pentruder HF-equipment simply by connecting the same Pentpak, remote control, motor and cables to a wallsaw, a wire saw or the CWF630 HF power cutter. It all fits together and gives unsurpassed flexibility.', //Description
   '/pdp', //Link
   'Pentpak 427 HF Power Pack', //ctaText
   ['Pentpak 427 HF Power Pack'], //Product List
 );
 
 export const remoteControl = new Tile(
-  'Pentruder Remote Control', //Header
+  'Cable Remote Control', //Header
   null, //subheader
   null, //image
-  '', //Description
+  'Cable remote control with ergonomic layout with joystick and rocker switches for smooth operation and reduced operator hand fatigue.', //Description
   '/pdp', //Link
-  'Pentruder Remote Control', //ctaText
-  ['Pentruder Remote Control'], //Product List
+  'Cable Remote Control', //ctaText
+  ['Cable Remote Control'], //Product List
 );
 
 export const track = new Tile(
@@ -124,7 +124,7 @@ export const eightTwentyHFWalllSaw = new Tile(
   '8-20 HF Wall Saw',
   null,
   null,
-  '',
+  'The Pentruder 8-20HF 4-speed saw head operates with up to a 79 in. blade capacity and 36 in. maximum cutting depth to meet your highest standards and toughest job requirements. The 8-20 HF wall saw is equipped with a 4-speed gearbox and 30HP high-frequency motor, to continuously delivers high torque at all spindle speeds. The 8-20 HP is manufactured with precision-machined, aerospace-quality billet aluminum components for maximum rigidity, lightest weight, and extended life. The patented quick-disconnect blade flange enables you to mount the blade safely and efficiently so that you can get more done faster.',
   '/pdp',
   '8-20 HF Wall Saw',
   ['8-20 HF Wall Saw']
@@ -134,7 +134,7 @@ export const cbkWallSaw = new Tile(
   'CBK HF Wall Saw',
   null,
   null,
-  '',
+  'A powerful single variable speed saw that delivers up to 30 hp at the spindle. Blade capacity is 63-inch diameter with a maximum cutting depth of 28.5 inches. Long-life low maintenance design with components machined from aerospace billet aluminum for maximum rigidity, quick disconnect blade flanges for easy blade change-outs, and high-quality precision ground gears for durability. An everyday saw that keeps your productivity ahead of the competitors.',
   '/pdp',
   'CBK HF Wall Saw',
   ['CBK HF Wall Saw']
@@ -146,9 +146,9 @@ export const PentruderChainSaws = [hfChainSaw];
 export const PentruderParts = [pentruderParts, pentruderAccessories];
 export const AllPentruderTiles = [
   cbkWallSaw,
-  threePEightWireSaw,
   eightTwentyHFWalllSaw,
-  hfChainSaw,
+  threePEightWireSaw,
   pentruderPowerPack,
-  remoteControl
+  remoteControl,
+  hfChainSaw,
 ];

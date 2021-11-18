@@ -7,7 +7,7 @@ const PentruderProducts = [
   new Product('8-20 HF Wall Saw', Brands.pentruder, Categories.wallSaws),
   new Product('3P8 HF Wire Saw', Brands.pentruder, Categories.wireSaws),
   new Product('Pentpak 427 HF Power Pack', Brands.pentruder, Categories.powerSupply),
-  new Product('Pentruder Remote Control', Brands.pentruder, Categories.access),
+  new Product('Cable Remote Control', Brands.pentruder, Categories.access),
   new Product('Pentruder Track', Brands.pentruder, Categories.access),
   new Product('Pentruder Track Feet', Brands.pentruder, Categories.access),
   new Product('Pentruder Blade Flanges', Brands.pentruder, Categories.parts),

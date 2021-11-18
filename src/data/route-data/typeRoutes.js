@@ -36,7 +36,7 @@ const TypeRoutes = [
   ),
   new RouteObject('/products/parts-accessories', 
     () => <CategoryContent components={[
-      <ImgTextOverlay header={'Parts & Accessories'} text={PlaceholderText} />,
+      <ImgTextOverlay header={'Parts & Accessories'} text={<p>From power packs that run your hydraulic tools, pipe clamps to reduce fatigue on your team and heavy duty carrying bags to keep your equipment organized. These work-proven products are indispensable complements to your ICS, Merit & Pentruder Tools.</p>} />,
       ReusableTileCollections.icsPartsCollection,
       ReusableTileCollections.meritPartsCollection,
       ReusableTileCollections.pentruderPartsCollection,

@@ -3,6 +3,7 @@ import LargePlaceholderImage from '../../../media/placeholder-image-large.png';
 import { PlaceholderText } from "../../../utility/variables";
 import { DefaultLinkGroup, DefaultBulletGroup } from "../base-cms-components/list-groups/reusable-list-groups";
 import { BulletList, BullletListGroup } from "../base-cms-components/list-groups/listGroups";
+import ChemicalWarning from "../../base/chemicalWarning";
 
 const IWATComponentSpecs = () => {
   return (
@@ -142,14 +143,23 @@ export const MWATICS695Cutters = () => {
       header='695XL Series Gas Power Cutters'
       ctaUrl='/products/ics/gas-power-cutters/695-series'
       ctaText='695XL Series Gas Power Cutters'
-      bodyText={<p>{PlaceholderText}</p>}
+      bodyText={<>
+        <p>The new 695XL features an easy-to-start engine with a higher energy ignition system and durable, long-lasting components including a new muffler, carburetor, and piston and cylinder. Based on the best-selling 695 saw platform, the 695XL is the highest horsepower ICS gas power cutter for frequent-use by general construction, utility contractors, and concrete professionals. Available with 12 in. (30 cm), 16 in. (40cm) guide bars and the entire line of FORCE3®, FORCE4®, and PowerGrit® Series diamond chains.</p>
+        <ChemicalWarning />
+      </>}
       textPlacement='right'
       image={LargePlaceholderImage}
       bulletGroup={
         <BullletListGroup 
-          groupHeader='Key Features of the 695 Series'
           bulletLists={[
-            <BulletList bullets={['List 1, Bullet 1', 'List 1, Bullet 2', 'List 1, Bullet 3']} />
+            <BulletList bullets={[
+              'Use on concrete, stone, masonry, ductile iron pipe, cast iron pipe, and more',
+              'Most versatile gas-power cutter',
+              'New piston and cylinder lowers engine temperature',
+              'Longer life muffler with reinforced internal baffle',
+              'Easy-to-start with higher energy ignition system',
+              'New easy-to-tune carburetor',
+            ]} />
           ]}
         />
       }

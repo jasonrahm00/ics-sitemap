@@ -18,9 +18,14 @@
   font-size: 1.25rem;
 }
 
+.media-adj-text-content p {
+  padding: .5rem 0;
+}
+
 .media-adj-text-content.text-left .media-wrapper {
   order: 1;
 }
+
 
 .text-wrapper,
 .media-wrapper {

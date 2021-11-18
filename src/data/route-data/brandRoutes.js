@@ -6,10 +6,10 @@ import { Categories, Brands, Series } from "../../utility/variables";
 import ReusableTileCollections from "../../components/cms-components/tile-collection/reusableTileCollections";
 import { PlaceholderText } from "../../utility/variables";
 import AllProducts from "../products/allProducts";
+import ChemicalWarning from "../../components/base/chemicalWarning";
 
 import {
-  MWATMeritFlatSaws, 
-  MWATPentruderSaws,
+  MWATMeritFlatSaws,
   MWATICS680Cutters,
   MWATICS695Cutters,
   MWATICS890Cutters,
@@ -41,7 +41,7 @@ const BrandRoutes = [
   // ICS Brand Routes
   new RouteObject('/products/ics', 
     () => <CategoryContent components={[
-      <ImgTextOverlay header={'ICS Brand'} text={PlaceholderText} />,
+      <ImgTextOverlay header={'ICS'} text={'When ICS launched in 1990, the technology was born from our ambition to design safe, efficient, and productive products for our customers. We knew we were creating more than just diamond chains, we were pioneering a whole new category.  By leveraging expertise from the World’s #1 chain manufacturer, Oregon, we crafted a line of equipment that inspires.  More than 30 years later, ICS continues to lead the industry in chain based concrete and pipe cutting solutions.  Built to cut through the toughest stuff ever made, our tools help you get the job done easier and faster.  Don’t just cut. Conquer.'} />,
       ReusableTileCollections.icsSawCollection,
       ReusableTileCollections.icsChainsCollection,
       ReusableTileCollections.singleICSPartsTile,
@@ -53,7 +53,13 @@ const BrandRoutes = [
   new RouteObject('/products/ics/diamond-wires', () => <PLP title={'Diamond Wire and Accessories'} products={ProductsDiamondWires} />),
   new RouteObject('/products/ics/carrying-bags', () => <PLP title={'Carrying Bags'} products={ProductsICSBags} />),
   new RouteObject('/products/ics/gas-power-cutters', () => <CategoryContent components={[
-    <ImgTextOverlay header={'ICS Gas Power Cutters'} text={PlaceholderText} />,
+    <ImgTextOverlay 
+      header={'ICS Gas Power Cutters'} 
+      text={<>
+        <p>ICS concrete gas power cutters let you make deeper, cleaner and more accurate cuts, in less time.  Deeper cuts and square corners mean getting the job done with fewer steps. No more trying to match up cuts from both sides.  No more impact tools that risk damage to the surrounding concrete or masonry.  No more over-cutting corners.  The ICS gas power cutter offers portability to you and your team.</p>
+        <ChemicalWarning />
+      </>} 
+    />,
     <MWATICS680Cutters />,
     <MWATICS695Cutters />
   ]}/>),

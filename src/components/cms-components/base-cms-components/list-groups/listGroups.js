@@ -20,7 +20,7 @@ export const BulletList = ({...props}) => {
 export const BullletListGroup = ({...props}) => {
   const HeaderTag = props.headerTag ? props.headerTag : 'h3';
   return (
-    <section className="list-group-component">
+    <section className={'list-group-component' + (props.bulletLists.length > 1 ? ' two-columns' : '')}>
       {props.groupHeader && <HeaderTag>{props.groupHeader}</HeaderTag> }
       {props.bulletLists && props.bulletLists.map((list, index) => {
         return (
@@ -37,7 +37,7 @@ export const LinkListGroup = ({...props}) => {
   const HeaderTag = props.headerTag ? props.headerTag : 'h3';
   const SubHeaderTag = props.subheaderTag ? props.subheaderTag : 'h4';
   return (
-    <section className="list-group-component links">
+    <section className="list-group-component links two-columns">
       {props.header && <HeaderTag>{props.header}</HeaderTag> }
       {props.subheader && <SubHeaderTag>{props.subheader}</SubHeaderTag>}
       {props.links ? (

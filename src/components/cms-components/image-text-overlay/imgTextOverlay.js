@@ -35,7 +35,7 @@ function ImgTextOverlay({...props}) {
                 <HeaderTag>{props.header}</HeaderTag>
               ) : ''}
               {props.subheader ? (<SubheaderTag>{props.subheader}</SubheaderTag>) : ''}
-              {props.text ? (<p>{props.text}</p>) : ''}
+              {props.text ? props.text : ''}
               {props.to && props.ctaText ? (
                 <LinkButton ctaText={props.ctaText} to={props.to} />
               ) : ''}

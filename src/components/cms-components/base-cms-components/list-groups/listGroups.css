@@ -18,7 +18,7 @@
   padding-top: .5rem;
 }
 
-.list-group-component section {
+.list-group-component.two-columns{
   width: 50%;
 }
 

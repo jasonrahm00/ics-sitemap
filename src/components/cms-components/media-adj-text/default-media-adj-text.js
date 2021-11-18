@@ -109,17 +109,28 @@ export const MWATPentruderSaws = () => {
 export const MWATICS680Cutters = () => {
   return (
     <MediaAdjText 
-      header='680 Series Power Cutters'
+      header='680ES Series Gas Power Cutters'
       ctaUrl='/products/ics/gas-power-cutters/680-series'
-      ctaText='680 Series Power Cutters'
-      bodyText={PlaceholderText}
+      ctaText='680ES Series Gas Power Cutters'
+      bodyText={
+        <>
+        'Built to meet the operation and flexibility demands of the general construction user, the 680ES stands alone in terms of reliability and value. Easy to start with a new multifunction lever to control choke, run, and stop functions. The powerhead houses specially designed carburetion and ignition systems that work together for easy starting, cooler operation, and dependable performance at just about any elevation. Available with 12 in. (30 cm) and 14 in. (35 cm) guide bars and the entire line of FORCE3® Series diamond chain.'
+        </>
+      }
       textPlacement='right'
       image={LargePlaceholderImage}
       bulletGroup={
         <BullletListGroup 
-          groupHeader='Key Features of the 680 Series'
           bulletLists={[
-            <BulletList bullets={['List 1, Bullet 1', 'List 1, Bullet 2', 'List 1, Bullet 3']} />
+            <BulletList bullets={[
+              'Polyester air filter designed specifically for wet cutting',
+              'Operates FORCE3™ diamond chain consumables up to 14 in. (35cm)',
+              'Multifunction lever controls choke, throttle advance, run and stop modes', 
+              'Extended drive sprocket adapter offers easy chain assembly', 
+              'Deep cutting solution for obstructed or small openings', 
+              'Cut squares as small as 4 in. x 4 in. (10 cm x 10 cm)', 
+              'Easy-to-start in all weather' 
+            ]} />
           ]}
         />
       }
@@ -130,9 +141,9 @@ export const MWATICS680Cutters = () => {
 export const MWATICS695Cutters = () => {
   return (
     <MediaAdjText 
-      header='695 Series Power Cutters'
+      header='695XL Series Gas Power Cutters'
       ctaUrl='/products/ics/gas-power-cutters/695-series'
-      ctaText='695 Series Power Cutters'
+      ctaText='695XL Series Gas Power Cutters'
       bodyText={PlaceholderText}
       textPlacement='right'
       image={LargePlaceholderImage}

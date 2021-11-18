@@ -31,7 +31,7 @@ function TileComponent({...props}) {
       ) : ''}
       <CardContent>
         <CardHeader component="span" title={props.header} subheader={props.subheader} action={props.verified ? <CheckCircleIcon /> : ''}/>
-        <Typography variant="body2" color="text.secondary" className={!props.description ? 'no-description' : ''}>
+        <Typography component="div" variant="body2" color="text.secondary" className={!props.description ? 'no-description' : ''}>
           {props.description ? props.description : PlaceholderText}
         </Typography>
       </CardContent>

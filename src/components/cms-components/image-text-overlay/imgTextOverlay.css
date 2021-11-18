@@ -25,3 +25,7 @@
   background-color: rgba(0,0,0,0.5);
   padding: 1rem;
 }
+
+.iwto-content-container p {
+  padding: .5rem 0;
+}

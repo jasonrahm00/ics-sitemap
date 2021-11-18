@@ -7,7 +7,7 @@ export const FullWidthImgTextOverlay = () => {
       header='Full Width Image with Text Overlay'
       subheader='Subheader'
       ctaText={'CTA Text'}
-      text={PlaceholderText}
+      text={<p>{PlaceholderText}</p>}
       to={'#'}
       showSpecs={true}
     />
@@ -22,7 +22,7 @@ export const MarginsImgTextOverlay = () => {
       ctaText='CTA Text'
       to='#'
       withMargins={true}
-      text={PlaceholderText}
+      text={<p>{PlaceholderText}</p>}
     />
   )
 }

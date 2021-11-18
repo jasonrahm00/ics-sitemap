@@ -14,7 +14,7 @@ const UseRoutes = [
     <ImgTextOverlay 
       header={'Concrete Cutting'} 
       headerTag='h1'
-      text={`It’s ok to take the occasional gamble, as long as it’s something like switching from regular to decaf coffee.  But if you cut concrete for a living, you know rolling the dice on your equipment is not a trade-off you should make.  You’re working for every dollar and so should your tools. At ICS, we design and manufacture all our concrete cutting equipment with high-quality, top-of-the-line materials.  Because we know, our tools shouldn’t stop working until you do.`} />,
+      text={<p>It’s ok to take the occasional gamble, as long as it’s something like switching from regular to decaf coffee.  But if you cut concrete for a living, you know rolling the dice on your equipment is not a trade-off you should make.  You’re working for every dollar and so should your tools. At ICS, we design and manufacture all our concrete cutting equipment with high-quality, top-of-the-line materials.  Because we know, our tools shouldn’t stop working until you do.</p>} />,
     ReusableTileCollections.concreteCuttingSaws,
     ReusableTileCollections.concreteCuttingChainsCollection,
     ReusableTileCollections.concreteCuttingPartsCollection,
@@ -24,7 +24,7 @@ const UseRoutes = [
       <ImgTextOverlay 
         header={'Pipe Cutting'} 
         headerTag='h1'
-        text={`If you’re in the water and wastewater industry or road and bridge maintenance,  ICS technology is literally changing the way you work. With products that virtually eliminate rotational kickback, designs that give you more control and tools that create practically no debris or dust, we have a range of solutions that make your job safer, faster, and easier.`} />,
+        text={<p>If you’re in the water and wastewater industry or road and bridge maintenance,  ICS technology is literally changing the way you work. With products that virtually eliminate rotational kickback, designs that give you more control and tools that create practically no debris or dust, we have a range of solutions that make your job safer, faster, and easier.</p>} />,
       ReusableTileCollections.allChainSawsCollection,
       ReusableTileCollections.pipeCuttingChainsCollection,
       ReusableTileCollections.pipeCuttingAccessoriesCollection,

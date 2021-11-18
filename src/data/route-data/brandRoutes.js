@@ -41,7 +41,7 @@ const BrandRoutes = [
   // ICS Brand Routes
   new RouteObject('/products/ics', 
     () => <CategoryContent components={[
-      <ImgTextOverlay header={'ICS'} text={'When ICS launched in 1990, the technology was born from our ambition to design safe, efficient, and productive products for our customers. We knew we were creating more than just diamond chains, we were pioneering a whole new category.  By leveraging expertise from the World’s #1 chain manufacturer, Oregon, we crafted a line of equipment that inspires.  More than 30 years later, ICS continues to lead the industry in chain based concrete and pipe cutting solutions.  Built to cut through the toughest stuff ever made, our tools help you get the job done easier and faster.  Don’t just cut. Conquer.'} />,
+      <ImgTextOverlay header={'ICS'} text={<p>When ICS launched in 1990, the technology was born from our ambition to design safe, efficient, and productive products for our customers. We knew we were creating more than just diamond chains, we were pioneering a whole new category.  By leveraging expertise from the World’s #1 chain manufacturer, Oregon, we crafted a line of equipment that inspires.  More than 30 years later, ICS continues to lead the industry in chain based concrete and pipe cutting solutions.  Built to cut through the toughest stuff ever made, our tools help you get the job done easier and faster.  Don’t just cut. Conquer.</p>} />,
       ReusableTileCollections.icsSawCollection,
       ReusableTileCollections.icsChainsCollection,
       ReusableTileCollections.singleICSPartsTile,
@@ -79,7 +79,7 @@ const BrandRoutes = [
     <ImgTextOverlay 
       header={'Merit'}
       headerTag='h1' 
-      text={`These are Merit Flat Saws.  Made with high-strength, high-quality steel and a fully welded frame. Odds are, if you cut concrete for a living, you know how tough your tools need to be.  Each Merit by ICS saw is built to stand up to the abrasive abuse of concrete cutting, and power you through to the end of each job with ease.`} />,
+      text={<p>These are Merit Flat Saws.  Made with high-strength, high-quality steel and a fully welded frame. Odds are, if you cut concrete for a living, you know how tough your tools need to be.  Each Merit by ICS saw is built to stand up to the abrasive abuse of concrete cutting, and power you through to the end of each job with ease.</p>} />,
     <MWATMeritFlatSaws />,
     ReusableTileCollections.meritPartsCollection,
   ]} />),
@@ -88,7 +88,7 @@ const BrandRoutes = [
   new RouteObject('/products/pentruder', () => <CategoryContent components={[
     <ImgTextOverlay 
       header={'Pentruder'} 
-      text={`You don't want just a saw.  You want a Pentruder. With state-of-the-art features, cutting-edge technology and world-class engineering, it takes first place in every measure of tough. Pentruder is the gold standard for concrete cutters worldwide. Powerful, high-frequency motors, aircraft-grade billet aluminum, a multi-speed gearbox and the only saw on the market today that runs a 79" blade like a hot knife though butter. You and your team will be the rock stars of the job site. Go ahead, let the other guys stare jealously, slack-jawed, while standing to the side. You eat, sleep and breath this, and it looks good on you. `} />,
+      text={<p>You don't want just a saw.  You want a Pentruder. With state-of-the-art features, cutting-edge technology and world-class engineering, it takes first place in every measure of tough. Pentruder is the gold standard for concrete cutters worldwide. Powerful, high-frequency motors, aircraft-grade billet aluminum, a multi-speed gearbox and the only saw on the market today that runs a 79" blade like a hot knife though butter. You and your team will be the rock stars of the job site. Go ahead, let the other guys stare jealously, slack-jawed, while standing to the side. You eat, sleep and breath this, and it looks good on you.</p>} />,
     ReusableTileCollections.allPentruderTiles,
   ]} />),
   new RouteObject('/products/pentruder/parts', () => <PLP title={'Pentruder Parts'} products={ProductsPentruderParts} />),

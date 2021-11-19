@@ -24,18 +24,7 @@ export const pentruderPowerPack = new Tile(
   'Pentpak 427 HF Power Pack', //Header
   null, //subheader
   null, //image
-  (() => {return (
-    <>
-      <p>Operate a full range of Pentruder HF-equipment simply by connecting the same Pentpak, remote control, motor and cables to a wallsaw, a wire saw or the CWF630 HF power cutter. It all fits together and gives unsurpassed flexibility.</p>
-      <ul>
-        <li>Digital Connector</li>
-        <li>Versatile</li>
-        <li>Built in EMC-filter</li>
-        <li>Protected against short circuit & overloads</li>
-        <li>No high peak loads</li>
-      </ul>
-    </>
-  )})(), //Description
+  'Operate a full range of Pentruder HF-equipment simply by connecting the same Pentpak, remote control, motor and cables to a wallsaw, a wire saw or the CWF630 HF power cutter. It all fits together and gives unsurpassed flexibility.', //Description
   '/pdp', //Link
   'Pentpak 427 HF Power Pack', //ctaText
   ['Pentpak 427 HF Power Pack'], //Product List

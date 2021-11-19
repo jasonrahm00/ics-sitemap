@@ -18,8 +18,6 @@ const MeritProducts = [
   new Product('M600SS-61G Flat Saw', Brands.merit, Categories.flatSaws, new Attributes(PowerTypes.gas, '', Series.m600)),
   new Product('M800EX-87G Flat Saw', Brands.merit, Categories.flatSaws, new Attributes(PowerTypes.electric, '', Series.m800)),
   new Product('M300-23G-HPP Power Pack', Brands.merit, Categories.powerSupply),
-  new Product('Merit Water Pump', Brands.merit, Categories.parts),
-  new Product('Merit Light Kit', Brands.merit, Categories.parts),
 ];
 
 export default MeritProducts;

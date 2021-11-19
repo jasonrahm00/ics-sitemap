@@ -154,7 +154,7 @@ export const cbkWallSaw = new Tile(
 export const PentruderWallSaws = [wallSaws];
 export const PentruderWireSaws = [threePEightWireSaw];
 export const PentruderChainSaws = [hfChainSaw];
-export const PentruderParts = [pentruderParts, pentruderAccessories];
+export const PentruderParts = [pentruderPowerPack, remoteControl];
 export const AllPentruderTiles = [
   cbkWallSaw,
   eightTwentyHFWalllSaw,

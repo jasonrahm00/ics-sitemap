@@ -1,0 +1,43 @@
+.user-segmentation h2 {
+  padding: 2rem .5rem 1rem;
+  margin: 0;
+}
+
+.user-segmentation img {
+  padding-bottom: 1rem;
+}
+
+.user-segmentation h3 {
+  padding: 0 0 1rem 0;
+  margin: 0;
+}
+
+.user-segmentation h3 .MuiCardHeader-title {
+  font-size: 1.25rem;
+}
+
+.user-segmentation .MuiTypography-body2 {
+  padding: 0 1rem 1rem; 
+}
+
+.user-segmentation .list-group-component {
+  width: 100%;
+  display: block;
+}
+
+.user-segmentation .list-group-component h4 {
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.user-segmentation .list-group-component ul {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.user-segmentation .MuiCard-root {
+  border-radius: 0;
+  border: 1px solid #f2f2f2;
+  box-shadow: none;
+}

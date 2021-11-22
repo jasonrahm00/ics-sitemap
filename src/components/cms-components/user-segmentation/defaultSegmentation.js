@@ -8,6 +8,8 @@ import { LinkListGroup } from "../base-cms-components/list-groups/listGroups";
 const TestLinkGroup = () => {
   return (
     <LinkListGroup 
+      header='Link Group Header'
+      headerTag='h4'
       links={[
         <Link to="#">Link 1</Link>,
         <Link to="#">Link 2</Link>,

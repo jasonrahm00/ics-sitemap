@@ -1,9 +1,31 @@
 import { TileGroup } from '../../../../utility/constructors';
-import { ICSSaws, ICSChains, ICSPartsTiles, wires, forceThree, forceFour, powerGrit, pipeClamp, icsParts } from './ics-tiles';
-import { MeritFlatSaws, MeritParts } from './merit-tiles';
-import { PentruderWallSaws, PentruderChainSaws, PentruderParts, remoteControl, AllPentruderTiles  } from './pentruder-tiles';
 import { FeaturesNewsTiles, ProductsNewsTiles, GuidesNewsTiles } from './news-tiles';
 import { AddressTiles } from './misc-tiles';
+import { 
+  ICSSaws, 
+  ICSChains, 
+  ICSPartsTiles, 
+  wires, 
+  forceThree, 
+  forceFour, 
+  powerGrit, 
+  pipeClamp, 
+  icsParts,
+  pneumaticSaws
+} from './ics-tiles';
+import { 
+  MeritFlatSaws, 
+  MeritParts, 
+  meritPowerPack } from './merit-tiles';
+import { 
+  PentruderWallSaws, 
+  PentruderChainSaws, 
+  PentruderParts, 
+  remoteControl, 
+  AllPentruderTiles, 
+  threePEightWireSaw 
+} from './pentruder-tiles';
+
 
 // ICS Brand Tile Groups
 export const ICSBrandSaws = new TileGroup('Power Cutters', '', ICSSaws);
@@ -37,3 +59,4 @@ export const NewsTilesGuides = new TileGroup('Step-By-Step Guides', '', GuidesNe
 
 // Misc Tile Groups
 export const AddressTilesGroup = new TileGroup('', '', AddressTiles);
+export const FeaturedProducts = new TileGroup('Featured Products', null, [pneumaticSaws, threePEightWireSaw, meritPowerPack, pipeClamp])

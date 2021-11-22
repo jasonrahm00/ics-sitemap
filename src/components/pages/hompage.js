@@ -2,7 +2,7 @@ import ImgTextOverlay from "../cms-components/image-text-overlay/imgTextOverlay"
 import UserSegmentationWrapper from "../cms-components/user-segmentation/userSegmentationWrapper";
 import UserSegmentationCard from "../cms-components/user-segmentation/userSegmentationCard";
 import TileCollection from "../cms-components/tile-collection/tileCollection";
-import TileComponent from "../cms-components/tile-collection/tile/tileComponent";
+import { FeaturedProducts } from "../cms-components/tile-collection/tiles/tile-groupings";
 import { PlaceholderText } from "../../utility/variables";
 import PlaceholderImage from '../../media/placeholder-image-large.png';
 
@@ -44,7 +44,11 @@ function Homepage() {
           ]
         }/>
       </div>
-      <ul className="content-wrapper">
+
+      <TileCollection tileGroup={FeaturedProducts} />
+      
+      {/* Notes */}
+      <ul className="content-wrapper padding-top">
         <li>Homepage
           <ul>
             <li>Hero banner</li>

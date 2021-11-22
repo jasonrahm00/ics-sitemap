@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 
 import ParagraphHeadSubheadBody from "../cms-components/paragraph-head-subhead-body/paragraphHeadSubheadBody";
 import ParagraphLinks from "../cms-components/paragraph-links/paragraphLinks";
-import UserSegmentation from "../cms-components/user-segmentation/userSegmentation";
 import TileCollection from '../cms-components/tile-collection/tileCollection';
 
 //Component Defaults
@@ -17,6 +16,7 @@ import { FullWidthImgTextOverlay, MarginsImgTextOverlay } from '../cms-component
 import { IWATDefault, VWATDefault } from '../cms-components/media-adj-text/default-media-adj-text';
 import DefaultParagraphBullets from '../cms-components/paragraph-bullets/default-paragraph-bullets';
 import { PlaceholderText } from '../../utility/variables';
+import DefaultSegmentation from '../cms-components/user-segmentation/defaultSegmentation';
 
 const components = [
   {
@@ -76,7 +76,7 @@ const components = [
   },
   {
     value: 'User Segmentation Component',
-    component: [<UserSegmentation showSpecs={true} />]
+    component: [<DefaultSegmentation />]
   },
   {
     value: 'Video with Adjacent Text',

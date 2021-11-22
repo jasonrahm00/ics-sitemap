@@ -1,10 +1,9 @@
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CardHeader from '@mui/material/CardHeader';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CardMedia from '@mui/material/CardMedia';
+import LinkButton from '../base-cms-components/link-button/linkButton';
 
 import './userSegmentation.css';
 
@@ -30,7 +29,32 @@ function UserSegmentation({...props}) {
   return (
     <>
       { props.showSpecs && <ComponentSpecs /> }
-      {/* Dev notes: Use MUI Grid and Card to build out. Limit grid to 3. */}
+      <Card>
+        {props.header && (
+          <CardHeader component="h2">
+            {props.header}
+          </CardHeader>
+        )}
+        {props.image && (
+          <CardMedia component="img" media={props.image} />
+        )}
+        {props.subheder && (
+          <CardHeader component="h3">
+            {props.subheader}
+          </CardHeader>
+        )}
+        {props.bodyText && (
+          <Typography component="div" variant="body2" color="text.secondary">
+            {props.bodyText}
+          </Typography>
+        )}
+        {props.ctaURL && props.ctaText.length && (
+          <CardActions>
+            <LinkButton ctaText={props.ctaText} to={props.ctaURL} />
+          </CardActions>
+        )}
+        {props.linkGroup && props.linkGroup}
+      </Card>
     </>
     
   );

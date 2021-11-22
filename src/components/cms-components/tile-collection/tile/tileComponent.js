@@ -22,7 +22,7 @@ function TileComponent({...props}) {
   };
 
   return (
-    <Card sx={{ width: props.width }} raised={true}>
+    <Card sx={{ width: props.width }}>
       {props.image ? (
         <CardMedia 
           component="img"

@@ -1,3 +1,8 @@
+.MuiPaper-root.MuiCard-root {
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .MuiCardHeader-action {
   color: green;
 }

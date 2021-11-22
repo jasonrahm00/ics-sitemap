@@ -134,8 +134,7 @@ export const icsParts = new Tile(
   'Parts & Accessories', //Header
   null, //subheader
   null, //image
-  'From power packs that run your hydraulic tools, pipe clamps to reduce fatigue on your team and heavy duty carrying bags to keep your equipment organized. These work-proven products are indispensable complements to your ICS, Merit & Pentruder Tools.'
-  , //Description
+  'From power packs that run your hydraulic tools, pipe clamps to reduce fatigue on your team and heavy duty carrying bags to keep your equipment organized. These work-proven products are indispensable complements to your ICS, Merit & Pentruder Tools.', //Description
   '/products/parts-accessories', //Link
   'Parts & Accessories', //ctaText
   [], //Product List

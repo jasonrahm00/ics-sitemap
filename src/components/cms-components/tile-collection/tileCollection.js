@@ -25,10 +25,12 @@ const ComponentSpecs = () => {
     </section>
   )
 }
+
 function TileCollection({...props}) {
 
   let {tileGroup} = props;
   let tiles = tileGroup.tiles;
+  let tileWidth = tiles && tiles.length > 3 ? 268 : 358
 
   return (
     <>
@@ -41,7 +43,7 @@ function TileCollection({...props}) {
               {tileGroup.subheader && (<h3>{tileGroup.subheader}</h3>)}
             </header>
           )}
-          <Grid container justifyContent="center" spacing={12}>
+          <Grid container justifyContent="center" spacing={2}>
             {tiles && tiles.map((x, i) => {
               return(
                 <Grid item key={i}>
@@ -55,7 +57,7 @@ function TileCollection({...props}) {
                     subheader={x.subheader}
                     customCrumbs={x.crumbs}
                     image={x.image}
-                    width={345}
+                    width={tileWidth}
                   />
                 </Grid>
               )

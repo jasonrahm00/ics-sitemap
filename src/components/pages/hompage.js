@@ -5,6 +5,7 @@ import TileCollection from "../cms-components/tile-collection/tileCollection";
 import { FeaturedProducts } from "../cms-components/tile-collection/tiles/tile-groupings";
 import { PlaceholderText } from "../../utility/variables";
 import PlaceholderImage from '../../media/placeholder-image-large.png';
+import MediaAdjText from "../cms-components/media-adj-text/mediaAdjText";
 
 function Homepage() {
   return (
@@ -46,6 +47,13 @@ function Homepage() {
       </div>
 
       <TileCollection tileGroup={FeaturedProducts} />
+
+      <MediaAdjText 
+        header='Video with Adjacent Text'
+        bodyText={<p>{PlaceholderText}</p>}
+        textPlacement='right'
+        videoId='NnaJTRqgXWE'
+      />
       
       {/* Notes */}
       <ul className="content-wrapper padding-top">

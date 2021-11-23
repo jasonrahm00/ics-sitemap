@@ -30,7 +30,7 @@ function TileCollection({...props}) {
 
   let {tileGroup} = props;
   let tiles = tileGroup.tiles;
-  let tileWidth = tiles && tiles.length > 3 ? 268 : 358
+  let tileWidth = tiles && tiles.length > 3 ? 278 : 358
 
   return (
     <>

@@ -58,8 +58,41 @@ export const germanyHeadquarters = new Tile (
   <GermanyAddress />
 );
 
+export const findDealerTile = new Tile (
+  'Find a Dealer',
+  null,
+  null,
+  null,
+  '/find-dealer',
+  'Find a Dealer'
+);
+
+export const registerProductTile = new Tile (
+  'Register a Product',
+  null,
+  null,
+  null,
+  '/product-registration',
+  'Register a Product'
+)
+
+export const downloadWhitepaperTile = new Tile (
+  'Kickback Study Whitepaper',
+  null,
+  null,
+  null,
+  '#',
+  'Download Whitepaper'
+);
+
 export const AddressTiles = [
   usHeadquarters,
   europeHeadquarters,
   germanyHeadquarters,
+];
+
+export const TopActionsTiles = [
+  findDealerTile,
+  registerProductTile,
+  downloadWhitepaperTile
 ];

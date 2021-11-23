@@ -2,7 +2,7 @@ import ImgTextOverlay from "../cms-components/image-text-overlay/imgTextOverlay"
 import UserSegmentationWrapper from "../cms-components/user-segmentation/userSegmentationWrapper";
 import UserSegmentationCard from "../cms-components/user-segmentation/userSegmentationCard";
 import TileCollection from "../cms-components/tile-collection/tileCollection";
-import { FeaturedProducts } from "../cms-components/tile-collection/tiles/tile-groupings";
+import { FeaturedProducts, TopActionsTileGroup } from "../cms-components/tile-collection/tiles/tile-groupings";
 import { PlaceholderText } from "../../utility/variables";
 import PlaceholderImage from '../../media/placeholder-image-large.png';
 import MediaAdjText from "../cms-components/media-adj-text/mediaAdjText";
@@ -49,31 +49,14 @@ function Homepage() {
       <TileCollection tileGroup={FeaturedProducts} />
 
       <MediaAdjText 
-        header='Video with Adjacent Text'
+        header='Some Intro Video for the Company'
         bodyText={<p>{PlaceholderText}</p>}
         textPlacement='right'
         videoId='NnaJTRqgXWE'
       />
+
+      <TileCollection tileGroup={TopActionsTileGroup} />
       
-      {/* Notes */}
-      <ul className="content-wrapper padding-top">
-        <li>Homepage
-          <ul>
-            <li>Hero banner</li>
-            <li>User segmentation, Brands with CTA to individual shop by brand page</li>
-            <li>Featured Products Row of Tils</li>
-            <li>Someway to link to Request Demo page (tile or other method)</li>
-            <li>Video of something (get people to interact) - Splash Video</li>
-          </ul>
-        </li>
-        <li>Top actions
-          <ul>
-            <li>Find a dealer</li>
-            <li>Request a Demo</li>
-            <li>Download Whitepaper</li>
-          </ul>
-        </li>
-      </ul>
     </>
   );
 }

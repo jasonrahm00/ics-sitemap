@@ -20,7 +20,7 @@
   padding: 0 1rem 1rem; 
 }
 
-.user-segmentation .list-group-component {
+.user-segmentation .list-group-component.two-columns {
   width: 100%;
   display: block;
 }
@@ -31,7 +31,7 @@
   padding-bottom: 1rem;
 }
 
-.user-segmentation .list-group-component ul {
+.user-segmentation .list-group-component.links ul {
   width: 80%;
   margin: 0 auto;
 }

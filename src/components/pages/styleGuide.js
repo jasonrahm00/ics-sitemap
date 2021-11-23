@@ -11,7 +11,7 @@ import ParagraphLinks from "../cms-components/paragraph-links/paragraphLinks";
 import TileCollection from '../cms-components/tile-collection/tileCollection';
 
 //Component Defaults
-import DefaulTileCollection from '../cms-components/tile-collection/default-tile-collection';
+import {DefaulTileCollectionFew, DefaulTileCollectionSeveral} from '../cms-components/tile-collection/default-tile-collection';
 import { FullWidthImgTextOverlay, MarginsImgTextOverlay } from '../cms-components/image-text-overlay/default-img-text-overlay';
 import { IWATDefault, VWATDefault } from '../cms-components/media-adj-text/default-media-adj-text';
 import DefaultParagraphBullets from '../cms-components/paragraph-bullets/default-paragraph-bullets';
@@ -33,7 +33,10 @@ const components = [
   },
   {
     value: 'Tile Collection Component',
-    component: [<TileCollection showSpecs="true" tileGroup={DefaulTileCollection} />]
+    component: [
+      <TileCollection showSpecs="true" tileGroup={DefaulTileCollectionFew} />,
+      <TileCollection tileGroup={DefaulTileCollectionSeveral} />,
+    ]
   },
   {
     value: 'Paragraph with Header Subheader Body',

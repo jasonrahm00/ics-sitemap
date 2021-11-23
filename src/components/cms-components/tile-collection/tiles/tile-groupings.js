@@ -1,6 +1,6 @@
 import { TileGroup } from '../../../../utility/constructors';
 import { FeaturesNewsTiles, ProductsNewsTiles, GuidesNewsTiles } from './news-tiles';
-import { AddressTiles } from './misc-tiles';
+import { AddressTiles, TopActionsTiles } from './misc-tiles';
 import { 
   ICSSaws, 
   ICSChains, 
@@ -59,4 +59,5 @@ export const NewsTilesGuides = new TileGroup('Step-By-Step Guides', '', GuidesNe
 
 // Misc Tile Groups
 export const AddressTilesGroup = new TileGroup('', '', AddressTiles);
-export const FeaturedProducts = new TileGroup('Featured Products', null, [pneumaticSaws, threePEightWireSaw, meritPowerPack, pipeClamp])
+export const FeaturedProducts = new TileGroup('Featured Products', null, [pneumaticSaws, threePEightWireSaw, meritPowerPack, pipeClamp]);
+export const TopActionsTileGroup = new TileGroup('Interact with Us', null, TopActionsTiles);

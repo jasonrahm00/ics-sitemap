@@ -24,21 +24,21 @@ function Homepage() {
             <UserSegmentationCard 
               header='ICS Brand Products'
               image={PlaceholderImage}
-              bodyText={PlaceholderText}
+              bodyText="ICS’s growing line of industrial cutting systems includes gas, hydraulic, and pneumatic powerheads, guide bars, and our patented diamond chains for concrete, utility pipe, stone, and masonry work."
               ctaURL='/products/ics'
               ctaText='ICS Brand Page'
             />,
             <UserSegmentationCard 
               header='Merit Brand Products'
               image={PlaceholderImage}
-              bodyText={PlaceholderText}
+              bodyText="Founded by professional concrete cutters for professional concrete cutters, Merit’s heavy-duty, high-performing floor saws are intuitive to operate and easy to maintain."
               ctaURL='/products/merit'
               ctaText='Merit Brand Page'
             />,
             <UserSegmentationCard 
               header='Pentruder Brand Products'
               image={PlaceholderImage}
-              bodyText={PlaceholderText}
+              bodyText="Pentruder is considered the gold standard for high-frequency wall and wire saws by professional concrete cutters worldwide. ICS is proud to be the exclusive distributor of Pentruder for the Americas."
               ctaURL='/products/pentruder'
               ctaText='Pentruder Brand Page'
             />,
@@ -49,8 +49,8 @@ function Homepage() {
       <TileCollection tileGroup={FeaturedProducts} />
 
       <MediaAdjText 
-        header='Some Intro Video for the Company'
-        bodyText={<p>{PlaceholderText}</p>}
+        header='Born for the Tough Stuff'
+        bodyText={<p>If we’re not talking about getting the job done, then why are we talking? We don’t bother with any other BS. Because the only thing that matters is doing the work the right way – and we’ll do whatever it takes to make sure it’s done.</p>}
         textPlacement='right'
         videoId='NnaJTRqgXWE'
       />

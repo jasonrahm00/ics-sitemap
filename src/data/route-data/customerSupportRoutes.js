@@ -11,7 +11,11 @@ import ContactUs from '../../components/pages/contactUs';
 const CustomerSupportRoutes = [
   new RouteObject('/contact-us', () => <ContactUs />),
   new RouteObject('/find-dealer', () => <ContentPage components={[
-    <ParagraphHeadSubheadBody headerTag='h1' header='Find a Dealer' bodyText='Interested in purchasing an ICS product? Our network of dealers is here to help.' />,
+    <ParagraphHeadSubheadBody 
+      headerTag='h1' 
+      header='Find a Dealer' 
+      bodyText={<p>Interested in purchasing an ICS product? Our network of dealers is here to help.</p>} 
+      />,
     <ParagraphHeadSubheadBody bodyText='Insert Storepoint App here' />
   ]} />),
   new RouteObject('/product-registration', () => <ContentPage components={[
@@ -20,7 +24,11 @@ const CustomerSupportRoutes = [
   ]} />),
   new RouteObject('/videos', 
   () => <ContentPage components={[
-    <ParagraphHeadSubheadBody header="Video Library" bodyText="Display a handful of videos in VWTO component with either links to additional videos or a separate CTA somehwere on the page linking to the YouTube channel"/>,
+    <ParagraphHeadSubheadBody 
+      header="Video Library" 
+      headerTag='h1'
+      bodyText={<p>Handy tips and tricks from the experts to help you get your job done right the first time.</p>}
+    />,
     <VWATVideoLibraryDefault />,
     <VWATVideoLibraryDefault />,
     <VWATVideoLibraryDefault />,
@@ -28,17 +36,26 @@ const CustomerSupportRoutes = [
     <VWATVideoLibraryDefault />,
   ]}/>
 ),
-  new RouteObject('/demo-request', () => <ContentPage title={'Request a Demo'}/>),
+  new RouteObject('/demo-request', () => <ContentPage components={[
+    <ParagraphHeadSubheadBody 
+      headerTag='h1' 
+      header='Request a Demo'
+      bodyText={<p>Take us for a test drive.  Fill out the form below and one of our sales team will reach out.  </p>} 
+    />
+  ]} />),
   new RouteObject('/service-centers', () => <ContentPage components={[
     <ParagraphHeadSubheadBody 
       headerTag='h1' 
       header='Service Centers'
-      bodyText={`At ICS, your satisfaction is paramount. If for some reason, your equipment is not performing as promised, we want to know. Please call 800.321.1240 or email ics.service@oregontool.com`} 
-      />
+      bodyText={<p>At ICS, your satisfaction is paramount. If for some reason, your equipment is not performing as promised, we want to know. Please call 800.321.1240 or email ics.service@oregontool.com</p>} 
+    />
   ]} />),
   new RouteObject('/document-library', 
     () => <CategoryContent components={[
-      <ParagraphHeadSubheadBody header="Document Library" />,
+      <ParagraphHeadSubheadBody 
+        header="Document Library"
+        bodyText={<p>Access to operator manuals, data sheets, parts list and more.</p>} 
+      />,
       <TileCollection tileGroup={new TileGroup('', '', AllDocTiles)} />
     ]}/>
   ),

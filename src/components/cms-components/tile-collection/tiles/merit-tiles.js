@@ -14,7 +14,7 @@ export const meritPowerPack = new Tile(
   'M300-23G-HPP Power Pack', //Header
   null, //subheader
   null, //image
-  '', //Description
+  'The gas powered M300 power pack is a dependable, self-contained source of hydraulic power.', //Description
   '/pdp', //Link
   'Power Pack', //ctaText
   ['M300-23G-HPP Power Pack'], //Product List

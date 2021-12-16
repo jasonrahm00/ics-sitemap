@@ -62,7 +62,7 @@ export const findDealerTile = new Tile (
   'Find a Dealer',
   null,
   null,
-  null,
+  'Go to our dealer locator to find a dealer near you.',
   '/find-dealer',
   'Find a Dealer'
 );
@@ -71,7 +71,7 @@ export const registerProductTile = new Tile (
   'Register a Product',
   null,
   null,
-  null,
+  "Get ICS’s full range of customer support, including product notices, maintenance reminders, troubleshooting tips, and previews of new products. Register your cutting systems, power packs, and accessories today.",
   '/product-registration',
   'Register a Product'
 )
@@ -80,7 +80,7 @@ export const downloadWhitepaperTile = new Tile (
   'Kickback Study Whitepaper',
   null,
   null,
-  null,
+  "Reduce the risk in the trench. Read the in-depth investigation of abrasive saw kickback and which tools will help you limit the risk. ",
   '#',
   'Download Whitepaper'
 );

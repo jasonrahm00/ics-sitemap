@@ -5,7 +5,7 @@ import ParagraphHeadSubheadBody from '../../components/cms-components/paragraph-
 import { AllDocTiles } from '../../components/cms-components/tile-collection/tiles/document-tiles';
 import TileCollection from '../../components/cms-components/tile-collection/tileCollection';
 import { TileGroup } from '../../utility/constructors';
-import { VWATVideoLibraryDefault } from '../../components/cms-components/media-adj-text/default-media-adj-text';
+import { InstructionalVideosVWAT, CompareVideosVWAT } from '../../components/cms-components/media-adj-text/default-media-adj-text';
 import ContactUs from '../../components/pages/contactUs';
 
 const CustomerSupportRoutes = [
@@ -29,11 +29,8 @@ const CustomerSupportRoutes = [
       headerTag='h1'
       bodyText={<p>Handy tips and tricks from the experts to help you get your job done right the first time.</p>}
     />,
-    <VWATVideoLibraryDefault />,
-    <VWATVideoLibraryDefault />,
-    <VWATVideoLibraryDefault />,
-    <VWATVideoLibraryDefault />,
-    <VWATVideoLibraryDefault />,
+    <CompareVideosVWAT />,
+    <InstructionalVideosVWAT />,
   ]}/>
 ),
   new RouteObject('/demo-request', () => <ContentPage components={[

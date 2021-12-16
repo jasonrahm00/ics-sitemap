@@ -2,8 +2,9 @@ import MediaAdjText from "./mediaAdjText";
 import LargePlaceholderImage from '../../../media/placeholder-image-large.png';
 import { PlaceholderText } from "../../../utility/variables";
 import { DefaultLinkGroup, DefaultBulletGroup } from "../base-cms-components/list-groups/reusable-list-groups";
-import { BulletList, BullletListGroup } from "../base-cms-components/list-groups/listGroups";
+import { BulletList, BullletListGroup, LinkListGroup } from "../base-cms-components/list-groups/listGroups";
 import ChemicalWarning from "../../base/chemicalWarning";
+import { Link } from "react-router-dom";
 
 const IWATComponentSpecs = () => {
   return (
@@ -240,6 +241,45 @@ export const VWATVideoLibraryDefault = () => {
       textPlacement='left'
       videoId='NnaJTRqgXWE'
       linkGroup={<DefaultLinkGroup />}
+    />
+  )
+}
+
+export const CompareVideosVWAT = () => {
+  return (
+    <MediaAdjText 
+      header='Comparison Videos'
+      bodyText={<p>See the ICS power cutters go head-to-head with other industry tools. Both cut openings, both get the job done. See the benefits of using the ICS tools to get your job done faster, easier and with less clean up than some of our competitors.</p>}
+      textPlacement='left'
+      videoId='jZcPlKcG3tg'
+      linkGroup={
+        <LinkListGroup 
+          header='Additional Comparison Videos'
+          links={[
+            <Link to="https://www.youtube.com/watch?v=fhrGlLVKE-E&t=2s">ICS 695XL vs Cut-n-Break</Link>
+          ]}
+        />
+      }
+    />
+  )
+}
+
+export const InstructionalVideosVWAT = () => {
+  return (
+    <MediaAdjText 
+      header='Instructional Videos'
+      bodyText={<p>You want to get the most out of your ICS® equipment. We can help. Check out the videos below for everything from basic maintenance and troubleshooting to operating and safety tips.</p>}
+      textPlacement='left'
+      videoId='TSWOI34lbcc'
+      linkGroup={
+        <LinkListGroup 
+          header='Additional Instructional Videos'
+          links={[
+            <Link to="https://www.youtube.com/watch?v=4ZcrGG-lv80">ICS 695 Series Maintenance and Training</Link>,
+            <Link to="https://www.youtube.com/watch?v=XCCwWAx0Vt4">ICS 890 Series Daily Inspection</Link>
+          ]}
+        />
+      }
     />
   )
 }

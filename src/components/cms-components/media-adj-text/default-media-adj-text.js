@@ -256,7 +256,8 @@ export const CompareVideosVWAT = () => {
         <LinkListGroup 
           header='Additional Comparison Videos'
           links={[
-            <Link to="https://www.youtube.com/watch?v=fhrGlLVKE-E&t=2s">ICS 695XL vs Cut-n-Break</Link>
+            <Link to="https://www.youtube.com/watch?v=fhrGlLVKE-E">ICS 695XL vs Cut-n-Break</Link>,
+            <Link to="https://www.youtube.com/watch?v=Z7K987iCuMM">ICS 695XL vs Ring Saw</Link>
           ]}
         />
       }
